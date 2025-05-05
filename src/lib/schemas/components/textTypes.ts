@@ -3,5 +3,5 @@ export type TextStyles = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'h7' | 'h8' |
 
 
 // Text style options (same as TextTypeValue)
-export type TextStyleValue = TextTypeValue;
+export type TextStyleValue = TextStyles;
 export type TextStyleOptions = Record<TextStyleValue, string>;
