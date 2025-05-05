@@ -11,3 +11,6 @@
 <svelte:element this={type} {id} class={styling} {...restProps}>
 	{@render children()}
 </svelte:element>
+
+
+<!-- Eventually this Component will also support RichText -->
