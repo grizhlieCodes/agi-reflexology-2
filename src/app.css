@@ -1,27 +1,21 @@
 @import 'tailwindcss';
 @import '../static/fonts.css';
+@custom-variant dark (&:where(.dark, .dark *));
 
-/* FONTS ~ FONTS ~ FONTS ~ FONTS ~ FONTS ~ FONTS */
+/* COLORS ~ COLORS ~ COLORS ~ COLORS ~ COLORS */
+/* PALETTE ~ PALETTE ~ PALETTE ~ PALETTE ~ PALETTE */
 @theme {
-    /* Core */
-	--font-sans: 'Inter', sans-serif;
+	/* Core */
+	--font-sans: 'Open Sans', sans-serif;
 	--font-serif: 'Source Serif 4', serif;
 	--font-mono: 'Space Mono', monospace;
 	--font-ui: 'Inter', sans-serif;
 
-    /* Semantic */
-    --font-heading: var(--font-serif);
-    --font-body: var(--font-sans);
-    --font-special: var(--font-mono);
-    --font-ui: var(--font-ui); 
-
-
-    
-}
-
-/* COLORS ~ COLORS ~ COLORS ~ COLORS ~ COLORS */
-/* PRIMITIVES ~ PRIMITIVES ~ PRIMITIVES ~ PRIMITIVES*/
-@theme {
+	/* Semantic */
+	--font-heading: var(--font-serif);
+	--font-body: var(--font-sans);
+	--font-special: var(--font-mono);
+	
 	/* Aga Grey */
 	--color-aga-gray-50: #f6f7f6;
 	--color-aga-gray-100: #e3e4e3;
@@ -60,11 +54,6 @@
 	--color-aga-brown-800: #6b5049;
 	--color-aga-brown-900: #5b4641;
 	--color-aga-brown-950: #2f2320;
-}
-
-/* COLORS ~ COLORS ~ COLORS ~ COLORS ~ COLORS */
-/* PALETTE ~ PALETTE ~ PALETTE ~ PALETTE ~ PALETTE */
-@theme {
 	/* Neutral */
 	--color-neutral-50: var(--color-aga-gray-50);
 	--color-neutral-100: var(--color-aga-gray-100);

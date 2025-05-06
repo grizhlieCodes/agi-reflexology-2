@@ -103,9 +103,9 @@
 @font-face {
 	font-family: 'Open Sans';
 	src:
-		url('https://seerstudio.b-cdn.net/web-fonts/open-sans/opensans-italic-variablefont_wdthwght-webfont.woff2')
+		url('https://seerstudio.b-cdn.net/web-fonts/open-sans/OpenSans-Italic-VariableFont_wdth-wght.woff2')
 			format('woff2-variations'),
-		url('https://seerstudio.b-cdn.net/web-fonts/open-sans/opensans-italic-variablefont_wdthwght-webfont.woff')
+		url('https://seerstudio.b-cdn.net/web-fonts/open-sans/OpenSans-Italic-VariableFont_wdth-wght.woff')
 			format('woff-variations');
 	font-weight: 300 800; /* Standard weight range */
 	font-stretch: 75% 100%; /* Standard width range */
@@ -116,9 +116,9 @@
 @font-face {
 	font-family: 'Open Sans';
 	src:
-		url('https://seerstudio.b-cdn.net/web-fonts/open-sans/opensans-variablefont_wdthwght-webfont.woff2')
+		url('https://seerstudio.b-cdn.net/web-fonts/open-sans/OpenSans-VariableFont_wdth-wght.woff2')
 			format('woff2-variations'),
-		url('https://seerstudio.b-cdn.net/web-fonts/open-sans/opensans-variablefont_wdthwght-webfont.woff')
+		url('https://seerstudio.b-cdn.net/web-fonts/open-sans/OpenSans-VariableFont_wdth-wght.woff')
 			format('woff-variations');
 	font-weight: 300 800; /* Standard weight range */
 	font-stretch: 75% 100%; /* Standard width range */
