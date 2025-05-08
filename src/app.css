@@ -54,6 +54,8 @@
 	--color-aga-brown-800: #6b5049;
 	--color-aga-brown-900: #5b4641;
 	--color-aga-brown-950: #2f2320;
+
+	
 	/* Neutral */
 	--color-neutral-50: var(--color-aga-gray-50);
 	--color-neutral-100: var(--color-aga-gray-100);
