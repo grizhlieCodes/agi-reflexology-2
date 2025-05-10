@@ -1,5 +1,6 @@
 <script lang="ts">
 	import HomeHero from "./home/HomeHero.svelte";
+	import HomeMyApproach from "./home/HomeMyApproach.svelte";
 	import HomepageProblem from "./home/HomepageProblem.svelte";
 	import HomepageSolution from "./home/HomepageSolution.svelte";
 	import HomeTestimonial from "./home/HomeTestimonial.svelte";
@@ -11,3 +12,4 @@
 <HomeTestimonial></HomeTestimonial>
 <HomepageProblem></HomepageProblem>
 <HomepageSolution></HomepageSolution>
+<HomeMyApproach></HomeMyApproach>
