@@ -1,41 +1,71 @@
-// export type IconComponent = React.ComponentType<any> | null;
-import type { Icon as IconType } from '@lucide/svelte';
+// types.ts
+import type { ComponentType } from 'svelte';
 
-// --- Badge Item Type ---
-// This is the structure for individual items within the badge arrays (location, time, etc.)
-export type BadgeDisplayType = 'default' | 'primary' | 'info'; // Add more if you have other types
+// the Lucide-Svelte icons all satisfy this shape
+export type IconType = ComponentType<{
+	size?: string;
+	color?: string;
+	[prop: string]: any;
+}>;
 
-export interface BadgeItem {
-	type: BadgeDisplayType;
-	Icon: IconType | null; // Can be an Icon component or null
+// the three “kinds” of badge you use
+export type BadgeKind = 'default' | 'info' | 'primary';
+
+// a single badge (returned by getDays, getLocations, etc.)
+export interface Badge {
+	type: BadgeKind;
 	content: string;
+	Icon: IconType | null;
 }
 
-// --- Card Badges Type ---
-// This defines the structure of the 'badges' object within a PriceCard
-export interface CardBadges {
-	location: BadgeItem[];
-	time: BadgeItem[];
-	key_info: BadgeItem[];
-	additional_info: BadgeItem[];
-}
+// --- function signatures ---
 
-// --- Card Button Type ---
-// This defines the structure of the 'button' object within a PriceCard
-export interface CardButton {
+/**
+ * @param days comma-separated day keys ("mon,tue,…")
+ * @returns one Badge per day
+ */
+export function getDays(days: string): Badge[];
+
+/**
+ * @param locationNames comma-separated location keys ("agi,chelsea,…")
+ * @returns one Badge per location
+ */
+export function getLocations(locationNames: string): Badge[];
+
+/**
+ * @param timeDuration in minutes
+ * @returns a single “time” Badge
+ */
+export function getTime(timeDuration: number): Badge[];
+
+/**
+ * @param massageAreaNames comma-separated words (with “or”/“and”)
+ * @returns one Badge per token
+ */
+export function getMassageAreas(massageAreaNames: string): Badge[];
+
+// --- price card types ---
+
+export interface PriceCardButton {
 	content: string;
-	icon: IconComponent; // Assuming button icon can also be a component or null
+	icon: IconType | null;
 	href: string;
 }
 
-// --- Price Card Type ---
-// This is the main type for an individual price card object
+export interface PriceCardBadges {
+	location: Badge[];
+	time: Badge[];
+	massage_areas: Badge[];
+	additional_info: Badge[];
+}
+
 export interface PriceCard {
 	cost: number;
 	title: string;
-	duration: number; // Assuming duration is in minutes or some consistent numeric unit
-	divider?: boolean;
-	badges: CardBadges;
+	duration: number;
 	description: string;
-	button: CardButton;
+	location: string;
+	button: PriceCardButton;
+	badges: PriceCardBadges;
 }
+
