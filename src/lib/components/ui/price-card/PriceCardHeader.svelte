@@ -51,7 +51,7 @@
 	</div>
 	<Text
 		type="p"
-		style="para8"
+		style="para7"
 		class="font-semibold
 text-neutral-500 dark:text-neutral-400"
 	>

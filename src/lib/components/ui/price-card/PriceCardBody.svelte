@@ -4,7 +4,7 @@
 	import Text from "$lib/components/ui/Text.svelte";
 
     interface PriceCardBody {
-        badges: PriceCardTypes.CardBadges;
+        badges: PriceCardTypes.Badge[];
         divider?: boolean;
         description: string;
     }
@@ -23,7 +23,7 @@
         </Badge>
     {/each}
     <div class="flex gap-1">
-        {#each badges.key_info as infoBadge}
+        {#each badges.massage_areas as infoBadge}
             <Badge type={infoBadge.type}>
                 {#if infoBadge.Icon}
                     <infoBadge.Icon />

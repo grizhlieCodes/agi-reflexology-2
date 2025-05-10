@@ -5,13 +5,18 @@
 	import PriceCardBody from './PriceCardBody.svelte';
 	import PriceCardFooter from './PriceCardFooter.svelte';
 
-	let { cost, title, badges, divider = true, description, button }: PriceCardTypes.PriceCard = $props();
+	type LocalProps = PriceCardTypes.PriceCard & {
+		divider?: boolean;
+		class?: string;
+	};
+
+	let { cost, title, badges, divider = true, description, button, class: className }: LocalProps = $props();
 	let infoUnlocked = $state(false);
 </script>
 
 <article
-	class="relative flex w-full max-w-96 flex-col gap-4 rounded-xl
-border border-neutral-200 bg-neutral-50 p-6 transition-colors duration-300 dark:border-neutral-700 dark:bg-neutral-800/20"
+	class="relative flex w-full max-w-96 flex-col gap-4 rounded-xl border
+border-neutral-200 bg-neutral-50 p-6 text-left transition-colors duration-300 dark:border-neutral-700 dark:bg-neutral-800/20"
 >
 	{#if infoUnlocked}
 		<PriceCardInfo badges={badges.additional_info}></PriceCardInfo>

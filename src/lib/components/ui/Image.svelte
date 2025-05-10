@@ -55,8 +55,11 @@
 		/>
 
 		{#if clampedBrightness > 0 && !isLoading}
-			<div class="pointer-events-none absolute inset-0 bg-white
-			dark:bg-black/40 transition-colors duration-300" style="opacity: {brightnessOpacity};"></div>
+			<div
+				class="pointer-events-none absolute inset-0 bg-white
+			transition-colors duration-300 dark:bg-black/40"
+				style="opacity: {brightnessOpacity};"
+			></div>
 		{/if}
 	</div>
 	{#if figCaption && !isLoading}
