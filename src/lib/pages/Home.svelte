@@ -1,11 +1,10 @@
 <script lang="ts">
-	import HomeHero from "./home/HomeHero.svelte";
-	import HomeMyApproach from "./home/HomeMyApproach.svelte";
-	import HomepageProblem from "./home/HomepageProblem.svelte";
-	import HomepageSolution from "./home/HomepageSolution.svelte";
-	import HomeTestimonial from "./home/HomeTestimonial.svelte";
-
-
+	import HomeHero from './home/HomeHero.svelte';
+	import HomeMyApproach from './home/HomeMyApproach.svelte';
+	import HomeMyServices from './home/HomeMyServices.svelte';
+	import HomepageProblem from './home/HomepageProblem.svelte';
+	import HomepageSolution from './home/HomepageSolution.svelte';
+	import HomeTestimonial from './home/HomeTestimonial.svelte';
 </script>
 
 <HomeHero></HomeHero>
@@ -13,3 +12,4 @@
 <HomepageProblem></HomepageProblem>
 <HomepageSolution></HomepageSolution>
 <HomeMyApproach></HomeMyApproach>
+<HomeMyServices></HomeMyServices>

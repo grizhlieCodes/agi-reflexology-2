@@ -23,7 +23,7 @@
 		>
 			<div class="aspect-square w-full max-w-md md:min-w-xs lg:max-w-sm">
 				<Image
-					src="https://seerstudio.b-cdn.net/image-tests/grizhlie_A_close-up_of_bare_feet_resting_gently_on_a_soft_lin_faa959bc-5933-42e0-b12d-555a422599aa_3.webp"
+					src="https://seerstudio.b-cdn.net/image-tests/ChatGPT%20Image%20May%2010%2C%202025%2C%2008_55_13%20PM.webp"
 					alt="A person sitting with their bare feet resting on a soft towel. Hands gently touch the feet, surrounded by green ferns and pebbles, suggesting a relaxing and natural setting."
 				></Image>
 			</div>
@@ -40,24 +40,20 @@
 				<Text type="p" style="paraBase">
 					As your body returns to balance, I follow what it’s truly asking for, moment to moment. These are the qualities that shape every session:
 				</Text>
-				<ul class="w-full space-y-1.5">
+				<ul class="w-full max-w-max list-disc space-y-1.5 pl-4 text-neutral-500
+				md:pl-0">
 					{#each APPROACH_LIST as item}
-						<li class="flex items-center gap-2">
-							<Leaf class="size-4.5 stroke-primary-300"></Leaf>
+						<li class="list-item items-center gap-2 text-left md:flex">
+							<Leaf
+								class="stroke-primary-300 size-2.5 lg:size-3.5
+							hidden shrink-0 md:block"
+							></Leaf>
 							<Text type="span" style="para4" class="text-neutral-500">
 								{item}
 							</Text>
 						</li>
 					{/each}
 				</ul>
-				<!-- <div class="mt-10 flex flex-row flex-wrap justify-center gap-4 md:justify-start">
-					<Button size={4} type="primary" href="/treatments" ariaLabel="View all of my services that could help you" class="w-full max-w-md sm:w-max">
-						Explore My Treatments
-					</Button>
-					<Button size={4} type="plain" href="/treatments" ariaLabel="Learn how reflexology works" class="w-full max-w-md sm:w-max">
-						How Reflexology Works
-					</Button>
-				</div> -->
 			</div>
 		</div>
 	</Container>
