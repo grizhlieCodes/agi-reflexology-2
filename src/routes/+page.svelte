@@ -121,3 +121,7 @@
 
 
 <Home></Home>
+
+<!-- <div class="w-full max-w-[400px]">
+	<PriceCard {...priceCards[0]}></PriceCard>
+</div> -->
