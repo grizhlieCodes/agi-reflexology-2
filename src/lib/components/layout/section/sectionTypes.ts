@@ -49,6 +49,6 @@ export interface SectionProps {
 	vertical_padding?: PaddingPropValue;
 	horizontal_padding?: PaddingPropValue;
 	gap?: PaddingPropValue;
-	class: string;
+	class?: string;
 	children: Snippet; // Svelte 5 children prop
 }

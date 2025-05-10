@@ -78,12 +78,11 @@
 	let btnStyling = $derived(cn(BASE_STYLES, padding, gap, borderRadius, btnType, textSize, className));
 </script>
 
-<div style:--icon-size="calc(var(--spacing)*{iconSize})" style:--text-size="calc(var()*)" class="[&_svg]:w-(--icon-size)">
-	<Button.Root {href} {disabled} class={btnStyling} aria-label={ariaLabel}
-	onclick={func}>
+<Button.Root {href} {disabled} class={btnStyling} aria-label={ariaLabel} onclick={func}>
+	<div style:--icon-size="calc(var(--spacing)*{iconSize})" style:--text-size="calc(var()*)" class="[&_svg]:w-(--icon-size)">
 		{@render children()}
-	</Button.Root>
-</div>
+	</div>
+</Button.Root>
 
 <style>
 	@reference "../../../app.css";

@@ -8,7 +8,8 @@
 		containerClass,
 		imgClass,
 		loading = 'lazy',
-		brightness = 0
+		brightness = 0,
+		decorate = true
 	}: {
 		src: string;
 		alt: string;
@@ -17,18 +18,19 @@
 		imgClass?: string;
 		loading?: 'lazy' | 'eager';
 		brightness?: number;
+		decorate?: boolean;
 	} = $props();
 
 	let isLoading: boolean = $state(true);
 
 	let CONTAINER_BASE_STYLING = 'relative h-full w-full';
 	let IMAGE_BASE_STYLING = 'h-full w-full object-cover';
-	let DECORATION_STYLING = 'rounded-xl border-2 border-primary-200 dark:border-primary-600 overflow-hidden';
+	let DECORATION_STYLING = 'rounded-xl border-2 border-primary-200 dark:border-primary-700 overflow-hidden';
 
 	const clampedBrightness = $derived(Math.max(0, Math.min(100, brightness)));
 	const brightnessOpacity = $derived(clampedBrightness / 100);
 
-	let containerStyles = $derived(cn(CONTAINER_BASE_STYLING, DECORATION_STYLING, containerClass));
+	let containerStyles = $derived(cn(CONTAINER_BASE_STYLING, decorate ? DECORATION_STYLING : '', containerClass));
 	let imageStyles = $derived(cn(IMAGE_BASE_STYLING, imgClass));
 </script>
 
@@ -53,7 +55,8 @@
 		/>
 
 		{#if clampedBrightness > 0 && !isLoading}
-			<div class="pointer-events-none absolute inset-0 bg-white" style="opacity: {brightnessOpacity};"></div>
+			<div class="pointer-events-none absolute inset-0 bg-white
+			dark:bg-black/40 transition-colors duration-300" style="opacity: {brightnessOpacity};"></div>
 		{/if}
 	</div>
 	{#if figCaption && !isLoading}

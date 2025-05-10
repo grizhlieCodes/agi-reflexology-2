@@ -15,18 +15,18 @@
 		src="https://seerstudio.b-cdn.net/image-tests/quotation-marks-icon.webp"
 		alt="illustration of a quotation mark"
 		role="presentation"
-		class="size-12
-	-scale-x-100 rotate-180 md:size-16 lg:size-20 -translate-x-3"
+		class="size-10
+	-scale-x-100 rotate-180 md:size-12 lg:size-16 -translate-x-3 text-inherit"
 	/>
 	<div class="flex flex-col gap-4">
-		<Text type="p" style="h6" class="text-primary-800 dark:text-primary-300 font-normal">
+		<Text type="p" style="h6" class="text-primary-800 dark:text-primary-200 font-normal">
 			{@render children()}
 		</Text>
         <div>
             <Text type="p" style="para4" class="font-bold text-neutral-700 dark:text-neutral-300">
                 {authorName}
             </Text>
-            <Text type="p" style="para4" class="text-neutral-400 dark:text-neutral-500">
+            <Text type="p" style="para4" class="text-neutral-400 dark:text-neutral-400">
                 {authorTitle}
             </Text>
         </div>
