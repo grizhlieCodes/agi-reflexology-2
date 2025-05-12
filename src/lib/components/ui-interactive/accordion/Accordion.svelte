@@ -7,7 +7,7 @@
 		value: string; // Unique value for the item, used by bits-ui
 		title: string;
 		content: string;
-		type?: 'base' | 'level-1-neutral' | 'level-2-neutral' | 'level-1-primary' | 'level-2-primary';
+		type?: 'default' | 'level-1-neutral' | 'level-2-neutral' | 'level-1-primary' | 'level-2-primary';
 		disabled?: boolean;
 	};
 
@@ -17,7 +17,7 @@
 	type Props = WithoutChildrenOrChild<BitsAccordionRootProps> & {
 		items: AccordionListItem[];
 		class?: BitsDivAttributes['class'];
-		styleType: 'base' | 'level-1-neutral' | 'level-2-neutral' | 'level-1-primary' | 'level-2-primary';
+		styleType: 'default' | 'level-1-neutral' | 'level-2-neutral' | 'level-1-primary' | 'level-2-primary';
 	};
 
 	let {
@@ -33,8 +33,7 @@
 </script>
 
 <Accordion.Root bind:value bind:ref {...otherRootProps as any} class="w-full {passedClass ?? ''}">
-	{#each items as item (item.value)}
-		<AccordionItem value={item.value} title={item.title} content={item.content}
-		disabled={item.disabled} type={styleType} />
+	{#each items as item (item.title)}
+		<AccordionItem value={item.value} title={item.title} content={item.content} disabled={item.disabled} type={styleType} />
 	{/each}
 </Accordion.Root>

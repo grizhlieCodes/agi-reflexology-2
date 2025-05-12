@@ -9,7 +9,8 @@
 		imgClass,
 		loading = 'lazy',
 		brightness = 0,
-		decorate = true
+		decorate = true,
+		role = 'presentation'
 	}: {
 		src: string;
 		alt: string;
@@ -19,6 +20,7 @@
 		loading?: 'lazy' | 'eager';
 		brightness?: number;
 		decorate?: boolean;
+		role?: string;
 	} = $props();
 
 	let isLoading: boolean = $state(true);
@@ -52,6 +54,7 @@
 				isLoading = false;
 				console.error('Image failed to load:', src);
 			}}
+			{role}
 		/>
 
 		{#if clampedBrightness > 0 && !isLoading}

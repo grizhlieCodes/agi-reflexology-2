@@ -42,7 +42,6 @@
 	const gap = gapProp ?? 0;
 	const customStyling = customStylingProp ?? '';
 
-
 	// --- Computed classes using Svelte 5 $derived ---
 	const sectionClasses = $derived.by(() => {
 		const classes = [
@@ -72,14 +71,9 @@
 		return classes.filter(Boolean).join(' ');
 	});
 
-	let styles = $derived(cn(sectionClasses, className))
+	let styles = $derived(cn(sectionClasses, className));
 </script>
 
-<svelte:element
-	this={type}
-	id={section_id}
-	aria-labelledby={section_labelledby ?? `${section_id}_heading` }
-	class={styles}
->
+<svelte:element this={type} id={section_id} aria-labelledby={section_labelledby ?? `${section_id}_heading`} class={styles}>
 	{@render children()}
 </svelte:element>

@@ -20,10 +20,10 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 		class="relative flex w-full max-w-[57.5rem] items-center justify-between border-b
 	border-(--header-border) bg-(--header-bg) py-2 pr-1 pl-5 md:rounded-2xl md:border md:px-3 lg:p-1 dark:border-(--header-border_dark) dark:bg-(--header-bg_dark)"
 	>
-		<!--? Logo -->
+		<!--! Logo -->
 		<Logo {...logo} textClass="lg:text-xl"></Logo>
 
-		<!--? Mobile Navigation -->
+		<!--! Mobile Navigation -->
 		<MobileHeaderNav {mobileMenuOpen} {toggleMobMenu} {links}></MobileHeaderNav>
 		<DesktopHeaderNav {links}></DesktopHeaderNav>
 
@@ -31,7 +31,7 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 			<BurgerMenu {mobileMenuOpen} {toggleMobMenu}></BurgerMenu>
 		</div>
 
-		<!--? Call To Action Button -->
+		<!--! Call To Action Button -->
 		<div class="hidden lg:block">
 			<Button size={4} type="primary" href={cta.href} ariaLabel="Explore all of the treatments I offer">
 				{cta.content}
@@ -45,8 +45,8 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 
 	*:global(.main-header) {
 		/* Core Header/Nav */
-		--header-bg: var(--color-primary-50);
-		--header-bg_dark: var(--color-primary-950);
+		--header-bg: var(--color-primary-100);
+		--header-bg_dark: var(--color-primary-900);
 		--header-border: var(--color-primary-300);
 		--header-border_dark: var(--color-primary-700);
 
