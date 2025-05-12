@@ -6,13 +6,16 @@
 	import Text from '$lib/components/ui/Text.svelte';
 </script>
 
-<Section section_id="page-cta" grid_span="fullSpan" class="w-full p-0" justify_content="center">
+<Section section_id="page-cta" grid_span="fullSpan" class="w-full p-0" justify_content="center" horizontal_padding={4}>
 	<Container
 		class="grid min-h-screen w-full max-w-[100rem] grid-cols-1
 	grid-rows-1 p-0 *:col-start-1 *:row-start-1 md:min-h-[52rem] md:p-10
 	lg:min-h-[56rem] xl:min-h-[60rem]"
 	>
-		<div class="z-3 flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
+		<div
+			class="z-3 flex flex-col items-center gap-4 px-6 md:gap-6 md:px-10
+		lg:gap-8 lg:px-12 2xl:px-0"
+		>
 			<Text type="h1" style="h3" class="font-[450]">
 				Ready To Feel <br /> Supported Again?
 			</Text>

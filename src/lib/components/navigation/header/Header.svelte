@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { Moon, Sun } from 'lucide-svelte';
+
 	import Button from '$lib/components/ui-interactive/Button.svelte';
 	import Logo from '../Logo.svelte';
 	import BurgerMenu from './BurgerMenu.svelte';
@@ -10,6 +12,10 @@
 	const toggleMobMenu = () => (mobileMenuOpen = !mobileMenuOpen);
 
 	$inspect({ links, logo, cta });
+	const darkToggle = () => {
+		const htmlElement = document.documentElement;
+		htmlElement.classList.toggle('dark');
+	};
 </script>
 
 <header
@@ -17,7 +23,7 @@
 md:mt-4 md:px-6 md:pt-5 lg:p-0"
 >
 	<div
-		class="relative flex w-full max-w-[57.5rem] items-center justify-between border-b
+		class="relative flex w-full max-w-[64rem] items-center justify-between border-b
 	border-(--header-border) bg-(--header-bg) py-2 pr-1 pl-5 md:rounded-2xl md:border md:px-3 lg:p-1 dark:border-(--header-border_dark) dark:bg-(--header-bg_dark)"
 	>
 		<!--! Logo -->
@@ -32,10 +38,23 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 		</div>
 
 		<!--! Call To Action Button -->
-		<div class="hidden lg:block">
-			<Button size={4} type="primary" href={cta.href} ariaLabel="Explore all of the treatments I offer">
-				{cta.content}
+		<div class="gap-1 hidden md:flex ">
+			<Button type="outline" ariaLabel="Hehe" iconOnly size={3}
+			func={darkToggle} class="min-w-[2.5rem]">
+				<div class="w-full grid place-items-center *:col-start-1 *:row-start-1 aspect-square">
+					<div class="hidden dark:block">
+						<Moon class="!size-4.5"></Moon>
+					</div>
+					<div class="block dark:hidden">
+						<Sun class="!size-4.5"></Sun>
+					</div>
+				</div>
 			</Button>
+			<div class="hidden lg:block">
+				<Button size={4} type="primary" href={cta.href} ariaLabel="Explore all of the treatments I offer">
+					{cta.content}
+				</Button>
+			</div>
 		</div>
 	</div>
 </header>
@@ -49,6 +68,14 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 		--header-bg_dark: var(--color-primary-900);
 		--header-border: var(--color-primary-300);
 		--header-border_dark: var(--color-primary-700);
+
+		/* Burger Menu */
+		--header-burger-bg: var(--color-primary-200);
+		--header-burger-bg_dark: var(--color-primary-800);
+		--header-burger-bg_hover: var(--color-primary-300);
+		--header-burger-bg_dark_hover: var(--color-primary-700);
+		--header-burger-span-bg: var(--color-primary-700);
+		--header-burger-span-bg_dark: var(--color-primary-300);
 
 		/* Logo */
 		--header-logo: var(--color-primary-600);
