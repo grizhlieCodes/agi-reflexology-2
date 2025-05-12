@@ -24,7 +24,7 @@
 					time.
 				</Text>
 			</div>
-			<div class="flex flex-col flex-wrap gap-3">
+			<div class="flex flex-col flex-wrap lg:flex-nowrap lg:flex-row gap-3">
 				<Button
 					size={3}
 					type="primary"
