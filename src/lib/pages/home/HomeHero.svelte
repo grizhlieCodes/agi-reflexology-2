@@ -6,7 +6,8 @@
 	import Text from '$lib/components/ui/Text.svelte';
 </script>
 
-<Section section_id="homepage-hero" grid_span="fullSpan" gap={4} vertical_padding={14} class="bg-primary-50" horizontal_padding={6}>
+<Section section_id="homepage-hero" grid_span="fullSpan" gap={4}
+vertical_padding={14} class="bg-primary-50 min-h-screen items-center justify-center" horizontal_padding={6}>
 	<Container>
 		<div class="flex flex-col gap-3">
 			<Text id="homepage-hero_heading" type="h1" style="h4" class="max-w-4xl font-[450]">
@@ -37,7 +38,7 @@
 				Discover My Approach
 			</Button>
 		</div>
-		<div class="aspect-square w-full sm:aspect-video lg:aspect-[645/299]">
+		<div class="aspect-[3/2] w-full sm:aspect-video lg:aspect-[645/299]">
 			<Image
 				brightness={15}
 				src="https://seerstudio.b-cdn.net/image-tests/grizhlie_A_bright_and_white_advert_shot_of_a_blonde_woman_layin_cfe1a24a-46aa-4151-9bb7-5aca186c77f8.webp"
