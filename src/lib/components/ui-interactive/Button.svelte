@@ -3,7 +3,7 @@
 	import { Button } from 'bits-ui';
 	import type { ButtonProps } from '$lib/schemas/components/buttonTypes';
 
-	type ButtonTypes = 'default' | 'primary' | 'outline' | 'plain' | 'secondary' | 'warning' | 'danger' | 'info';
+	type ButtonTypes = 'default' | 'default_light' | 'primary' | 'outline' | 'plain' | 'secondary' | 'warning' | 'danger' | 'info';
 	type ButtonSizes = 1 | 2 | 3 | 4 | 5;
 
 	let iconSizes = {
@@ -56,6 +56,7 @@
 
 	let types = {
 		default: 'btnDefault',
+		default_light: 'btnDefaultInvert',
 		primary: 'btnPrimary',
 		outline: 'btnOutline',
 		plain: 'btnPlain',
@@ -93,6 +94,21 @@
 		--outline-col: var(--color-neutral-500);
 		--text-default: var(--color-neutral-100);
 		--text-hover: var(--color-neutral-50);
+
+		--bg-default_dark: var(--color-neutral-600);
+		--bg-hover_dark: var(--color-neutral-500);
+		--border-default_dark: var(--color-neutral-500);
+		--outline-col_dark: var(--color-neutral-500);
+		--text-default_dark: var(--color-neutral-100);
+		--text-hover_dark: var(--color-neutral-50);
+	}
+	:global(.button.btnDefaultInvert) {
+		--bg-default: var(--color-white);
+		--bg-hover: var(--color-neutral-100);
+		--border-default: var(--color-neutral-200);
+		--outline-col: var(--color-neutral-400);
+		--text-default: var(--color-neutral-700);
+		--text-hover: var(--color-neutral-750);
 
 		--bg-default_dark: var(--color-neutral-600);
 		--bg-hover_dark: var(--color-neutral-500);
