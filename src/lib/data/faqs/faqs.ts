@@ -41,3 +41,41 @@ export const homepage_faqs: FAQ[] = [
 		content: '<p>That\’s common. Stress, fatigue, hormonal imbalance, and chronic pain often show up together. I\’ll work holistically, supporting the whole system, not just one part.</p>'
 	}
 ];
+
+export const about_faqs: FAQ[] = [
+	{
+		value: '0',
+		title: 'How do I know you\'re the right person to help me?',
+		content: `
+            <p>The most important thing is that you feel safe, listened to, and not rushed. My approach is gentle and grounded — I take time to understand what your body\’s holding onto and work with it, not against it. Many clients say they felt a deep shift simply from being in a calm, attentive space.</p>
+        `
+	},
+	{
+		value: '1',
+		title: 'What makes this different from other treatments I\’ve tried?',
+		content: `
+            <p>This isn\’t just a massage or pressure-point routine. My work focuses on reconnecting you with how your body actually feels, beneath the noise. I work slowly, intuitively, and always adapt to what your nervous system is ready for — no pushing, no ticking boxes.</p>
+        `
+	},
+	{
+		value: '2',
+		title: 'Is this approach evidence-based or just \‘alternative\’?',
+		content: `
+            <p>Reflexology and massage have both been used for centuries across different cultures, and today, many aspects of these practices are supported by modern research — especially around relaxation, circulation, and nervous system regulation. I don\’t make medical claims — I support your body\’s natural capacity to heal and settle. The results my clients get are the evidence I seek to create.</p>
+        `
+	},
+	{
+		value: '3',
+		title: 'What if I’ve never done anything like this before?',
+		content: `
+            <p>That\’s completely fine. You don\’t need to prepare or have any prior experience. My work is simple, grounding, and respectful — most clients say they felt at ease within the first few minutes of arriving.</p>
+        `
+	},
+	{
+		value: '4',
+		title: 'Will I be expected to talk about personal issues?',
+		content: `
+            <p>Not at all. You\’re welcome to share whatever feels comfortable, but there\’s no pressure to open up. Some people speak the whole way through. Others say nothing and simply rest. Both are welcome.</p>
+        `
+	},
+];
