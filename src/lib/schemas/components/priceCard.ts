@@ -1,12 +1,27 @@
-// types.ts
-import type { ComponentType } from 'svelte';
+// types.ts (or your relevant type definition file)
+import type { ComponentType, SvelteComponent } from 'svelte'; // Ensure SvelteComponent is imported
 
-// the Lucide-Svelte icons all satisfy this shape
-export type IconType = ComponentType<{
-	size?: string;
-	color?: string;
-	[prop: string]: any;
-}>;
+// It's good practice to define the props type separately
+export type IconComponentProps = {
+    size?: string;
+    color?: string;
+    class?: string; // lucide-svelte icons often accept a class prop
+    [prop: string]: any; // Keep this if icons might have other arbitrary props
+};
+
+// IconType should be a ComponentType of a SvelteComponent that accepts IconComponentProps
+export type IconType = ComponentType<SvelteComponent<IconComponentProps>>;
+
+// It's good practice to define the props type separately
+export type IconComponentProps = {
+    size?: string;
+    color?: string;
+    class?: string; // lucide-svelte icons often accept a class prop
+    [prop: string]: any; // Keep this if icons might have other arbitrary props
+};
+
+// IconType should be a ComponentType of a SvelteComponent that accepts IconComponentProps
+export type IconType = ComponentType<SvelteComponent<IconComponentProps>>;
 
 // the three “kinds” of badge you use
 export type BadgeKind = 'default' | 'info' | 'primary';
