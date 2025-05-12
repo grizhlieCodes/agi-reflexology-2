@@ -79,3 +79,41 @@ export const about_faqs: FAQ[] = [
         `
 	},
 ];
+
+export const services_faqs: FAQ[] = [
+	{
+		value: '0',
+		title: 'Do I need to know exactly what treatment to book?',
+		content: `
+            <p>Yes — you\’ll need to select a specific treatment when booking (Reflexology or Massage). If you\’re unsure which one is right for you, take a look at the Reflexology and Massage pages for more detail. Each treatment is designed with a different focus and intention.</p>
+        `
+	},
+	{
+		value: '1',
+		title: 'Can I switch between Reflexology and Massage on the day?',
+		content: `
+            <p>No — each treatment is prepared in advance based on what you\’ve booked. Reflexology and Massage are different approaches, and the space, tools, and timing are tailored accordingly.</p>
+        `
+	},
+	{
+		value: '2',
+		title: 'What if I want support with multiple issues?',
+		content: `
+            <p>That\’s absolutely okay. Many clients come with overlapping concerns — tension, fatigue, hormonal imbalance, and more. The key is to choose the treatment style that most resonates with what your body needs right now.</p>
+        `
+	},
+	{
+		value: '3',
+		title: 'How do I know if Reflexology or Massage is better for me?',
+		content: `
+            <p>Reflexology is great if you\’re looking for deep support with your body\’s internal balance — hormones, sleep, digestion, mood. Massage is more hands-on and focused on physical tension and nervous system reset. You can read more about each here and here.</p>
+        `
+	},
+	{
+		value: '4',
+		title: 'Are prices shown here the same when booking?',
+		content: `
+            <p>Yes — all prices and session durations are consistent with what you\’ll see on the booking page (Fresha). You\’ll never be surprised by hidden costs.</p>
+        `
+	},
+];
