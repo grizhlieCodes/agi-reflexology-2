@@ -10,7 +10,7 @@
 	<Container>
 		<div class="flex flex-col gap-3">
 			<Text id="homepage-hero_heading" type="h1" style="h4" class="max-w-4xl font-[450]">
-				Experience Deep Relief & <br /> Reconnect With Your Body
+				Experience Deep Relief & <br class="hidden sm:block" /> Reconnect With Your Body
 			</Text>
 			<Text type="p" style="paraBase" class="max-w-2xl text-neutral-500 dark:text-neutral-400">
 				I use my intuitive reflexology-massage techniques to guide your body toward a deep release and natural balance. In a healing and peaceful
