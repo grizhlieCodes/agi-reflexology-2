@@ -39,13 +39,13 @@
 				src="https://seerstudio.b-cdn.net/image-tests/grizhlie_Create_a_soft_high-key_background_image_designed_for_a_4059b71e-b7f1-4139-a71a-212523ab5bf1.webp"
 				alt="Purely decorative image of a surface with fern plants surrounding the empty center."
 				decorate={true}
-				containerClass="w-full h-full dark:opacity-0 transition-opacity duration-1000"
+				containerClass="w-full h-full dark:opacity-0 transition-opacity duration-500"
 			></Image>
 			<Image
 				src="https://seerstudio.b-cdn.net/image-tests/grizhlie_httpss.mj.run0Uw2dwfUORs_Create_a_dark_atmospheric_bac_778ecb51-a686-492c-875b-b7d73bb28a46.webp"
 				alt="Purely decorative image of a surface with fern plants surrounding the empty center."
 				decorate={true}
-				containerClass="w-full h-full opacity-0 dark:opacity-100 transition-opacity duration-1000"
+				containerClass="w-full h-full opacity-0 dark:opacity-100 transition-opacity duration-500"
 			></Image>
 		</div>
 	</Container>
