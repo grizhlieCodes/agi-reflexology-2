@@ -11,8 +11,9 @@
 	grid_span="fullSpan"
 	gap={4}
 	vertical_padding={10}
-	class="bg-primary-50 min-h-screen items-center justify-center"
+	class="min-h-screen items-center justify-center"
 	horizontal_padding={6}
+	background_color="primary-50"
 >
 	<Container>
 		<div class="flex flex-col gap-3">
