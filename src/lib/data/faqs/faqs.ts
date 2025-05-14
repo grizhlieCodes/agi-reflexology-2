@@ -45,7 +45,7 @@ export const homepage_faqs: FAQ[] = [
 export const about_faqs: FAQ[] = [
 	{
 		value: '0',
-		title: 'How do I know you\'re the right person to help me?',
+		title: "How do I know you're the right person to help me?",
 		content: `
             <p>The most important thing is that you feel safe, listened to, and not rushed. My approach is gentle and grounded — I take time to understand what your body\’s holding onto and work with it, not against it. Many clients say they felt a deep shift simply from being in a calm, attentive space.</p>
         `
@@ -77,7 +77,7 @@ export const about_faqs: FAQ[] = [
 		content: `
             <p>Not at all. You\’re welcome to share whatever feels comfortable, but there\’s no pressure to open up. Some people speak the whole way through. Others say nothing and simply rest. Both are welcome.</p>
         `
-	},
+	}
 ];
 
 export const services_faqs: FAQ[] = [
@@ -115,5 +115,63 @@ export const services_faqs: FAQ[] = [
 		content: `
             <p>Yes — all prices and session durations are consistent with what you\’ll see on the booking page (Fresha). You\’ll never be surprised by hidden costs.</p>
         `
+	}
+];
+export const reflexology_faqs: FAQ[] = [
+	{
+		value: '0',
+		title: 'Is reflexology just a fancy foot massage?',
+		content: `
+            <p>Not quite. A foot massage focuses on comfort and loosening muscles. Reflexology is more intentional: each touch targets a mapped point linked to a body system. For example, pressing one area might help settle digestion; another may ease tension in the neck. It’s structured, purposeful, and whole-body in its intent.</p>
+        `
 	},
+	{
+		value: '1',
+		title: 'Does reflexology actually work?',
+		content: `
+            <p>Many people find it helps ease tension, improve sleep, reduce discomfort, and feel more emotionally grounded. Studies have shown promising effects on pain, fatigue, and anxiety — but like most holistic treatments, results vary. One thing is certain: the deep relaxation reflexology provides is real and beneficial on its own.</p>
+        `
+	},
+	{
+		value: '2',
+		title: 'Is reflexology safe?',
+		content: `
+            <p>Yes — for most people, it’s very safe. It’s non-invasive and gentle. That said, if you’re pregnant, have a recent injury, or a medical condition like blood clots, always check with your doctor first. If anything feels too sensitive during your session, I’ll adjust immediately.</p>
+        `
+	},
+	{
+		value: '3',
+		title: 'Can it help with specific issues like fatigue or hormone imbalance?',
+		content: `
+            <p>It can support the body in restoring balance — which is why so many people come to reflexology for exactly those reasons. Many of my clients report improvements in sleep, energy, mood, and even menstrual regularity over time. It’s not a “cure,” but it helps your system settle and reset.</p>
+        `
+	},
+	{
+		value: '4',
+		title: 'How does a session actually work?',
+		content: `
+            <p>You’ll lie back fully clothed while I work on your feet (or hands/face, if preferred). I apply gentle, focused pressure to specific points using thumbs and fingers. It’s calming, never painful. Most people deeply relax or even fall asleep. You’ll leave feeling lighter, more grounded, and more connected to your body.</p>
+        `
+	},
+	{
+		value: '5',
+		title: 'Do I need to believe in it for it to work?',
+		content: `
+            <p>No belief required. This isn’t magic — it’s about calming your nervous system and supporting your body to do what it naturally knows how to do. You can be curious, skeptical, or somewhere in between. Just come as you are.</p>
+        `
+	},
+	{
+		value: '6',
+		title: 'Can reflexology replace medical treatment?',
+		content: `
+            <p>No. Reflexology is a supportive therapy — not a medical diagnosis or cure. It’s best used alongside your usual care, not instead of it. If something’s going on with your health, always check with your GP.</p>
+        `
+	},
+	{
+		value: '7',
+		title: 'When should I choose a massage instead of reflexology?',
+		content: `
+            <p>If your main goal is to release deep muscular tension or physical tightness in a specific area — like your back, legs, or shoulders — massage may be the better fit. Reflexology works holistically and indirectly through pressure points; massage works directly on the tissue. If you’re unsure, you can always read about both on the website before you book.</p>
+        `
+	}
 ];
