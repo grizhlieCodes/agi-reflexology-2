@@ -8,13 +8,14 @@
 
 <Section section_id="massage-expectations-for-client" grid_span="centeredSpan3" vertical_padding={9}>
 	<Container class="md:flex-row">
-		<div class="aspect-square w-full md:max-w-xs min-w-xs">
+		<div class="aspect-square w-full min-w-xs md:max-w-xs">
 			<Image
+				containerClass="-scale-x-100"
 				src="https://seerstudio.b-cdn.net/image-tests/grizhlie_clothed_neck_massage_person_laying_down._Female_hand_694680ab-ed00-43e9-b54d-0cfd23a7f7ed_3.webp"
 				alt="A woman lying on her back with closed eyes, receiving a head and neck massage. She is relaxed, with brown hair spread around her. Soft light and green foliage create a calming atmosphere."
 			></Image>
 		</div>
-		<div class="flex flex-col gap-4 grow md:text-left items-center md:items-start">
+		<div class="flex grow flex-col items-center gap-4 md:items-start md:text-left">
 			<div>
 				<Text type="span" style="eyebrow">What to Expect</Text>
 				<Text type="h2" id="" style="h6">A Calmer Approach to Massage</Text>

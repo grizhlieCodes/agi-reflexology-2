@@ -175,3 +175,61 @@ export const reflexology_faqs: FAQ[] = [
         `
 	}
 ];
+export const massage_faqs: FAQ[] = [
+	{
+		value: '0',
+		title: 'What’s the difference between Aithein Healing Massage and a regular massage?',
+		content: `
+            <p>Aithein Healing Massage blends deep tissue work with gentle, intuitive touch. It’s not just about muscle relief — it’s about calming the nervous system, releasing stored tension, and reconnecting with your body. Each session is deeply focused and fully tailored to what your body can receive that day.</p>
+        `
+	},
+	{
+		value: '1',
+		title: 'Is this a deep tissue massage?',
+		content: `
+            <p>It includes deep tissue techniques — but applied mindfully, not forcefully. The pressure adjusts to your body’s readiness. There’s no forcing, no “pushing through” pain. Just a safe space to release, reset, and restore at your own pace.</p>
+        `
+	},
+	{
+		value: '2',
+		title: 'What’s the difference between massage and reflexology?',
+		content: `
+            <p>Massage works directly on the muscles to release tightness and physical stress. Reflexology works indirectly, through mapped points on the feet (or hands/face) that correspond to your internal systems. If you want direct relief for tight areas, massage may be right. If you're looking to support your whole system — digestion, sleep, hormones, stress — reflexology is often more helpful.</p>
+        `
+	},
+	{
+		value: '3',
+		title: 'What happens in a session?',
+		content: `
+            <p>You’ll be gently guided to relax fully while I use slow, attentive movements to release tension across the body. Sessions are long and unhurried, especially the full-body option. You’ll be warmly held, physically and emotionally — and encouraged to fully let go.</p>
+        `
+	},
+	{
+		value: '4',
+		title: 'Do I need to undress fully?',
+		content: `
+            <p>Only as much as you're comfortable with. You’ll always be covered with towels, and I’ll only uncover the areas being worked on. This is a space of complete care and consent.</p>
+        `
+	},
+	{
+		value: '5',
+		title: 'Is this suitable if I’m going through emotional stress?',
+		content: `
+            <p>Absolutely. Many people find this massage helps with both physical and emotional release. It’s common to feel lighter, more present, or even teary afterward — all part of your system letting go.</p>
+        `
+	},
+	{
+		value: '6',
+		title: 'Can this help with sleep, burnout, or anxiety?',
+		content: `
+            <p>Yes. Massage can calm the body’s stress response, slow your breathing, and guide you back into a sense of safety and rest. It doesn’t “fix” everything, but it gives your system the chance to slow down and recalibrate.</p>
+        `
+	},
+	{
+		value: '7',
+		title: 'Is there anything I need to do before or after a session?',
+		content: `
+            <p>Just arrive on time and well-hydrated. After the session, give yourself time to rest if possible — especially after longer treatments. Some people feel emotional or tired afterward; this is normal. Drink water, move gently, and let the benefits settle in.</p>
+        `
+	}
+];
