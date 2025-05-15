@@ -38,15 +38,14 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 		</div>
 
 		<!--! Call To Action Button -->
-		<div class="gap-1 hidden md:flex ">
-			<Button type="outline" ariaLabel="Hehe" iconOnly size={3}
-			func={darkToggle} class="min-w-[2.5rem]">
-				<div class="w-full grid place-items-center *:col-start-1 *:row-start-1 aspect-square">
+		<div class="hidden gap-1 md:flex">
+			<Button type="outline" ariaLabel="Hehe" iconOnly size={3} func={darkToggle} class="min-w-[2.5rem]">
+				<div class="grid aspect-square w-full place-items-center *:col-start-1 *:row-start-1">
 					<div class="hidden dark:block">
-						<Moon class="!size-4.5"></Moon>
+						<Sun class="!size-4.5"></Sun>
 					</div>
 					<div class="block dark:hidden">
-						<Sun class="!size-4.5"></Sun>
+						<Moon class="!size-4.5"></Moon>
 					</div>
 				</div>
 			</Button>
