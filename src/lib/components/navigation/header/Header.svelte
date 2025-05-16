@@ -11,7 +11,7 @@
 	let mobileMenuOpen = $state(false);
 	const toggleMobMenu = () => (mobileMenuOpen = !mobileMenuOpen);
 
-	$inspect({ links, logo, cta });
+	// $inspect({ links, logo, cta });
 	const darkToggle = () => {
 		const htmlElement = document.documentElement;
 		htmlElement.classList.toggle('dark');
@@ -57,6 +57,9 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 		</div>
 	</div>
 </header>
+
+<span class="hidden fixed top-0 left-0 md:block h-40 w-full bg-white/10 dark:bg-neutral-950/10 z-29
+backdrop-blur-xl mask-[linear-gradient(black,black,transparent)]"></span>
 
 <style>
 	@reference "../../../../app.css";

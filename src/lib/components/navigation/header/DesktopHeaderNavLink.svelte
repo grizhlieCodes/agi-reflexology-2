@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import Text from '$lib/components/ui/Text.svelte';
 	import type { NavLink } from '$lib/data/navigation/navigation';
 	import ChevronDown from 'lucide-svelte/icons/chevron-down';
@@ -38,31 +39,31 @@
 		href={link.href}
 		data-sveltekit-preload-data
 		class="
+		m-0
+		flex
+		flex-row
+		items-center
+		gap-1
+		rounded-lg
+
+		px-3
+		py-1
+
 		text-(--header-link-text)
-		dark:text-(--header-link-text_dark) 
-		hover:text-(--header-link-text_hover)
-		dark:hover:text-(--header-link-text_dark_hover)
-		group-focus-within:text-(--header-link-text_hover)
-		dark:group-focus-within:text-(--header-link-text_dark_hover)
+		transition-all
 
-		group-hover:bg-(--header-link-bg_hover)
-		dark:group-hover:bg-(--header-link-bg_dark_hover)
-
+		duration-500
 		group-focus-within:bg-(--header-link-bg_hover)
-		dark:group-focus-within:bg-(--header-link-bg_dark_hover)
 
-		group-focus-within:outline-(--header-link-outline)
-		dark:group-focus-within:outline-(--header-link-outline_dark)
+		group-focus-within:text-(--header-link-text_hover)
 
 		group-focus-within:outline-1
-
-		m-0
-		flex flex-row items-center gap-1 rounded-lg
-		px-3 py-1  transition-all duration-500  
+		group-focus-within:outline-(--header-link-outline) group-hover:bg-(--header-link-bg_hover) hover:text-(--header-link-text_hover) dark:text-(--header-link-text_dark) dark:group-focus-within:bg-(--header-link-bg_dark_hover)
+		dark:group-focus-within:text-(--header-link-text_dark_hover) dark:group-focus-within:outline-(--header-link-outline_dark) dark:group-hover:bg-(--header-link-bg_dark_hover) dark:hover:text-(--header-link-text_dark_hover)
 	 
 	
 	
-		{linkEqualsCurrentPage ? ' *:!font-[600]' : ''}
+		{linkEqualsCurrentPage ? ' *:!font-[700]' : ''}
 	"
 		aria-haspopup={ariaHasPopup}
 		aria-expanded={ariaExpanded}
@@ -71,14 +72,14 @@
 		<Text type="span" style="para4" class="!text-inherit">{link.content}</Text>
 		{#if linkHasSublinks}
 			<div
-			class="!stroke-(--header-link-text)
-			dark:!stroke-(--header-link-text_dark) 
-			group-focus-within:!stroke-(--header-link-text_hover)
-			dark:group-focus-within:!stroke-(--header-link-text_dark_hover)
-
+				class="!stroke-(--header-link-text)
 			transition-transform
-			duration-500 group-focus-within:rotate-180
-			 group-hover:rotate-180"
+			duration-500
+			group-focus-within:rotate-180
+
+			group-focus-within:!stroke-(--header-link-text_hover)
+			group-hover:rotate-180 dark:!stroke-(--header-link-text_dark)
+			 dark:group-focus-within:!stroke-(--header-link-text_dark_hover)"
 			>
 				<ChevronDown></ChevronDown>
 			</div>
@@ -93,27 +94,28 @@
 		>
 			<ul
 				class="min-w-20rem flex w-max flex-col rounded-lg border border-solid
-         border-(--header-border) dark:border-(--header-border_dark) bg-(--header-bg) dark:bg-(--header-bg_dark) py-6 text-left"
+         border-(--header-border) bg-(--header-bg) py-6 text-left dark:border-(--header-border_dark) dark:bg-(--header-bg_dark)"
 			>
 				{#if link?.links && link?.links.length > 0}
 					{#each link?.links as sub_link, i}
+						{@const sublinkActive = sub_link.href === page.url.pathname}
 						<a
 							data-sveltekit-preload-data
 							href={sub_link.href}
-							class=" {i === 0 ? 'underline italic' : ''}
-							focus-within:bg-(--header-link-bg_hover) 
-							dark:focus-within:bg-(--header-link-bg_dark_hover) 
-							hover:bg-(--header-link-bg_hover)
-							dark:hover:bg-(--header-link-bg_dark_hover)
+							class=" {i === 0 ? 'italic underline' : ''}
+							px-6
+							py-1
+							text-lg
 							text-(--header-link-text)
-							dark:text-(--header-link-text_dark)
-							dark:group-focus-within:text-(--header-link-text_dark_hover)
+							outline-0
+							transition-all
+							duration-500
 							group-focus-within:text-(--header-link-text_hover)
-							dark:hover:text-(--header-link-text_dark_hover)
-							hover:text-(--header-link-text_hover)
-							px-6 py-1
-						text-lg outline-0 transition-all duration-500
-						{linkEqualsCurrentPage ? ' *:!font-[600]' : ''}
+							focus-within:bg-(--header-link-bg_hover)
+							hover:bg-(--header-link-bg_hover)
+							hover:text-(--header-link-text_hover) dark:text-(--header-link-text_dark)
+						dark:group-focus-within:text-(--header-link-text_dark_hover) dark:focus-within:bg-(--header-link-bg_dark_hover) dark:hover:bg-(--header-link-bg_dark_hover) dark:hover:text-(--header-link-text_dark_hover)
+						{sublinkActive ?  `**:!font-[700] bg-(--header-link-bg_hover) dark:bg-(--header-link-bg_dark_hover)` : ''}
 						"
 						>
 							<Text type="span" style="para4">{sub_link.content}</Text>
