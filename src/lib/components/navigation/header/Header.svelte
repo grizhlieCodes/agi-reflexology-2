@@ -11,7 +11,6 @@
 	let mobileMenuOpen = $state(false);
 	const toggleMobMenu = () => (mobileMenuOpen = !mobileMenuOpen);
 
-	// $inspect({ links, logo, cta });
 	const darkToggle = () => {
 		const htmlElement = document.documentElement;
 		htmlElement.classList.toggle('dark');
@@ -39,7 +38,7 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 
 		<!--! Call To Action Button -->
 		<div class="hidden gap-1 md:flex">
-			<Button type="outline" ariaLabel="Hehe" iconOnly size={3} func={darkToggle} class="min-w-[2.5rem]">
+			<Button type="outline" ariaLabel="Hehe" iconOnly size={3} onclick={darkToggle} class="min-w-[2.5rem]">
 				<div class="grid aspect-square w-full place-items-center *:col-start-1 *:row-start-1">
 					<div class="hidden dark:block">
 						<Sun class="!size-4.5"></Sun>

@@ -3,7 +3,6 @@ import { locations, locationSections } from '$lib/data/locations';
 
 export const load = async ({ params }) => {
 	const parsedLocationName = params.location_name.replaceAll('-', '_');
-	console.log("HERE =====================", parsedLocationName)
 	const pageData = locations[parsedLocationName];
 	const pageSection = locationSections.filter((l) => l.locationNames.includes(parsedLocationName));
 

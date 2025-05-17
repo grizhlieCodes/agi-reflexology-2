@@ -66,7 +66,7 @@
 		info: 'btnInfo'
 	};
 
-	let { children, href, type, size, func, ariaLabel, disabled = false, iconOnly = false, class: className, ...restProps }: ButtonProps = $props();
+	let { children, href, type, size, onclick, ariaLabel, disabled = false, iconOnly = false, class: className, ...restProps }: ButtonProps = $props();
 
 	let BASE_STYLES = `button font-ui flex flex-row items-center justify-center cursor-pointer outline-2 outline-offset-3 outline-transparent transition-all not-disabled:active:scale-95 border transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50`;
 
@@ -79,8 +79,9 @@
 	let btnStyling = $derived(cn(BASE_STYLES, padding, gap, borderRadius, btnType, textSize, className));
 </script>
 
-<Button.Root {href} {disabled} class={btnStyling} aria-label={ariaLabel} onclick={func}>
-	<div style:--icon-size="calc(var(--spacing)*{iconSize})" style:--text-size="calc(var()*)" class="[&_svg]:w-(--icon-size)">
+<Button.Root {href} {disabled} class={btnStyling} aria-label={ariaLabel} onclick={onclick}>
+	<div style:--icon-size="calc(var(--spacing)*{iconSize})"
+	style:--text-size="calc(var()*)" class="[&_svg]:w-(--icon-size) grid">
 		{@render children()}
 	</div>
 </Button.Root>

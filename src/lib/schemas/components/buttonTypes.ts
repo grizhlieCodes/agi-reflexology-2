@@ -13,7 +13,7 @@ interface ButtonSpecificProps {
 	children: any; // Or type as `snippet` if the parent passes via {@render children()}
 
 	href?: string; // Optional string for anchor behavior
-	func?: () => void; // Optional function for click handler
+	onclick?: () => void; // Optional function for click handler
 	ariaLabel: string; // Required string (based on your $props() not marking it optional)
 	disabled?: boolean; // Optional boolean, defaults to false
 	iconOnly?: boolean; // Optional boolean, defaults to false

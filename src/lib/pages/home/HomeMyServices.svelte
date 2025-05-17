@@ -5,7 +5,6 @@
 	import Text from '$lib/components/ui/Text.svelte';
 
 	import { price_cards } from '$lib/data/price_cards';
-	$inspect(price_cards);
 </script>
 
 <Section section_id="homepage-my-services" horizontal_padding={4} grid_span="fullSpan">

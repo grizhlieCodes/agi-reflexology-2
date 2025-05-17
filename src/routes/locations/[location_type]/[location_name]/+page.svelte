@@ -7,7 +7,6 @@
 
 	let { data }: { data: any } = $props();
 	let { hero_section, how_it_works_section } = $derived(data.pageData.location_page);
-	// $inspect(data)
 </script>
 
 <LocationHero {hero_section}></LocationHero>
