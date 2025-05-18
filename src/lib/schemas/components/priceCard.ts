@@ -1,86 +1,77 @@
-// types.ts (or your relevant type definition file)
-import type { ComponentType, SvelteComponent } from 'svelte'; // Ensure SvelteComponent is imported
+import type { ComponentType, SvelteComponent } from 'svelte';
 
-// It's good practice to define the props type separately
-export type IconComponentProps = {
-    size?: string;
-    color?: string;
-    class?: string; // lucide-svelte icons often accept a class prop
-    [prop: string]: any; // Keep this if icons might have other arbitrary props
-};
-
-// IconType should be a ComponentType of a SvelteComponent that accepts IconComponentProps
+// --- Icon types ---
+export interface IconComponentProps {
+  size?: string;
+  color?: string;
+  class?: string;
+  [prop: string]: any;
+}
 export type IconType = ComponentType<SvelteComponent<IconComponentProps>>;
 
-// It's good practice to define the props type separately
-export type IconComponentProps = {
-    size?: string;
-    color?: string;
-    class?: string; // lucide-svelte icons often accept a class prop
-    [prop: string]: any; // Keep this if icons might have other arbitrary props
-};
-
-// IconType should be a ComponentType of a SvelteComponent that accepts IconComponentProps
-export type IconType = ComponentType<SvelteComponent<IconComponentProps>>;
-
-// the three “kinds” of badge you use
+// --- Badge ---
 export type BadgeKind = 'default' | 'info' | 'primary';
-
-// a single badge (returned by getDays, getLocations, etc.)
 export interface Badge {
-	type: BadgeKind;
-	content: string;
-	Icon: IconType | null;
+  type: BadgeKind;
+  content: string;
+  Icon: IconType | null;
 }
 
-// --- function signatures ---
+// --- Badge generators (align with badge.get*Names) ---
+export function getLocationBadges(
+  locationKeys: string,
+  kind?: BadgeKind
+): Badge[];
 
-/**
- * @param days comma-separated day keys ("mon,tue,…")
- * @returns one Badge per day
- */
-export function getDays(days: string): Badge[];
+export function getTimeBadge(
+  durationMinutes: number
+): Badge[];
 
-/**
- * @param locationNames comma-separated location keys ("agi,chelsea,…")
- * @returns one Badge per location
- */
-export function getLocations(locationNames: string): Badge[];
+export function getMassageAreaBadges(
+  areaKeys: string
+): Badge[];
 
-/**
- * @param timeDuration in minutes
- * @returns a single “time” Badge
- */
-export function getTime(timeDuration: number): Badge[];
+export function getDayBadges(
+  dayKeys: string
+): Badge[];
 
-/**
- * @param massageAreaNames comma-separated words (with “or”/“and”)
- * @returns one Badge per token
- */
-export function getMassageAreas(massageAreaNames: string): Badge[];
-
-// --- price card types ---
-
+// --- Price card sub-types ---
 export interface PriceCardButton {
-	content: string;
-	icon: IconType | null;
-	href: string;
+  content: string;
+  icon: IconType | null;
+  href: string;
 }
-
 export interface PriceCardBadges {
-	location: Badge[];
-	time: Badge[];
-	massage_areas: Badge[];
-	additional_info: Badge[];
+  location: Badge[];
+  time: Badge[];
+  massage_areas: Badge[];
+  additional_info: Badge[];
 }
 
-export interface PriceCard {
-	cost: number;
-	title: string;
-	duration: number;
-	description: string;
-	location: string;
-	button: PriceCardButton;
-	badges: PriceCardBadges;
+// --- Base and specific PriceCard definitions ---
+interface PriceCardBase {
+  type: string;
+  title: string;
+  description: string;
+  button: PriceCardButton;
+  badges: PriceCardBadges;
+  locations: string[];
+  body_part: string[];
+  days: string[];
 }
 
+// For treatments (with cost, duration, single location)
+export interface TreatmentPriceCard extends PriceCardBase {
+  type: 'agi_price_card';
+  cost?: number;
+  duration: number;
+  location?: string;
+}
+
+// For reflexions (no cost/duration/location fields)
+export interface ReflexionsPriceCard extends PriceCardBase {
+  type: 'reflexions_price_card';
+}
+
+// Union type for all price cards
+export type PriceCard = TreatmentPriceCard | ReflexionsPriceCard;

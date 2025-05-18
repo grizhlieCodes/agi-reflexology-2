@@ -4,7 +4,7 @@ import { MapPinHouse, Store, Car, AlarmClock, Check, X, MapPin } from 'lucide-sv
 
 type BadgeType = 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'info';
 
-export const getDayBadges = (days: string): pc.Badge[] => {
+export const getDayBadges = (days: string[]): pc.Badge[] => {
 	// days = "mon,tue,wed,etc"
 	let result: any[] = [];
 
@@ -18,7 +18,7 @@ export const getDayBadges = (days: string): pc.Badge[] => {
 		sun: 'Sunday'
 	};
 
-	days.split(',').forEach((dayName: string) => {
+	days.forEach((dayName: string) => {
 		let newDayName = dayNames[dayName];
 		result.push({
 			type: 'default',
@@ -29,52 +29,46 @@ export const getDayBadges = (days: string): pc.Badge[] => {
 	return result;
 };
 
-export const getLocationBadges = (locationNames: 'agi' | 'chelsea' | 'bayswater' | 'home_visit' | string, type?: BadgeType): pc.Badge[] => {
-	let result: any[] = [];
-
-	const locations = {
+export const getLocationBadges = (locationKeys: string[], type: BadgeType = 'info'): pc.Badge[] => {
+	const templates: Record<string, Omit<pc.Badge, 'type'>> = {
 		agi: {
-			type: type ?? 'info',
 			Icon: MapPinHouse,
-			content: "Agi's Studio - Burnham"
+			content: "Burnham"
 		},
 		chelsea: {
-			type: type ?? 'info',
 			Icon: Store,
-			content: 'Reflexions: Chelsea'
+			content: 'Chelsea'
 		},
 		bayswater: {
-			type: type ?? 'info',
 			Icon: Store,
-			content: 'Reflexions: Bayswater'
+			content: 'Bayswater'
 		},
 		home_visit: {
-			type: type ?? 'info',
 			Icon: Car,
 			content: 'Home Visit'
 		}
 	};
 
-	locationNames.split(',').forEach((locationName) => {
-		if (['agi', 'chelsea', 'bayswater', 'home_visit'].includes(locationName)) {
-			result.push(locations[locationName]);
-		} else {
-			let newContent = locationName
-				.split(' ')
-				.map((c) => c.charAt(0).toUpperCase() + c.slice(1))
-				.join(' ');
-			result.push({ type: type ?? 'info', Icon: MapPin, content: newContent });
+	return locationKeys.map((key) => {
+		if (templates[key]) {
+			// known location
+			return { type, ...templates[key] };
 		}
-	});
 
-	return result;
+		// fallback: title-case the key, use generic pin icon
+		const content = key
+			.split(/[\s-_]+/)
+			.map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+			.join(' ');
+		return { type, Icon: MapPin, content };
+	});
 };
 
 export const getTimeBadge = (timeDuration: number): pc.Badge[] => [{ type: 'primary', Icon: AlarmClock, content: `${timeDuration}min` }];
 
-export const getMassageAreaBadges = (massageAreaNames: string): pc.Badge[] => {
+export const getBodyPartAreaBadges = (massageAreaNames: string[]): pc.Badge[] => {
 	let result: any[] = [];
-	massageAreaNames.split(',').forEach((word) => {
+	massageAreaNames.forEach((word) => {
 		const isSeperator = ['and', 'or'].includes(word.trim().toLowerCase());
 		if (isSeperator) {
 			result.push({

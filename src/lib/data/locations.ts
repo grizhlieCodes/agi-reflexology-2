@@ -12,8 +12,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Best way & location to work with me in Burnham.',
 			button_href: '/locations/agi-studio/burnham',
 			badges: {
-				location_badge: badge.getLocationBadges('agi'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['agi']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.5977802822654!2d-0.662497086696884!3d51.53893677170293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487665ff26d86315%3A0x13a3816db920c66a!2sAgi%20Reflexology!5e0!3m2!1sen!2suk!4v1747309546278!5m2!1sen!2suk'
 		},
@@ -27,9 +27,9 @@ export const locations: locations.LocationsMap = {
 					alt: 'A tranquil massage room featuring a bed topped with neatly folded towels and massage supplies. Soft candlelight glows from two side tables, creating a calming atmosphere. A window with potted plants adds a touch of nature, while a privacy screen stands in the background.'
 				},
 				badges: {
-					location: badge.getLocationBadges('agi'),
+					location: badge.getLocationBadges(['agi']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-true'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -97,8 +97,8 @@ export const locations: locations.LocationsMap = {
 			description: 'On Tuesdays I work at the Reflexions studio in Chelsea, London. You can book an appointment there and request “Aga”.',
 			button_href: '/locations/reflexions/chelsea',
 			badges: {
-				location_badge: badge.getLocationBadges('chelsea'),
-				day_badges: badge.getDayBadges('tue')
+				location_badge: badge.getLocationBadges(['chelsea']),
+				day_badges: badge.getDayBadges(['tue'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.4025120309666!2d-0.17161598669870132!3d51.4874806716913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876056c1688d807%3A0xe5a74fabbf00296c!2sReflexions!5e0!3m2!1sen!2suk!4v1747315440834!5m2!1sen!2suk'
 		},
@@ -109,9 +109,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I work in the Reflexions Studio every Tuesday. Feel free to schedule a reflexology treatment through the Reflexions - Chelsea Fresha page and specifically request “Aga”.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('chelsea'),
+					location: badge.getLocationBadges(['chelsea']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('tue')
+					available_days: badge.getDayBadges(['tue'])
 				},
 				buttons: {
 					primary: {
@@ -179,8 +179,8 @@ export const locations: locations.LocationsMap = {
 			description: 'On Saturdays I work at the Reflexia studio in Bayswater, London. You can book an appointment there and request “Aga”.',
 			button_href: '/locations/reflexions/bayswater',
 			badges: {
-				location_badge: badge.getLocationBadges('bayswater'),
-				day_badges: badge.getDayBadges('sat')
+				location_badge: badge.getLocationBadges(['bayswater']),
+				day_badges: badge.getDayBadges(['sat'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5280.338682730738!2d-0.19447721760800585!3d51.51606181946083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760ffffb5864d9%3A0xa96eff1ab3cd63b3!2sReflexions%20-%20The%20Reflexology%20Shop!5e0!3m2!1sen!2suk!4v1747315600194!5m2!1sen!2suk'
 		},
@@ -191,9 +191,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I work in the Reflexions Studio every Saturday. Feel free to schedule a reflexology treatment through the Reflexions - Bayswater Fresha page and specifically request “Aga”.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('bayswater'),
+					location: badge.getLocationBadges(['bayswater']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('sat')
+					available_days: badge.getDayBadges(['sat'])
 				},
 				buttons: {
 					primary: {
@@ -261,8 +261,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Beaconsfield.',
 			button_href: '/locations/home-visit/beaconsfield',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,beaconsfield'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'beaconsfield']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39646.298717596015!2d-0.6793049403454746!3d51.60683683991242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487661459c285999%3A0xad26386aea2fcd98!2sBeaconsfield!5e0!3m2!1sen!2suk!4v1747316855936!5m2!1sen!2suk'
 		},
@@ -273,9 +273,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Beaconsfield.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,beaconsfield'),
+					location: badge.getLocationBadges(['home_visit', 'beaconsfield']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -343,8 +343,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Bisham.',
 			button_href: '/locations/home-visit/bisham',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,bisham'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'bisham']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9921.546923814461!2d-0.7845591584004155!3d51.56114354920807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487689cb8f4a121b%3A0x34c71f85550c0791!2sBisham%2C%20Marlow!5e0!3m2!1sen!2suk!4v1747316980086!5m2!1sen!2suk'
 		},
@@ -355,9 +355,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Bisham.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,bisham'),
+					location: badge.getLocationBadges(['home_visit', 'bisham']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -425,8 +425,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Bourne End.',
 			button_href: '/locations/home-visit/bourne-end',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,bourne End'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'bourne End']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19836.3886901555!2d-0.7306688681462171!3d51.57650844704901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487663caae42b939%3A0xf3ca9f5bbd86272f!2sBourne%20End%2C%20Wooburn%20Green%2C%20Bourne%20End%20SL8%205FF!5e0!3m2!1sen!2suk!4v1747317259567!5m2!1sen!2suk'
 		},
@@ -437,9 +437,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Bourne End.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,bourne end'),
+					location: badge.getLocationBadges(['home_visit', 'bourne End']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -507,8 +507,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Cookham.',
 			button_href: '/locations/home-visit/cookham',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,cookham'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'cookham']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39688.56815796808!2d-0.7689114907944434!3d51.55841578706115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876624360227c07%3A0x657a1b6fe488197f!2sCookham!5e0!3m2!1sen!2suk!4v1747319255743!5m2!1sen!2suk'
 		},
@@ -519,9 +519,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Cookham.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,cookham'),
+					location: badge.getLocationBadges(['home_visit', 'cookham']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -589,8 +589,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Farnham Common.',
 			button_href: '/locations/home-visit/farnham-common',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,farnham Common'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'farnham Common']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9920.660719514663!2d-0.6236456583981493!3d51.565205349222964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766451f9eebb71%3A0x62b6b9d2577b14ab!2sFarnham%20Common%2C%20Slough!5e0!3m2!1sen!2suk!4v1747319363269!5m2!1sen!2suk'
 		},
@@ -601,9 +601,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Farnham Common.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,farnham'),
+					location: badge.getLocationBadges(['home_visit', 'farnham']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -671,8 +671,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Forty Green.',
 			button_href: '/locations/home-visit/forty-green',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,forty Green'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'forty Green']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5790.984818326895!2d-0.6639221344736147!3d51.61645101332409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766135c57271c3%3A0x7bda3c7b21e1715d!2sForty%20Green%2C%20Beaconsfield!5e0!3m2!1sen!2suk!4v1747319472112!5m2!1sen!2suk'
 		},
@@ -683,9 +683,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Forty Green.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,forty green'),
+					location: badge.getLocationBadges(['home_visit', 'forty Green']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -753,8 +753,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Hedgerley.',
 			button_href: '/locations/home-visit/hedgerley',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,hedgerley'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'hedgerley']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4959.4916899897125!2d-0.6080619977585376!3d51.572892587313135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487665ba2e22d7a5%3A0x9dfac6e982297078!2sHedgerley%2C%20Slough!5e0!3m2!1sen!2suk!4v1747319593166!5m2!1sen!2suk'
 		},
@@ -765,9 +765,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Hedgerley.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,hedgerley'),
+					location: badge.getLocationBadges(['home_visit', 'hedgerley']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -835,8 +835,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Maidenhead.',
 			button_href: '/locations/home-visit/maidenhead',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,maidenhead'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'maidenhead']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39723.82121170287!2d-0.7698830911688935!3d51.51800738469749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487662409cc2c793%3A0xde54c6f43e749cf6!2sMaidenhead!5e0!3m2!1sen!2suk!4v1747319652849!5m2!1sen!2suk'
 		},
@@ -847,9 +847,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Maidenhead.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,maidenhead'),
+					location: badge.getLocationBadges(['home_visit', 'maidenhead']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -917,8 +917,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Marlow.',
 			button_href: '/locations/home-visit/marlow',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,marlow'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'marlow']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19838.163231008486!2d-0.7979506181555469!3d51.57244239698924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487661882e969811%3A0xb25284f05eccc5c2!2sMarlow!5e0!3m2!1sen!2suk!4v1747319703101!5m2!1sen!2suk'
 		},
@@ -929,9 +929,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Marlow.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,marlow'),
+					location: badge.getLocationBadges(['home_visit', 'marlow']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -999,8 +999,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Penn.',
 			button_href: '/locations/home-visit/penn',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,penn'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'penn']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39624.895223526095!2d-0.7246975901181345!3d51.63134289136328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876612b9aa55965%3A0xb1a584820be19462!2sPenn!5e0!3m2!1sen!2suk!4v1747319745173!5m2!1sen!2suk'
 		},
@@ -1011,9 +1011,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Penn.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,penn'),
+					location: badge.getLocationBadges(['home_visit', 'penn']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -1081,8 +1081,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Stokepoges.',
 			button_href: '/locations/home-visit/stoke-poges',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,stoke Poges'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'stoke Poges']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19848.49061340883!2d-0.622797138308561!3d51.54877446096732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766572a7654c8d%3A0x53aa8f4c760a296c!2sStoke%20Poges%2C%20Slough!5e0!3m2!1sen!2suk!4v1747319840195!5m2!1sen!2suk'
 		},
@@ -1093,9 +1093,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Stoke Poges.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,stoke poges'),
+					location: badge.getLocationBadges(['home_visit', 'stoke poges']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -1163,8 +1163,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Taplow.',
 			button_href: '/locations/home-visit/taplow',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,taplow'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'taplow']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39702.37204719479!2d-0.7197987409410987!3d51.54259593613406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876632555c7cf77%3A0xefcc11cd0f641c7d!2sTaplow!5e0!3m2!1sen!2suk!4v1747320360275!5m2!1sen!2suk'
 		},
@@ -1175,9 +1175,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Taplow.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,taplow'),
+					location: badge.getLocationBadges(['home_visit', 'taplow']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -1245,8 +1245,8 @@ export const locations: locations.LocationsMap = {
 			description: 'Book your home-visit reflexology treatment in Woodburn Green.',
 			button_href: '/locations/home-visit/woodburn-green',
 			badges: {
-				location_badge: badge.getLocationBadges('home_visit,Woodburn Green'),
-				day_badges: badge.getDayBadges('mon,wed,thur,fri')
+				location_badge: badge.getLocationBadges(['home_visit', 'Woodburn Green']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 			},
 			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19832.585772464558!2d-0.7078473181262214!3d51.585221397177214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487663c29f368913%3A0x7a721fd27eb8fdfd!2sWooburn%20Green!5e0!3m2!1sen!2suk!4v1747320405456!5m2!1sen!2suk'
 		},
@@ -1257,9 +1257,9 @@ export const locations: locations.LocationsMap = {
 				description: 'I provide home-visit reflexology treatments in Woodburn Green.',
 				image: null,
 				badges: {
-					location: badge.getLocationBadges('home_visit,woodburn green'),
+					location: badge.getLocationBadges(['home_visit', 'woodburn green']),
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('mon,wed,thur,fri')
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
 					primary: {
@@ -1329,7 +1329,7 @@ export const locationSections: locations.LocationSections = [
 		id: 'agi-studio-location',
 		badges: {
 			available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-true'),
-			available_days: badge.getDayBadges('mon,wed,thur,fri')
+			available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 		},
 		description: 'The easiest and optimal way to work with me is by booking a visit to my studio in Burnham, UK. I provide Reflexology & Massage treatments in my studio. Other locations will have a reduced number of treatments I can offer.',
 		location_button: {
@@ -1343,7 +1343,7 @@ export const locationSections: locations.LocationSections = [
 		id: 'reflexions-location',
 		badges: {
 			available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-			available_days: badge.getDayBadges('tue,sat')
+			available_days: badge.getDayBadges(['tue', 'sat'])
 		},
 		description: 'I work in London on Tuesday, Friday and Saturday at the Reflexions studio. You can book an appointment with me via Fresha and ask for Aga.',
 		location_button: null,
@@ -1354,7 +1354,7 @@ export const locationSections: locations.LocationSections = [
 				id: 'reflexions-chelsea-location',
 				badges: {
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('tue')
+					available_days: badge.getDayBadges(['tue'])
 				},
 				description: 'I work in London on Tuesday at the Reflexions, Chelsea reflexology studio. You can book an appointment with me via Fresha and ask for Aga.',
 				location_button: null,
@@ -1365,7 +1365,7 @@ export const locationSections: locations.LocationSections = [
 				id: 'reflexions-bayswater-location',
 				badges: {
 					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-					available_days: badge.getDayBadges('sat')
+					available_days: badge.getDayBadges(['sat'])
 				},
 				description: 'I work in London on Saturday at the Reflexions, Bayswater reflexology studio. You can book an appointment with me via Fresha and ask for Aga.',
 				location_button: null,
@@ -1379,7 +1379,7 @@ export const locationSections: locations.LocationSections = [
 		id: 'home-visit-locations',
 		badges: {
 			available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
-			available_days: badge.getDayBadges('mon,wed,thur,fri')
+			available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 		},
 		description: 'I offer home visits for Reflexology treatments only. You will book through Fresha and will have to select the “Home Visit” option. If it’s your first time booking with me you will be asked for some personal information like name, surname, contact details and your address.',
 		location_button: null,
