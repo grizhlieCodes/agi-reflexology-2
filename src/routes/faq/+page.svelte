@@ -78,7 +78,7 @@
 				type="plain"
 				ariaLabel="View the locations that I
 			offer my services in"
-				href="/reflexology"
+				href="/services/reflexology"
 				class="min-w-max"
 			>
 				How Reflexology Works
@@ -96,7 +96,7 @@
 			class="justify-center"
 			vertical_padding={8}
 		>
-			<Container class="justify-center gap-10 !bg-red-200 md:gap-16 lg:gap-20">
+			<Container class="justify-center gap-10 md:gap-16 lg:gap-20">
 				<div
 					class="flex w-full flex-col items-center gap-4 text-center
             md:items-start md:gap-5 md:text-left lg:col-start-1 lg:row-start-1"

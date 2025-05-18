@@ -18,7 +18,7 @@
 		</div>
 
 		<div class="flex flex-wrap xl:flex-nowrap justify-center gap-4 md:gap-8">
-			{#each price_cards as pc}
+			{#each price_cards.slice(0,3) as pc}
 				<PriceCard {...pc} class=""></PriceCard>
 			{/each}
 		</div>

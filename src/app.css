@@ -15,7 +15,7 @@
 	--font-heading: var(--font-serif);
 	--font-body: var(--font-sans);
 	--font-special: var(--font-mono);
-	
+
 	/* Aga Grey */
 	--color-aga-gray-50: #f6f7f6;
 	--color-aga-gray-100: #e3e4e3;
@@ -55,7 +55,6 @@
 	--color-aga-brown-900: #5b4641;
 	--color-aga-brown-950: #2f2320;
 
-	
 	/* Neutral */
 	--color-neutral-50: var(--color-aga-gray-50);
 	--color-neutral-100: var(--color-aga-gray-100);
@@ -94,8 +93,6 @@
 	--color-secondary-800: var(--color-aga-brown-800);
 	--color-secondary-900: var(--color-aga-brown-900);
 	--color-secondary-950: var(--color-aga-brown-950);
-
-	
 
 	/* Success */
 	--color-success-50: var(--color-green-50);
@@ -159,5 +156,3 @@ html,
 		margin-top: 0.25rem;
 	}
 }
-
-

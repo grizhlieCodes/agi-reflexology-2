@@ -1,18 +1,15 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import PageTransition from '$lib/components/layout/PageTransition.svelte';
 	import Header from '$lib/components/navigation/header/Header.svelte';
-	import Button from '$lib/components/ui-interactive/Button.svelte';
 	import { headerData, footerData } from '$lib/data/navigation/navigation';
 	import '../app.css';
 	import Footer from '$lib/components/navigation/footer/Footer.svelte';
-
-	let { children, data } = $props();
-	import { page } from '$app/state';
 	import Head from '$lib/data/Head.svelte';
-	let pathname = $derived(page.url.pathname === '/' ? 'Home' : page.url.pathname);
 
+	let pathname = $derived(page.url.pathname === '/' ? 'Home' : page.url.pathname);
 	let { header_cta, header_logo, header_links } = $derived(headerData);
-	// let { footer_links, footer_business_name, footer_logo } = $derived(footerData);
+	let { children, data } = $props();
 </script>
 
 <Head></Head>
