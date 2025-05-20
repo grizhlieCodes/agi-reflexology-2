@@ -8,12 +8,13 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Reflexology Session',
 		duration: 60,
 		description: 'Gentle, grounding pressure to support whole-body balance. Choose between Face, Hands or Feet.',
-		location: 'Agi\s Studio: Burnham',
+		location_name: 'Agi\s Studio: Burnham',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
+		location_type: 'on_location',
 		locations: ['agi'],
 		body_part: ['face', 'or', 'hands', 'or', 'feet'],
 		days: ['mon', 'wed', 'thur', 'fri']
@@ -24,12 +25,13 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Extended Reflexology',
 		duration: 90,
 		description: 'A deeper session for nervous system reset and relaxation. Choose between Face, Hands or Feet.',
-		location: 'Agi\s Studio: Burnham',
+		location_name: 'Agi\s Studio: Burnham',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
+		location_type: 'on_location',
 		locations: ['agi'],
 		body_part: ['face', 'or', 'hands', 'or', 'feet'],
 		days: ['mon', 'wed', 'thur', 'fri']
@@ -40,12 +42,13 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Foot + Face Reflexology',
 		duration: 90,
 		description: 'A full reset that combines facial and foot reflexology to rebalance both body and mind.',
-		location: 'Agi\s Studio: Burnham',
+		location_name: 'Agi\s Studio: Burnham',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
+		location_type: 'on_location',
 		locations: ['agi'],
 		body_part: ['face', 'and', 'feet'],
 		days: ['mon', 'wed', 'thur', 'fri']
@@ -56,12 +59,13 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Head, Neck & Face Massage',
 		duration: 30,
 		description: 'Targeted massage for upper body to release tension, ease fatigue, and calm your nervous system.',
-		location: 'Agi\s Studio: Burnham',
+		location_name: 'Agi\s Studio: Burnham',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
+		location_type: 'on_location',
 		locations: ['agi'],
 		body_part: ['head', 'and', 'face', 'and', 'neck'],
 		days: ['mon', 'wed', 'thur', 'fri']
@@ -72,12 +76,13 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Back Tension Release',
 		duration: 45,
 		description: 'Focused massage to ease muscle tightness and knots in the back. Ideal for chronic or acute pain.',
-		location: 'Agi\s Studio: Burnham',
+		location_name: 'Agi\s Studio: Burnham',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
+		location_type: 'on_location',
 		locations: ['agi'],
 		body_part: ['back'],
 		days: ['mon', 'wed', 'thur', 'fri']
@@ -88,12 +93,13 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Front of Legs Massage',
 		duration: 30,
 		description: 'Gentle release work across hips, thighs and shins to reduce built-up tightness or daily strain.',
-		location: 'Agi\s Studio: Burnham',
+		location_name: 'Agi\s Studio: Burnham',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
+		location_type: 'on_location',
 		locations: ['agi'],
 		body_part: ['legs'],
 		days: ['mon', 'wed', 'thur', 'fri']
@@ -104,12 +110,13 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Back of Legs Massage',
 		duration: 30,
 		description: 'Support for calves and hamstrings using slow, soothing massage to relax deep muscular tension.',
-		location: 'Agi\s Studio: Burnham',
+		location_name: 'Agi\s Studio: Burnham',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
+		location_type: 'on_location',
 		locations: ['agi'],
 		body_part: ['legs'],
 		days: ['mon', 'wed', 'thur', 'fri']
@@ -120,12 +127,13 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Arms & Hands Massage',
 		duration: 30,
 		description: 'Support for calves and hamstrings using slow, soothing massage to relax deep muscular tension.',
-		location: 'Agi\s Studio: Burnham',
+		location_name: 'Agi\s Studio: Burnham',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
+		location_type: 'on_location',
 		locations: ['agi'],
 		body_part: ['arms', 'and', 'hands'],
 		days: ['mon', 'wed', 'thur', 'fri']
@@ -136,12 +144,13 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Aithein Full Body Massage',
 		duration: 150,
 		description: 'A deep, intuitive massage to reset your whole body. Combines relaxation with energy flow work.',
-		location: 'Agi\s Studio: Burnham',
+		location_name: 'Agi\s Studio: Burnham',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
+		location_type: 'on_location',
 		locations: ['agi'],
 		body_part: ['full body'],
 		days: ['mon', 'wed', 'thur', 'fri']
@@ -152,13 +161,14 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Reflexology Session',
 		duration: 60,
 		description: 'Gentle, grounding pressure to support whole-body balance. Choose between Face, Hands or Feet.',
-		location: 'Home Visit',
+		location_name: 'Home Visit',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
-		locations: ['home_visit'],
+		location_type: 'home_visit',
+		locations: ['Beaconsfield', 'Bisham', 'Bourne End', 'Cookham', 'Farnham Common', 'Forty Green', 'Hedgerley', 'Maidenhead', 'Marlow', 'Penn', 'Stoke Poges', 'Taplow', 'Woodburn Green'],
 		body_part: ['face', 'or', 'hands', 'or', 'feet'],
 		days: ['mon', 'wed', 'thur', 'fri']
 	},
@@ -168,13 +178,14 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Extended Reflexology',
 		duration: 90,
 		description: 'A deeper session for nervous system reset and relaxation. Choose between Face, Hands or Feet.',
-		location: 'Home Visit',
+		location_name: 'Home Visit',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
-		locations: ['home_visit'],
+		location_type: 'home_visit',
+		locations: ['Beaconsfield', 'Bisham', 'Bourne End', 'Cookham', 'Farnham Common', 'Forty Green', 'Hedgerley', 'Maidenhead', 'Marlow', 'Penn', 'Stoke Poges', 'Taplow', 'Woodburn Green'],
 		body_part: ['face', 'or', 'hands', 'or', 'feet'],
 		days: ['mon', 'wed', 'thur', 'fri']
 	},
@@ -184,13 +195,14 @@ export const price_cards: pc.PriceCard[] = [
 		title: 'Foot + Face Reflexology',
 		duration: 90,
 		description: 'A full reset that combines facial and foot reflexology to rebalance both body and mind.',
-		location: 'Home Visit',
+		location_name: 'Home Visit',
 		button: {
 			content: 'Book Treatment',
 			icon: null,
 			href: 'https://google.com'
 		},
-		locations: ['home_visit'],
+		location_type: 'home_visit',
+		locations: ['Beaconsfield', 'Bisham', 'Bourne End', 'Cookham', 'Farnham Common', 'Forty Green', 'Hedgerley', 'Maidenhead', 'Marlow', 'Penn', 'Stoke Poges', 'Taplow', 'Woodburn Green'],
 		body_part: ['face', 'and', 'feet'],
 		days: ['mon', 'wed', 'thur', 'fri']
 	},
@@ -203,8 +215,9 @@ export const price_cards: pc.PriceCard[] = [
 			icon: null,
 			href: 'https://www.fresha.com/providers/reflexions-j8u52zlj?pId=424615'
 		},
-		body_part: ['face', 'or', 'hands', 'or', 'feet'],
+		location_type: 'on_location',
 		locations: ['chelsea', 'bayswater'],
+		body_part: ['face', 'or', 'hands', 'or', 'feet'],
 		days: ['tue', 'sat']
 	}
 ];

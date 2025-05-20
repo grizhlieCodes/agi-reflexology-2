@@ -151,6 +151,7 @@ html,
 :root {
 	scroll-behavior: smooth;
 	scroll-padding-top: 12.5rem;
+	interpolate-size: allow-keywords;
 
 	p:has(+ p) ~ p {
 		margin-top: 0.25rem;

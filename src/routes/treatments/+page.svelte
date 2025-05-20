@@ -119,7 +119,7 @@
 
 		<!-- ! Navigation -->
 		<div class="flex flex-col items-center gap-3">
-			<div class="w-max grow-0">
+			<!-- <div class="w-max grow-0">
 				<LocationType onValueChange={filterWithLocationType} bind:location_type></LocationType>
 			</div>
 			<div class=" items-center gap-2">
@@ -147,16 +147,16 @@
 					</Text>
 				</div>
 			{/if}
-		</div>
+		</div> -->
 
 		<!-- ! Price Cards -->
-		<div
+		<!-- <div
 			class="flex flex-wrap justify-center gap-4 md:gap-8 xl:grid
 		xl:grid-cols-3"
 		>
 			{#each filtered_price_cards as pc}
 				<PriceCard {...pc} class=""></PriceCard>
 			{/each}
-		</div>
+		</div> -->
 	</Container>
 </Section>

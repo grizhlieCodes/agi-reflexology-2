@@ -10,9 +10,9 @@
 
 <Select.Root type="multiple" bind:value={selected_locations} {onValueChange} disabled={locationSelectionDisabled}>
 	<Select.Trigger
-		class="bg-primary-50 outline-primary-200 flex min-w-[14rem] 
+		class="bg-primary-50 outline-primary-200 flex transition-all duration-300 
 	justify-center rounded-lg px-3 py-1.5 text-neutral-500 outline {locationSelectionDisabled ?
-	'opacity-50 cursor-not-allowed': 'cursor-pointer'}"
+	'opacity-50 cursor-not-allowed': 'cursor-pointer'} group/hehe w-auto"
 		aria-label="Select a location"
 	>
 		<div class="flex items-center gap-2">
