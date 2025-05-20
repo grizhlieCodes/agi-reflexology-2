@@ -4,96 +4,11 @@
 	import PriceCard from '$lib/components/ui/price-card/PriceCard.svelte';
 	import Text from '$lib/components/ui/Text.svelte';
 
-	import { price_cards } from '$lib/data/price_cards'; // Original data.
 	import Location from '$lib/pages/treatments/Location.svelte';
 	import LocationType from '$lib/pages/treatments/LocationType.svelte';
 	import { slide } from 'svelte/transition';
-	let mounted = $state(false);
 
-	let location_type = $state('on_location');
-	let filtered_price_cards = $state([...price_cards]);
-
-	$effect(() => {
-		if (!mounted) {
-			mounted = true;
-			filterWithLocationType();
-		}
-	});
-
-	let locationTypeMapping: any = {
-		on_location: ['agi', 'chelsea', 'bayswater'],
-		home_visit: ['home_visit']
-	};
-
-	let locations: any = {
-		on_location: [
-			{ name: 'agi', label: 'Burnham: Agi Studio' },
-			{ name: 'bayswater', label: 'Reflexions: Bayswater' },
-			{ name: 'chelsea', label: 'Reflexions: Chelsea' }
-		],
-		home_visit: [
-			{ name: 'beaconsfield', label: 'Beaconsfield' },
-			{ name: 'bisham', label: 'Bisham' },
-			{ name: 'bourne_end', label: 'Bourne End' },
-			{ name: 'cookham', label: 'Cookham' },
-			{ name: 'farnham_common', label: 'Farnham Common' },
-			{ name: 'forty_green', label: 'Forty Green' },
-			{ name: 'hedgerley', label: 'Hedgerley' },
-			{ name: 'maidenhead', label: 'Maidenhead' },
-			{ name: 'marlow', label: 'Marlow' },
-			{ name: 'penn', label: 'Penn' },
-			{ name: 'stoke_poges', label: 'Stoke Poges' },
-			{ name: 'taplow', label: 'Taplow' },
-			{ name: 'woodburn_green', label: 'Woodburn Green' }
-		]
-	};
-	let allowedLocations = $derived(locationTypeMapping[location_type]);
-
-	interface location {
-		name: string;
-		label: string;
-	}
-
-	let location_filter_options = $derived(locations[location_type]);
-	let selected_locations = $state<location[]>([]);
-
-	const filterWithLocationType = () => {
-		let res = [];
-
-		res = price_cards.filter((card) => {
-			return card.locations.some((card_location: string) =>
-				allowedLocations.includes(card_location)
-			);
-		});
-		filtered_price_cards = res;
-		selected_locations = [];
-	};
-
-	const removeFilter = (index: any) => {
-		selected_locations = selected_locations.filter((l, i) => i !== index);
-		filterWithLocation();
-	};
-
-	const filterWithLocation = () => {
-		let res = [];
-
-		if (selected_locations.length === 0) {
-			filterWithLocationType();
-			return;
-		}
-
-		res = filtered_price_cards.filter((card) => {
-			return card.locations.some((locName) => {
-				return selected_locations.some((sel_loc) => {
-					return sel_loc === locName;
-				});
-			});
-		});
-
-		filtered_price_cards = res;
-	};
-
-	let locationSelectionDisabled = $derived(location_type === 'home_visit');
+	import { t } from '$lib/stores/treatments.svelte';
 </script>
 
 <Section
@@ -112,25 +27,21 @@
 			<div>
 				<Text type="p" style="paraBase">Please view the treatments I offer.</Text>
 				<Text type="p" style="paraBase"
-					>Every link will take you to a corresponding Fresha link for the service.</Text
-				>
+					>Every link will take you to a corresponding Fresha link for the service.</Text>
 			</div>
+
 		</div>
 
 		<!-- ! Navigation -->
 		<div class="flex flex-col items-center gap-3">
-			<!-- <div class="w-max grow-0">
-				<LocationType onValueChange={filterWithLocationType} bind:location_type></LocationType>
+			<div class="w-max grow-0">
+				<LocationType></LocationType>
 			</div>
+
 			<div class=" items-center gap-2">
-				<Location
-					{locationSelectionDisabled}
-					onValueChange={filterWithLocation}
-					{removeFilter}
-					{location_filter_options}
-					bind:selected_locations
-				></Location>
+				<Location></Location>
 			</div>
+			<!--
 			{#if locationSelectionDisabled}
 				<div transition:slide={{ duration: 400, axis: 'y' }} class="max-w-4xl">
 					<Text type="p" style="paraBase">
@@ -149,8 +60,8 @@
 			{/if}
 		</div> -->
 
-		<!-- ! Price Cards -->
-		<!-- <div
+			<!-- ! Price Cards -->
+			<!-- <div
 			class="flex flex-wrap justify-center gap-4 md:gap-8 xl:grid
 		xl:grid-cols-3"
 		>
@@ -158,5 +69,6 @@
 				<PriceCard {...pc} class=""></PriceCard>
 			{/each}
 		</div> -->
-	</Container>
+		</div></Container
+	>
 </Section>

@@ -1,30 +1,31 @@
 <script lang="ts">
+	import { t } from '$lib/stores/treatments.svelte';
 	import { Select } from 'bits-ui';
 	import { MapPin, ArrowUp, ArrowDown, Check, X } from 'lucide-svelte';
 	import { slide } from 'svelte/transition';
-
-	let { location_filter_options, selected_locations = $bindable(), removeFilter, onValueChange, locationSelectionDisabled } = $props();
-
-	// $inspect(selected_locations);
+	import { returnLocationName } from '$lib/scripts/utils';
 </script>
 
-<Select.Root type="multiple" bind:value={selected_locations} {onValueChange} disabled={locationSelectionDisabled}>
+<Select.Root
+	type="multiple"
+	value={t.sel_locations}
+	onValueChange={(e) => t.updateSelectedLocations(e)}
+>
 	<Select.Trigger
-		class="bg-primary-50 outline-primary-200 flex transition-all duration-300 
-	justify-center rounded-lg px-3 py-1.5 text-neutral-500 outline {locationSelectionDisabled ?
-	'opacity-50 cursor-not-allowed': 'cursor-pointer'} group/hehe w-auto"
+		class="bg-primary-50 outline-primary-200 group/hehe flex w-auto 
+	cursor-pointer justify-center rounded-lg px-3 py-1.5 text-neutral-500 outline transition-all duration-300"
 		aria-label="Select a location"
 	>
 		<div class="flex items-center gap-2">
 			<MapPin></MapPin>
 			<span class="font-ui font-medium">Location</span>
-			{#if selected_locations && selected_locations.length > 0}
+			{#if t.sel_locations && t.sel_locations.length > 0}
 				<span class="block h-full w-[1px] bg-neutral-200"></span>
 				<div class="flex w-max gap-1">
-					{#each selected_locations as location, index}
+					{#each t.sel_locations as location, index}
 						<button
-                            transition:slide={{duration: 150, axis:"x"}}
-                            onclick={() => removeFilter(index)}
+							transition:slide={{ duration: 150, axis: 'x' }}
+							onclick={() => t.removeSelectedLocation(location)}
 							class="bg-primary-200 text-primary-500 group flex
 						cursor-pointer items-center gap-0.5 rounded-sm
 						px-1 py-0.5 text-base font-medium"
@@ -47,17 +48,17 @@
 			</Select.ScrollUpButton>
 
 			<Select.Viewport class="min-w-[14rem] p-1">
-				{#each location_filter_options as loc, i (i + loc.name)}
+				{#each t.aval_locations as loc, i (i + loc)}
 					<Select.Item
 						class="data-highlighted:bg-primary-200 font-ui flex h-10
 					w-full cursor-pointer items-center rounded-md py-3 pr-1.5
 					pl-5 text-base capitalize outline-hidden select-none"
-						value={loc.name}
-						label={loc.label}
+						value={loc}
+						label={returnLocationName(loc)}
 					>
 						{#snippet children({ selected })}
 							<span>
-								{loc.label}
+								{returnLocationName(loc)}
 							</span>
 							{#if selected}
 								<div class="ml-auto">
