@@ -54,6 +54,12 @@ const createTreatments = () => {
 	let sel_locations = $state([]);
 	let aval_days = $state([]);
 	let sel_days = $state([]);
+	let aval_treatment_types = $state([]);
+	let sel_treatment_types = $state([]);
+	let aval_body_parts = $state([]);
+	let sel_body_parts = $state([]);
+	let aval_durations = $state([]);
+	let sel_durations = $state([]);
 
 	let aval_price_cards = $state([]);
 
@@ -66,9 +72,15 @@ const createTreatments = () => {
 		if (sel_location_type === new_type) return;
 		clearSelectedLocations();
 		clearSelectedDays();
+		clearSelectedTreatmentTypes();
+		clearSelectedBodyParts();
+		clearSelectedDurations();
 		sel_location_type = new_type; // home_visit or on_location
 		updateAvailableLocations(sel_location_type);
 		updateAvailableDays(sel_location_type);
+		updateAvailableTreatmentTypes(sel_location_type);
+		updateAvailableBodyParts(sel_location_type);
+		updateAvailableDurations(sel_location_type);
 	};
 
 	const updateAvailableLocations = (location_type) => {
@@ -81,11 +93,34 @@ const createTreatments = () => {
 		aval_days = [...new Set(filteredPCards.map((pc) => pc.days).flat())];
 	};
 
+	const updateAvailableTreatmentTypes = (location_type) => {
+		let filteredPCards = price_cards.filter((pc) => pc.location_type.name === location_type);
+		aval_treatment_types = [...new Set(filteredPCards.map((pc) => pc.treatment_type))];
+	};
+
+	const updateAvailableBodyParts = (location_type) => {
+		const exclusionKeywords = ['or', 'and'];
+		let filteredPCards = price_cards.filter((pc) => pc.location_type.name === location_type);
+		const allBodyParts = filteredPCards.map((pc) => pc.body_part).flat();
+		aval_body_parts = [...new Set(allBodyParts.filter(part => !exclusionKeywords.includes(part)))];
+	};
+
+	const updateAvailableDurations = (location_type) => {
+		let filteredPCards = price_cards.filter((pc) => pc.location_type.name === location_type && pc.duration !== undefined);
+		aval_durations = [...new Set(filteredPCards.map((pc) => pc.duration))].sort((a, b) => a - b);
+	};
+
 	const clearSelectedLocations = () => (sel_locations = []);
 	const clearSelectedDays = () => (sel_days = []);
+	const clearSelectedTreatmentTypes = () => (sel_treatment_types = []);
+	const clearSelectedBodyParts = () => (sel_body_parts = []);
+	const clearSelectedDurations = () => (sel_durations = []);
 
 	const updateSelectedLocations = (locations) => (sel_locations = locations);
 	const updateSelectedDays = (days) => (sel_days = days);
+	const updateSelectedTreatmentTypes = (types) => (sel_treatment_types = types);
+	const updateSelectedBodyParts = (parts) => (sel_body_parts = parts);
+	const updateSelectedDurations = (durations) => (sel_durations = durations);
 
 	const removeSelectedLocation = (loc) => {
 		sel_locations = sel_locations.filter((l) => l !== loc);
@@ -121,11 +156,36 @@ const createTreatments = () => {
 		};
 	};
 
+	const filterByTreatmentType = (types) => {
+		return (treatment) => {
+			if (!types || types.length === 0 || (types.length === 1 && types[0] === '')) return true;
+			return types.some((type) => treatment.treatment_type === type);
+		};
+	};
+
+	const filterByBodyPart = (parts) => {
+		return (treatment) => {
+			if (!parts || parts.length === 0 || (parts.length === 1 && parts[0] === '')) return true;
+			const treatmentBodyParts = treatment.body_part.filter(part => !['or', 'and'].includes(part));
+			return parts.some(part => treatmentBodyParts.includes(part));
+		};
+	};
+
+	const filterByDuration = (durations) => {
+		return (treatment) => {
+			if (!durations || durations.length === 0 || (durations.length === 1 && durations[0] === '')) return true;
+			return durations.some(duration => treatment.duration === duration);
+		};
+	};
+
 	const setupDefaultTreatments = () => {
 		setDefaultAvailableLocationTypes(); // home_visit or on_location
 		updateSelectedLocationType(aval_location_types[0].name);
 		updateAvailableLocations(sel_location_type);
 		updateAvailableDays(sel_location_type);
+		updateAvailableTreatmentTypes(sel_location_type);
+		updateAvailableBodyParts(sel_location_type);
+		updateAvailableDurations(sel_location_type);
 		resetPriceCards();
 		filterResults();
 	};
@@ -136,6 +196,15 @@ const createTreatments = () => {
 		if (sel_location_type) filters.push(filterByLocationType(sel_location_type));
 		if (sel_locations) filters.push(filterByLocation(sel_locations));
 		if (sel_days) filters.push(filterByDays(sel_days));
+		if (sel_treatment_types && sel_treatment_types.length > 0) {
+			filters.push(filterByTreatmentType(sel_treatment_types));
+		}
+		if (sel_body_parts && sel_body_parts.length > 0) {
+			filters.push(filterByBodyPart(sel_body_parts));
+		}
+		if (sel_durations && sel_durations.length > 0) {
+			filters.push(filterByDuration(sel_durations));
+		}
 
 		return filters;
 	};
@@ -170,6 +239,24 @@ const createTreatments = () => {
 		get sel_days() {
 			return sel_days;
 		},
+		get aval_treatment_types() {
+			return aval_treatment_types;
+		},
+		get sel_treatment_types() {
+			return sel_treatment_types;
+		},
+		get aval_body_parts() {
+			return aval_body_parts;
+		},
+		get sel_body_parts() {
+			return sel_body_parts;
+		},
+		get aval_durations() {
+			return aval_durations;
+		},
+		get sel_durations() {
+			return sel_durations;
+		},
 		setDefaultAvailableLocationTypes,
 		updateSelectedLocationType,
 		updateAvailableLocations,
@@ -179,7 +266,16 @@ const createTreatments = () => {
 		removeSelectedLocation,
 		filterResults,
 		clearSelectedDays,
-		updateSelectedDays
+		updateSelectedDays,
+		clearSelectedTreatmentTypes,
+		updateSelectedTreatmentTypes,
+		updateAvailableTreatmentTypes,
+		clearSelectedBodyParts,
+		updateSelectedBodyParts,
+		updateAvailableBodyParts,
+		clearSelectedDurations,
+		updateSelectedDurations,
+		updateAvailableDurations
 	};
 };
 

@@ -17,7 +17,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
 		body_part: ['face', 'or', 'hands', 'or', 'feet'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'reflexology'
 	},
 	{
 		type: 'agi_price_card',
@@ -34,7 +35,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
 		body_part: ['face', 'or', 'hands', 'or', 'feet'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'reflexology'
 	},
 	{
 		type: 'agi_price_card',
@@ -51,7 +53,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
 		body_part: ['face', 'and', 'feet'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'reflexology'
 	},
 	{
 		type: 'agi_price_card',
@@ -68,7 +71,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
 		body_part: ['head', 'and', 'face', 'and', 'neck'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'massage'
 	},
 	{
 		type: 'agi_price_card',
@@ -85,7 +89,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
 		body_part: ['back'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'massage'
 	},
 	{
 		type: 'agi_price_card',
@@ -102,7 +107,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
 		body_part: ['legs'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'massage'
 	},
 	{
 		type: 'agi_price_card',
@@ -119,7 +125,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
 		body_part: ['legs'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'massage'
 	},
 	{
 		type: 'agi_price_card',
@@ -136,7 +143,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
 		body_part: ['arms', 'and', 'hands'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'massage'
 	},
 	{
 		type: 'agi_price_card',
@@ -153,7 +161,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
 		body_part: ['full body'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'massage'
 	},
 	{
 		type: 'agi_price_card',
@@ -170,7 +179,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'home_visit', label: 'Home Visit' },
 		locations: ['beaconsfield', 'bisham', 'bourne_end', 'cookham', 'farnham_common', 'forty_green', 'hedgerley', 'maidenhead', 'marlow', 'penn', 'stoke_poges', 'taplow', 'woodburn_green'],
 		body_part: ['face', 'or', 'hands', 'or', 'feet'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'reflexology'
 	},
 	{
 		type: 'agi_price_card',
@@ -187,7 +197,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'home_visit', label: 'Home Visit' },
 		locations: ['beaconsfield', 'bisham', 'bourne_end', 'cookham', 'farnham_common', 'forty_green', 'hedgerley', 'maidenhead', 'marlow', 'penn', 'stoke_poges', 'taplow', 'woodburn_green'],
 		body_part: ['face', 'or', 'hands', 'or', 'feet'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'reflexology'
 	},
 	{
 		type: 'agi_price_card',
@@ -204,7 +215,8 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'home_visit', label: 'Home Visit' },
 		locations: ['beaconsfield', 'bisham', 'bourne_end', 'cookham', 'farnham_common', 'forty_green', 'hedgerley', 'maidenhead', 'marlow', 'penn', 'stoke_poges', 'taplow', 'woodburn_green'],
 		body_part: ['face', 'and', 'feet'],
-		days: ['mon', 'wed', 'thur', 'fri']
+		days: ['mon', 'wed', 'thur', 'fri'],
+		treatment_type: 'reflexology'
 	},
 	{
 		type: 'reflexions_price_card',
@@ -218,6 +230,7 @@ export const price_cards: pc.PriceCard[] = [
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['chelsea', 'bayswater'],
 		body_part: ['face', 'or', 'hands', 'or', 'feet'],
-		days: ['tue', 'sat']
+		days: ['tue', 'sat'],
+		treatment_type: 'reflexology'
 	}
 ];

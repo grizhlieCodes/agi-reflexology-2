@@ -6,6 +6,9 @@
 
 	import Location from '$lib/pages/treatments/Location.svelte';
 	import LocationType from '$lib/pages/treatments/LocationType.svelte';
+	import TreatmentType from '$lib/pages/treatments/TreatmentType.svelte';
+	import BodyPart from '$lib/pages/treatments/BodyPart.svelte';
+	import Duration from '$lib/pages/treatments/Duration.svelte';
 	import { slide } from 'svelte/transition';
 
 	import { t } from '$lib/stores/treatments.svelte';
@@ -43,6 +46,15 @@
 
 			<div class=" items-center gap-2">
 				<Location></Location>
+			</div>
+			<div class=" items-center gap-2">
+				<TreatmentType />
+			</div>
+			<div class=" items-center gap-2">
+				<BodyPart />
+			</div>
+			<div class=" items-center gap-2">
+				<Duration />
 			</div>
 			<div class=" items-center gap-2">
 				<Days></Days>
