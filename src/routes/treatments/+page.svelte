@@ -9,8 +9,9 @@
 	import { slide } from 'svelte/transition';
 
 	import { t } from '$lib/stores/treatments.svelte';
+	import Days from '$lib/pages/treatments/Days.svelte';
 
-	// $inspect(t.sel_locations)
+	$inspect(t.aval_days);
 </script>
 
 <Section
@@ -42,6 +43,9 @@
 
 			<div class=" items-center gap-2">
 				<Location></Location>
+			</div>
+			<div class=" items-center gap-2">
+				<Days></Days>
 			</div>
 			<!--
 			{#if locationSelectionDisabled}

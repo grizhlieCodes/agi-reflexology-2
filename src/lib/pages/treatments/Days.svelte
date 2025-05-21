@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { t } from '$lib/stores/treatments.svelte';
 	import { Select } from 'bits-ui';
-	import { MapPin, ArrowUp, ArrowDown, Check, X } from 'lucide-svelte';
+	import { MapPin, ArrowUp, ArrowDown, Check, X, CalendarDays } from 'lucide-svelte';
 	import { slide } from 'svelte/transition';
 	import { returnLocationName } from '$lib/scripts/utils';
 </script>
@@ -10,32 +10,33 @@
 	type="multiple"
 	value={t.sel_locations}
 	onValueChange={(e) => {
-		t.updateSelectedLocations(e);
+		console.log(e);
+		t.updateSelectedDays(e);
 		t.filterResults();
 	}}
 >
 	<Select.Trigger
 		class="bg-primary-50 outline-primary-200 group/hehe flex w-auto 
 	cursor-pointer justify-center rounded-lg px-3 py-1.5 text-neutral-500 outline transition-all duration-300"
-		aria-label="Select a location"
+		aria-label="Select the days you want the treatment on"
 	>
 		<div class="flex items-center gap-2">
-			<MapPin></MapPin>
-			<span class="font-ui font-medium">Location</span>
-			{#if t.sel_locations && t.sel_locations.length > 0}
+			<CalendarDays></CalendarDays>
+			<span class="font-ui font-medium">Days</span>
+			{#if t.sel_days && t.sel_days.length > 0}
 				<span class="block h-full w-[1px] bg-neutral-200"></span>
 				<div class="flex w-max gap-1">
-					{#if t.sel_locations && t.sel_locations.length > 0}
+					{#if t.sel_days && t.sel_days.length > 0}
 						<button
 							onclick={() => {
-								t.clearSelectedLocations();
+								t.clearSelectedDays();
 								t.filterResults();
 							}}
 							class="bg-primary-200 text-primary-500 group flex
 						cursor-pointer items-center gap-0.5 rounded-sm
 						px-1 py-0.5 text-base font-medium"
 						>
-							{t.sel_locations.length}
+							{t.sel_days.length}
 							<X class="size-5"></X>
 						</button>
 					{/if}
@@ -45,25 +46,25 @@
 	</Select.Trigger>
 	<Select.Portal>
 		<Select.Content
-			class="bg-primary-50 border-primary-200 data-[state=open]:animate-in
-		data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 translate-y-5 rounded-lg border shadow-2xl"
+			class="bg-primary-50 border-primary-200 translate-y-5
+		rounded-lg border shadow-2xl data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
 		>
 			<Select.ScrollUpButton class="flex w-full items-center justify-center">
 				<ArrowUp class="size-3" />
 			</Select.ScrollUpButton>
 
 			<Select.Viewport class="min-w-[14rem] p-1">
-				{#each t.aval_locations as loc, i (i + loc)}
+				{#each t.aval_days as day, i (i + day)}
 					<Select.Item
 						class="data-highlighted:bg-primary-200 font-ui flex h-10
 					w-full cursor-pointer items-center rounded-md py-3 pr-1.5
 					pl-5 text-base capitalize outline-hidden select-none"
-						value={loc}
-						label={returnLocationName(loc)}
+						value={day}
+						label={returnLocationName(day)}
 					>
 						{#snippet children({ selected })}
 							<span>
-								{returnLocationName(loc)}
+								{returnLocationName(day)}
 							</span>
 							{#if selected}
 								<div class="ml-auto">

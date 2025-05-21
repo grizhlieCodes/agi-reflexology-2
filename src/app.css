@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import '../static/fonts.css';
 @custom-variant dark (&:where(.dark, .dark *));
+@plugin "tailwindcss-animate";
 
 /* COLORS ~ COLORS ~ COLORS ~ COLORS ~ COLORS */
 /* PALETTE ~ PALETTE ~ PALETTE ~ PALETTE ~ PALETTE */
@@ -145,6 +146,92 @@
 	--color-danger-800: var(--color-red-800);
 	--color-danger-900: var(--color-red-900);
 	--color-danger-950: var(--color-red-950);
+
+	/* Transitions testing */
+
+	@keyframes enter-from-right {
+		from {
+			opacity: 0;
+			transform: translateX(200px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	@keyframes enter-from-left {
+		from {
+			opacity: 0;
+			transform: translateX(-200px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	@keyframes exit-to-right {
+		from {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		to {
+			opacity: 0;
+			transform: translateX(200px);
+		}
+	}
+
+	@keyframes exit-to-left {
+		from {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		to {
+			opacity: 0;
+			transform: translateX(-200px);
+		}
+	}
+
+	@keyframes scale-in {
+		from {
+			opacity: 0;
+			transform: rotateX(-10deg) scale(0.9);
+		}
+		to {
+			opacity: 1;
+			transform: rotateX(0deg) scale(1);
+		}
+	}
+
+	@keyframes scale-out {
+		from {
+			opacity: 1;
+			transform: rotateX(0deg) scale(1);
+		}
+		to {
+			opacity: 0;
+			transform: rotateX(-10deg) scale(0.95);
+		}
+	}
+
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes fade-out {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
 }
 
 html,
