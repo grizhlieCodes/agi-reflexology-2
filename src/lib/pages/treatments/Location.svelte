@@ -9,7 +9,10 @@
 <Select.Root
 	type="multiple"
 	value={t.sel_locations}
-	onValueChange={(e) => t.updateSelectedLocations(e)}
+	onValueChange={(e) => {
+		t.updateSelectedLocations(e);
+		t.filterResults();
+	}}
 >
 	<Select.Trigger
 		class="bg-primary-50 outline-primary-200 group/hehe flex w-auto 
@@ -25,10 +28,13 @@
 					{#each t.sel_locations as location, index}
 						<button
 							transition:slide={{ duration: 150, axis: 'x' }}
-							onclick={() => t.removeSelectedLocation(location)}
+							onclick={() => {
+								t.removeSelectedLocation(location);
+								t.filterResults();
+							}}
 							class="bg-primary-200 text-primary-500 group flex
-						cursor-pointer items-center gap-0.5 rounded-sm
-						px-1 py-0.5 text-base font-medium"
+							cursor-pointer items-center gap-0.5 rounded-sm
+							px-1 py-0.5 text-base font-medium"
 						>
 							{location.charAt(0).toUpperCase() + location.slice(1)}
 							<X class="transform-all size-0 duration-150 group-hover:size-5"></X>

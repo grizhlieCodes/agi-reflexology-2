@@ -5,14 +5,14 @@ import { price_cards } from '$lib/data/price_cards';
 // 	sel_location_type = $state('');
 // 	aval_locations = $state([]);
 // 	sel_locations = $state([]);
-	// aval_week_days = [""]
-	// sel_week_days = [""]
-	// aval_treatment_types = [""]
-	// sel_treatment_types = [""]
-	// aval_massage_areas = [""]
-	// sel_massage_areas = [""]
-	// aval_durations = [""]
-	// sel_durations = [""]
+// aval_week_days = [""]
+// sel_week_days = [""]
+// aval_treatment_types = [""]
+// sel_treatment_types = [""]
+// aval_massage_areas = [""]
+// sel_massage_areas = [""]
+// aval_durations = [""]
+// sel_durations = [""]
 
 // 	setDefaultAvailableLocationTypes() {
 // 		this.aval_location_types = Array.from(
@@ -53,6 +53,8 @@ const createTreatments = () => {
 	let aval_locations = $state([]);
 	let sel_locations = $state([]);
 
+	let aval_price_cards = $state([]);
+
 	const setDefaultAvailableLocationTypes = () => {
 		aval_location_types = Array.from(
 			new Map(price_cards.map((pc) => [pc.location_type.name, pc.location_type])).values()
@@ -82,10 +84,49 @@ const createTreatments = () => {
 		sel_locations = sel_locations.filter((l) => l !== loc);
 	};
 
+	const resetPriceCards = () => (aval_price_cards = [...price_cards]);
+
+	const filterByLocationType = (location_type) => {
+		return (treatment) => {
+			return treatment.location_type.name === location_type;
+		};
+	};
+
+	const filterByLocation = (locations) => {
+		return (treatment) => {
+			if (!locations || locations.length === 0 || (locations.length === 1 && locations[0] === ''))
+				return true;
+			return locations.some((location) => {
+				return treatment.locations.some((l) => {
+					return l.includes(location);
+				});
+			});
+		};
+	};
+
 	const setupDefaultTreatments = () => {
 		setDefaultAvailableLocationTypes(); // home_visit or on_location
 		updateSelectedLocationType(aval_location_types[0].name);
 		updateAvailableLocations(sel_location_type);
+		resetPriceCards();
+		filterResults();
+	};
+
+	const buildFilters = () => {
+		let filters = [];
+
+		if (sel_location_type) filters.push(filterByLocationType(sel_location_type));
+		if (sel_locations) filters.push(filterByLocation(sel_locations));
+
+		return filters;
+	};
+
+	const filterResults = () => {
+		const filters = buildFilters();
+
+		aval_price_cards = price_cards.filter((t) => {
+			return filters.every((fn) => fn(t));
+		});
 	};
 
 	return {
@@ -101,13 +142,17 @@ const createTreatments = () => {
 		get sel_locations() {
 			return sel_locations;
 		},
+		get aval_price_cards() {
+			return aval_price_cards;
+		},
 		setDefaultAvailableLocationTypes,
 		updateSelectedLocationType,
 		updateAvailableLocations,
 		clearSelectedLocations,
 		updateSelectedLocations,
 		setupDefaultTreatments,
-		removeSelectedLocation
+		removeSelectedLocation,
+		filterResults
 	};
 };
 

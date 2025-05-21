@@ -9,6 +9,8 @@
 	import { slide } from 'svelte/transition';
 
 	import { t } from '$lib/stores/treatments.svelte';
+
+	// $inspect(t.sel_locations)
 </script>
 
 <Section
@@ -27,9 +29,9 @@
 			<div>
 				<Text type="p" style="paraBase">Please view the treatments I offer.</Text>
 				<Text type="p" style="paraBase"
-					>Every link will take you to a corresponding Fresha link for the service.</Text>
+					>Every link will take you to a corresponding Fresha link for the service.</Text
+				>
 			</div>
-
 		</div>
 
 		<!-- ! Navigation -->
@@ -61,14 +63,11 @@
 		</div> -->
 
 			<!-- ! Price Cards -->
-			<!-- <div
-			class="flex flex-wrap justify-center gap-4 md:gap-8 xl:grid
-		xl:grid-cols-3"
-		>
-			{#each filtered_price_cards as pc}
-				<PriceCard {...pc} class=""></PriceCard>
-			{/each}
-		</div> -->
-		</div></Container
-	>
+			<div class="flex flex-wrap justify-center gap-4 md:gap-8 xl:grid xl:grid-cols-3">
+				{#each t.aval_price_cards as pc}
+					<PriceCard {...pc} class=""></PriceCard>
+				{/each}
+			</div>
+		</div>
+	</Container>
 </Section>

@@ -24,7 +24,10 @@
 			{@const selected_class = t.sel_location_type === option.id ? `selected` : ``}
 			<div class="location-type-filter-item {option.class_side} {selected_class}">
 				<RadioGroup.Item
-					onclick={() => t.updateSelectedLocationType(option.id)}
+					onclick={() => {
+						t.updateSelectedLocationType(option.id);
+						t.filterResults()
+					}}
 					value={option.id}
 					id={`filter-${option.id}`}
 				></RadioGroup.Item>

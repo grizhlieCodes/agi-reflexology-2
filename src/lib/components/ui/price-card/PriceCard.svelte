@@ -12,6 +12,7 @@
 		cost?: number;
 		duration: number;
 		type: 'reflexions_price_card' | 'agi_price_card';
+		location_type: 'on_location' | 'home_visit';
 	};
 
 	let {
@@ -26,7 +27,8 @@
 		locations,
 		days,
 		duration,
-		type
+		type,
+		location_type
 	}: LocalProps = $props();
 	let infoUnlocked = $state(false);
 
@@ -43,7 +45,16 @@
 		...badge.getDayBadges(days)
 	]);
 
-	let locationBadgesForCard = $derived(badge.getLocationBadges(locations, 'default'));
+	let locationBadgesForCard = $derived.by(() => {
+		// console.log(location_type)
+		if (location_type.name === 'on_location') {
+			return badge.getLocationBadges(locations, 'default');
+		} else if (location_type.name === 'home_visit') {
+			return badge.getLocationBadges(['home_visit'], 'default');
+		}
+	});
+
+	// $inspect(locationBadgesForCard);
 
 	// $inspect(infoUnlocked && additional_info_badges && additional_info_badges.length > 0);
 
