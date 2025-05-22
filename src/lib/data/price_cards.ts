@@ -1,8 +1,14 @@
 import * as badge from '$lib/scripts/badges';
 import type { pc } from '$lib/schemas/components/priceCard';
 
+// Simple ID generator
+const generateId = () => {
+	return '_' + Math.random().toString(36).substr(2, 9);
+};
+
 export const price_cards: pc.PriceCard[] = [
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 65,
 		title: 'Reflexology Session',
@@ -21,6 +27,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'reflexology'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 85,
 		title: 'Extended Reflexology',
@@ -39,6 +46,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'reflexology'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 85,
 		title: 'Foot + Face Reflexology',
@@ -57,6 +65,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'reflexology'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 40,
 		title: 'Head, Neck & Face Massage',
@@ -75,6 +84,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'massage'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 65,
 		title: 'Back Tension Release',
@@ -93,6 +103,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'massage'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 40,
 		title: 'Front of Legs Massage',
@@ -111,6 +122,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'massage'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 40,
 		title: 'Back of Legs Massage',
@@ -129,6 +141,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'massage'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 40,
 		title: 'Arms & Hands Massage',
@@ -147,6 +160,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'massage'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 110,
 		title: 'Aithein Full Body Massage',
@@ -165,6 +179,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'massage'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 75,
 		title: 'Reflexology Session',
@@ -183,6 +198,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'reflexology'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 95,
 		title: 'Extended Reflexology',
@@ -201,6 +217,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'reflexology'
 	},
 	{
+		id: generateId(),
 		type: 'agi_price_card',
 		cost: 95,
 		title: 'Foot + Face Reflexology',
@@ -219,6 +236,7 @@ export const price_cards: pc.PriceCard[] = [
 		treatment_type: 'reflexology'
 	},
 	{
+		id: generateId(),
 		type: 'reflexions_price_card',
 		title: 'Reflexions',
 		description: 'I work in the Reflexions Chelsea and Bayswater studios on Tuesdays and Saturdays. Click the below button to see the locations and prices. Visit me there and make sure to request Aga when making your booking.',

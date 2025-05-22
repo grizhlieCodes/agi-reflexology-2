@@ -9,6 +9,30 @@
 	import TreatmentType from '$lib/pages/treatments/TreatmentType.svelte';
 	import BodyPart from '$lib/pages/treatments/BodyPart.svelte';
 	import Duration from '$lib/pages/treatments/Duration.svelte';
+
+	import { flip } from 'svelte/animate';
+
+	import { crossfade } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
+
+	export const [send, receive] = crossfade({
+		duration: (d) => Math.sqrt(d * 200),
+
+		fallback(node, params) {
+			const style = getComputedStyle(node);
+			const transform = style.transform === 'none' ? '' : style.transform;
+
+			return {
+				duration: 600,
+				easing: quintOut,
+				css: (t) => `
+				transform: ${transform} scale(${t});
+				opacity: ${t}
+			`
+			};
+		}
+	});
+
 	import { slide } from 'svelte/transition';
 
 	import { t } from '$lib/stores/treatments.svelte';
@@ -40,24 +64,16 @@
 
 		<!-- ! Navigation -->
 		<div class="flex flex-col items-center gap-3">
-			<div class="w-max grow-0">
+			<div class="flex flex-col items-center gap-3">
 				<LocationType></LocationType>
-			</div>
 
-			<div class=" items-center gap-2">
-				<Location></Location>
-			</div>
-			<div class=" items-center gap-2">
-				<TreatmentType />
-			</div>
-			<div class=" items-center gap-2">
-				<BodyPart />
-			</div>
-			<div class=" items-center gap-2">
-				<Duration />
-			</div>
-			<div class=" items-center gap-2">
-				<Days></Days>
+				<div class="flex items-center gap-3">
+					<Location></Location>
+					<TreatmentType />
+					<BodyPart />
+					<Duration />
+					<Days></Days>
+				</div>
 			</div>
 			<!--
 			{#if locationSelectionDisabled}
@@ -80,8 +96,14 @@
 
 			<!-- ! Price Cards -->
 			<div class="flex flex-wrap justify-center gap-4 md:gap-8 xl:grid xl:grid-cols-3">
-				{#each t.aval_price_cards as pc}
-					<PriceCard {...pc} class=""></PriceCard>
+				{#each t.aval_price_cards as pc (pc.id)}
+					<div
+						in:receive={{ key: pc.id }}
+						out:send={{ key: pc.id }}
+						animate:flip={{ duration: 200 }}
+					>
+						<PriceCard {...pc} class=""></PriceCard>
+					</div>
 				{/each}
 			</div>
 		</div>
