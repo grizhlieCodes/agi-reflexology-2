@@ -36,8 +36,8 @@
 					class="aspect-[2/3] w-full max-w-xs sm:min-w-[17rem] md:max-w-sm lg:min-w-sm"
 				>
 					<Image
-						src="https://seerstudio.b-cdn.net/image-tests/IMG_2109.webp"
-						alt="A person with shoulder-length hair, wearing a patterned gray top, is seated in a forest. They have a tattoo of a fern and bird on their arm and are resting their chin on their hand. The background shows tall trees and a soft focus on the forest setting."
+						src="https://seerstudio.b-cdn.net/image-tests/IMG_2149.webp"
+						alt="A woman with light brown hair, wearing a gray patterned shirt, leans slightly forward. She stands in a forest with tall trees in the background. Her arms have visible tattoos and the setting appears calm and natural."
 					></Image>
 				</div>
 				<Text

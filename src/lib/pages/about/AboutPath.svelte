@@ -35,7 +35,11 @@
 				<div class="aspect-[2/3] w-full max-w-xs sm:min-w-[17rem] md:max-w-sm lg:min-w-sm">
 					<Image
 						src="https://seerstudio.b-cdn.net/image-tests/IMG_7731.webp"
-						alt="A woman with long, blonde hair is smiling softly at the camera. She is wearing a dark turtleneck sweater and a delicate necklace. Behind her, there are kitchen shelves with glassware and a wooden pepper mill."
+					alt="A woman with long, blonde hair is smiling softly at the
+					camera. She is wearing a dark turtleneck sweater and a
+					delicate necklace. Behind her, there are kitchen shelves
+					with glassware and a wooden pepper mill."
+						
 					></Image>
 				</div>
 			</div>
