@@ -29,25 +29,40 @@
 			>
 				<div>
 					<Text type="span" style="eyebrow">The Science Behind the Calm</Text>
-					<Text type="h2" style="h6" id="science-behind-reflexology_heading">Why Reflexology Helps When Stress or Overwhelm Don’t Shift</Text>
+					<Text type="h2" style="h6" id="science-behind-reflexology_heading"
+						>Why Reflexology Helps When Stress or Overwhelm Don’t Shift</Text
+					>
 				</div>
 				<div>
 					<Text type="p" style="paraBase">
-						Many of the symptoms people bring to reflexology — tension, trouble sleeping, digestive issues, irregular cycles — are connected to the
-						nervous system being out of balance. Reflexology helps activate the parasympathetic (rest-and-restore) state, which allows your body to
-						slow down, rebalance, and reset itself.
+						Many of the symptoms people bring to reflexology — tension, trouble sleeping, digestive
+						issues, irregular cycles — are connected to the nervous system being out of balance.
+						Reflexology helps activate the parasympathetic (rest-and-restore) state, which allows
+						your body to slow down, rebalance, and reset itself.
 					</Text>
 					<Text type="p" style="paraBase">
-						When your system feels safe, everything works a little better: from hormones and sleep to digestion and emotional regulation.
+						When your system feels safe, everything works a little better: from hormones and sleep
+						to digestion and emotional regulation.
 					</Text>
 				</div>
 
 				<div class="mt-6 flex flex-row flex-wrap justify-center gap-4 md:justify-start">
-					<Button size={3} type="primary" href="/treatments" ariaLabel="View all of my services that could help you" class="w-full max-w-md sm:w-max">
+					<Button
+						size={3}
+						type="primary"
+						href="/treatments"
+						ariaLabel="View all of my services that could help you"
+						class="w-full max-w-md sm:w-max"
+					>
 						Explore My Treatments
 					</Button>
-					<Button size={3} type="plain" href="/treatments" ariaLabel="Learn how reflexology works" class="w-full max-w-md sm:w-max">
-						How Reflexology Works
+					<Button
+						size={3}
+						type="plain"
+						ariaLabel="Go to the locations page to all of the locations I provide my services in"
+						href="/locations"
+					>
+						View My Locations
 					</Button>
 				</div>
 			</div>

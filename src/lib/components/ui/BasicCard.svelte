@@ -2,7 +2,7 @@
 	import { cn } from '$lib/scripts/utils';
 
 	type Props = {
-		element: 'div' | 'li' | string;
+		element?: 'div' | 'li' | string;
 		children: any;
 		class?: string;
 		type?: 'primary' | 'neutral';

@@ -33,9 +33,10 @@
 		</div>
 		<div>
 			<Text type="p" style="paraBase" class="max-w-3xl text-neutral-500 dark:text-neutral-400">
-				Whether you're dealing with stress, fatigue, hormonal shifts, or just a sense of being off — my treatments help your body let go, reset, and
-				begin to restore balance. I offer reflexology and healing massage that gently support your body’s natural rhythms, so you can feel clearer,
-				softer, and more in tune with yourself.
+				Whether you're dealing with stress, fatigue, hormonal shifts, or just a sense of being off —
+				my treatments help your body let go, reset, and begin to restore balance. I offer
+				reflexology and healing massage that gently support your body’s natural rhythms, so you can
+				feel clearer, softer, and more in tune with yourself.
 			</Text>
 		</div>
 		<div class="flex flex-col gap-3 md:flex-row">
@@ -51,11 +52,10 @@
 			<Button
 				size={3}
 				type="plain"
-				ariaLabel="View my treatments page
-            to see which of my services could benefit you"
-				href="/"
+				ariaLabel="Go to the locations page to all of the locations I provide my services in"
+				href="/locations"
 			>
-				Discover My Approach
+				View My Locations
 			</Button>
 		</div>
 	</Container>

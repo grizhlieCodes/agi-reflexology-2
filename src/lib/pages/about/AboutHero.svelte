@@ -37,8 +37,8 @@
 				<Button
 					size={3}
 					type="plain"
-					ariaLabel="View my treatments page to see which of my services could benefit you"
-					href="/"
+					ariaLabel="Learn how reflexology works"
+					href="/services/reflexology"
 					class="min-w-max"
 				>
 					Discover My Approach

@@ -101,6 +101,7 @@
 						in:receive={{ key: pc.id }}
 						out:send={{ key: pc.id }}
 						animate:flip={{ duration: 200 }}
+						class="h-full *:h-full"
 					>
 						<PriceCard {...pc} class=""></PriceCard>
 					</div>

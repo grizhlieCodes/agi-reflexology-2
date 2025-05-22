@@ -75,7 +75,7 @@
 					<Button size={4} type="primary" href="/treatments" ariaLabel="View all of my services that could help you" class="w-full max-w-md sm:w-max">
 						Explore My Treatments
 					</Button>
-					<Button size={4} type="plain" href="/treatments" ariaLabel="Learn how reflexology works" class="w-full max-w-md sm:w-max">
+					<Button size={4} type="plain" href="/services/reflexology" ariaLabel="Learn how reflexology works" class="w-full max-w-md sm:w-max">
 						How Reflexology Works
 					</Button>
 				</div>

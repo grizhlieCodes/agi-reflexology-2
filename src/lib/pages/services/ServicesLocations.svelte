@@ -10,15 +10,20 @@
 		<div class="w-full text-left">
 			<div class="w-full">
 				<Text type="span" style="eyebrow">Where You Can See Me</Text>
-				<Text type="h2" style="h7" id="services-locations_heading">Did You Know? I Offer Home Visits Around Burnham</Text>
+				<Text type="h2" style="h7" id="services-locations_heading"
+					>Did You Know? I Offer Home Visits Around Burnham</Text
+				>
 			</div>
 			<Text type="p" style="paraBase">
-				Most of my treatments take place in a calm, private space at my home in Burnham. I also work from several London locations during the week and
-				offer occasional home visits nearby Burnham.
+				Most of my treatments take place in a calm, private space at my home in Burnham. I also work
+				from several London locations during the week and offer occasional home visits nearby
+				Burnham.
 			</Text>
 		</div>
 
-		<div class="border-primary-200 dark:border-primary-700 w-full overflow-hidden rounded-md border-2">
+		<div
+			class="border-primary-200 dark:border-primary-700 w-full overflow-hidden rounded-md border-2"
+		>
 			<iframe
 				class="aspect-square w-full"
 				title="Agi studio & Home Visit Locations Map"
@@ -35,7 +40,14 @@
 			>
 				Explore My Treatments
 			</Button>
-			<Button size={4} type="plain" ariaLabel="View my treatments page to see which of my services could benefit you" href="/" class="min-w-max">
+			<Button
+				size={4}
+				type="plain"
+				ariaLabel="Go to the locations page to
+			see all of the locations I provide my services in"
+				href="/locations"
+				class="min-w-max"
+			>
 				View All Locations
 			</Button>
 		</div>
