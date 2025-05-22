@@ -18,7 +18,7 @@
 		},
 		{
 			property: 'og:image',
-			content: '/social-media-img.png'
+			content: 'https://seerstudio.b-cdn.net/image-tests/social-media-img.webp'
 		},
 		{
 			property: 'og:image:width',
