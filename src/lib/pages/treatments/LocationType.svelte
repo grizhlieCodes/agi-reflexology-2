@@ -17,8 +17,8 @@
 	<RadioGroup.Root
 		value={t.sel_location_type}
 		aria-label="Filter Options"
-		class="bg-primary-50 outline-primary-200 flex justify-center rounded-lg
-	p-1 outline"
+		class="bg-primary-50 dark:bg-primary-900 outline-primary-200 dark:outline-primary-700 focus-within:ring-2 focus-within:ring-primary-300 dark:focus-within:ring-primary-600 flex justify-center rounded-lg
+	p-1 outline transition-all duration-300"
 	>
 		{#each filterOptions as option (option.id)}
 			{@const selected_class = t.sel_location_type === option.id ? `selected` : ``}
@@ -44,10 +44,10 @@
 	@reference '../../../app.css';
 
 	*:global(.location-type-filter-item) {
-		@apply text-primary-400 flex w-max px-2 py-1 transition-colors duration-300;
+		@apply text-primary-400 dark:text-primary-400 flex w-max px-2 py-1 transition-colors duration-300 hover:bg-primary-100 dark:hover:bg-primary-800;
 	}
 	*:global(.location-type-filter-item.selected) {
-		@apply bg-primary-200 text-primary-600;
+		@apply bg-primary-200 dark:bg-primary-700 text-primary-600 dark:text-primary-100;
 	}
 
 	*:global(.left) {
