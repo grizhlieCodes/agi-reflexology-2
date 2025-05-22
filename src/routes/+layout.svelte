@@ -7,31 +7,26 @@
 	import Footer from '$lib/components/navigation/footer/Footer.svelte';
 	import Head from '$lib/data/Head.svelte';
 	import ReportButton from '$lib/components/ui-interactive/ReportButton.svelte';
-
-	const pathToTitle = (path: string) => {
-		if (path === '/') return 'Home';
-
-		const segmentMap: Record<string, string> = {
-			locations: 'Locations',
-			reflexions: 'Reflexions',
-			chelsea: 'Chelsea',
-			bayswater: 'Bayswater',
-			about: 'About',
-			contact: 'Contact'
-		};
-
-		return path
-			.split('/')
-			.filter(Boolean)
-			.map((segment) => segmentMap[segment] || capitalize(segment))
-			.join(' – ');
-	};
-
-	const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
+	import { pathToTitle } from '$lib/scripts/utils';
+	import { dm } from '$lib/stores/darkmode.svelte';
 
 	let pathname = $derived(pathToTitle(page.url.pathname));
+	let mounted = $state(false);
 	let { header_cta, header_logo, header_links } = $derived(headerData);
 	let { children, data } = $props();
+
+	$effect(() => {
+		if (!mounted) {
+			mounted = true;
+			dm.updatedBasedOnLocalStorage();
+			dm.setDmInLocalStorage();
+			dm.setDarkClass();
+		}
+	});
+
+	$effect(() => {
+		if (dm.dm) dm.setDarkClass();
+	});
 </script>
 
 <Head></Head>

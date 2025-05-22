@@ -11,3 +11,24 @@ export const returnLocationName = (string) => {
 		.map((s) => s.charAt(0).toUpperCase() + s.slice(1))
 		.join(' ');
 };
+
+export const pathToTitle = (path: string) => {
+	if (path === '/') return 'Home';
+
+	const segmentMap: Record<string, string> = {
+		locations: 'Locations',
+		reflexions: 'Reflexions',
+		chelsea: 'Chelsea',
+		bayswater: 'Bayswater',
+		about: 'About',
+		contact: 'Contact'
+	};
+
+	return path
+		.split('/')
+		.filter(Boolean)
+		.map((segment) => segmentMap[segment] || capitalize(segment))
+		.join(' – ');
+};
+
+const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);

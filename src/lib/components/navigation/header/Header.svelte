@@ -6,15 +6,13 @@
 	import BurgerMenu from './BurgerMenu.svelte';
 	import DesktopHeaderNav from './DesktopHeaderNav.svelte';
 	import MobileHeaderNav from './MobileHeaderNav.svelte';
+	import { dm } from '$lib/stores/darkmode.svelte';
 	let { links, logo, cta } = $props();
 
 	let mobileMenuOpen = $state(false);
 	const toggleMobMenu = () => (mobileMenuOpen = !mobileMenuOpen);
 
-	const darkToggle = () => {
-		const htmlElement = document.documentElement;
-		htmlElement.classList.toggle('dark');
-	};
+	const darkToggle = () => dm.toggle();
 </script>
 
 <header
@@ -38,7 +36,14 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 
 		<!--! Call To Action Button -->
 		<div class="hidden gap-1 md:flex">
-			<Button type="outline" ariaLabel="Hehe" iconOnly size={3} onclick={darkToggle} class="min-w-[2.5rem]">
+			<Button
+				type="outline"
+				ariaLabel="Hehe"
+				iconOnly
+				size={3}
+				onclick={darkToggle}
+				class="min-w-[2.5rem]"
+			>
 				<div class="grid aspect-square w-full place-items-center *:col-start-1 *:row-start-1">
 					<div class="hidden dark:block">
 						<Sun class="!size-4.5"></Sun>
@@ -49,7 +54,12 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 				</div>
 			</Button>
 			<div class="hidden lg:block">
-				<Button size={4} type="primary" href={cta.href} ariaLabel="Explore all of the treatments I offer">
+				<Button
+					size={4}
+					type="primary"
+					href={cta.href}
+					ariaLabel="Explore all of the treatments I offer"
+				>
 					{cta.content}
 				</Button>
 			</div>
@@ -57,8 +67,10 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 	</div>
 </header>
 
-<span class="hidden fixed top-0 left-0 md:block h-40 w-full bg-white/10 dark:bg-neutral-950/10 z-29
-backdrop-blur-xl mask-[linear-gradient(black,black,transparent)]"></span>
+<span
+	class="fixed top-0 left-0 z-29 hidden h-40 w-full bg-white/10 mask-[linear-gradient(black,black,transparent)] backdrop-blur-xl
+md:block dark:bg-neutral-950/10"
+></span>
 
 <style>
 	@reference "../../../../app.css";
