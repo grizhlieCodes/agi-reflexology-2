@@ -2,6 +2,7 @@
 	import Form from '$lib/components/form/Form.svelte';
 	import Container from '$lib/components/layout/Container.svelte';
 	import Section from '$lib/components/layout/section/Section.svelte';
+	import PageCta from '$lib/pages/shared/PageCta.svelte';
 
 	let { data } = $props(); // Coming from load function in the server (+page.server.ts)
 	$inspect(data.form);
@@ -74,3 +75,5 @@
 		></Form>
 	</Container>
 </Section>
+
+<PageCta></PageCta>

@@ -37,6 +37,7 @@
 
 	import { t } from '$lib/stores/treatments.svelte';
 	import Days from '$lib/pages/treatments/Days.svelte';
+	import PageCta from '$lib/pages/shared/PageCta.svelte';
 
 	$inspect(t.aval_days);
 </script>
@@ -110,3 +111,5 @@
 		</div>
 	</Container>
 </Section>
+
+<PageCta></PageCta>

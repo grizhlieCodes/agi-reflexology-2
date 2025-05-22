@@ -7,6 +7,7 @@
 	import Text from '$lib/components/ui/Text.svelte';
 
 	import * as faqs from '$lib/data/faqs/faqs';
+	import PageCta from '$lib/pages/shared/PageCta.svelte';
 
 	let faq_sections = [
 		{
@@ -112,3 +113,5 @@
 		</Section>
 	{/each}
 {/if}
+
+<PageCta></PageCta>
