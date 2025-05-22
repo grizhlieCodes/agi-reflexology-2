@@ -6,6 +6,7 @@
 	import '../app.css';
 	import Footer from '$lib/components/navigation/footer/Footer.svelte';
 	import Head from '$lib/data/Head.svelte';
+	import ReportButton from '$lib/components/ui-interactive/ReportButton.svelte';
 
 	let pathname = $derived(page.url.pathname === '/' ? 'Home' : page.url.pathname);
 	let { header_cta, header_logo, header_links } = $derived(headerData);
@@ -30,4 +31,6 @@ grid-cols-1 grid-rows-[minmax(100px,max-content)_1fr_max-content]"
 		</PageTransition>
 	</div>
 </div>
+
+<ReportButton></ReportButton>
 <Footer {...footerData}></Footer>

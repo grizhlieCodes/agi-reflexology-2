@@ -39,6 +39,7 @@
 	"dependencies": {
 		"bits-ui": "^1.4.4",
 		"clsx": "^2.1.1",
+		"html2canvas": "^1.4.1",
 		"lucide-svelte": "^0.507.0",
 		"nodemailer": "^7.0.3",
 		"tailwind-merge": "^3.2.0",
