@@ -9,7 +9,7 @@
 	import { homepage_faqs } from '$lib/data/faqs/faqs';
 </script>
 
-<Section section_id="homepage-faq" horizontal_padding={4} grid_span="fullSpan">
+<Section section_id="homepage-faq" horizontal_padding={4} vertical_padding={8} grid_span="fullSpan">
 	<Container class="gap-10 md:gap-16 lg:gap-20">
 		<div
 			class=" grid w-full grid-cols-1

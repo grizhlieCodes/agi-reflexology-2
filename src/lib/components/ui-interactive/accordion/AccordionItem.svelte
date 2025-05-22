@@ -1,5 +1,9 @@
 <script lang="ts">
-	import { Accordion, type WithoutChildrenOrChild, type AccordionItemProps as BitsAccordionItemProps } from 'bits-ui';
+	import {
+		Accordion,
+		type WithoutChildrenOrChild,
+		type AccordionItemProps as BitsAccordionItemProps
+	} from 'bits-ui';
 	import ChevronDown from 'lucide-svelte/icons/chevron-down';
 	import { slide } from 'svelte/transition';
 
@@ -19,11 +23,15 @@
 	{...itemProps}
 	class="group/item accordion-item
 	bg-(--accordion-item-bg) dark:bg-(--accordion-item-bg_dark) {type} 
-	{type === 'default' ? `` : `border-b border-(--accordion-item-border) dark:border-(--accordion-item-border_dark)`}
+	{type === 'default'
+		? ``
+		: `border-b border-(--accordion-item-border) dark:border-(--accordion-item-border_dark)`}
 	
 "
 >
-	<Accordion.Header class="-300 w-full px-6 transition-colors hover:bg-(--accordion-item-bg_hover) dark:hover:bg-(--accordion-item-bg_dark_hover)">
+	<Accordion.Header
+		class="-300 w-full px-6 transition-colors hover:bg-(--accordion-item-bg_hover) dark:hover:bg-(--accordion-item-bg_dark_hover)"
+	>
 		<Accordion.Trigger
 			class="group/trigger flex w-full flex-1 cursor-pointer items-center justify-between
 		py-5 text-[15px] font-medium text-(--accordion-item-title)
@@ -37,10 +45,14 @@
 		[&[data-state=open]>span>svg]:rotate-180
 			"
 		>
-			<span class="font-body w-full text-left text-base leading-6 tracking-normal group-hover/trigger:underline">
+			<span
+				class="font-body w-full text-left text-base leading-6 tracking-normal group-hover/trigger:underline"
+			>
 				{title}
 			</span>
-			<span class="hover:bg-dark-10 inline-flex size-8 items-center justify-center rounded-[7px] bg-transparent">
+			<span
+				class="hover:bg-dark-10 inline-flex size-8 items-center justify-center rounded-[7px] bg-transparent"
+			>
 				<ChevronDown
 					class="size-[18px] transition-transform duration-200 
         "
@@ -48,28 +60,30 @@
 			</span>
 		</Accordion.Trigger>
 		{#if type === 'default'}
-			<span class="block h-[1px] bg-(--accordion-item-border) dark:bg-(--accordion-item-border_dark)"></span>
+			<span
+				class="block h-[1px] bg-(--accordion-item-border) dark:bg-(--accordion-item-border_dark)"
+			></span>
 		{/if}
 	</Accordion.Header>
 	<Accordion.Content
 		forceMount={true}
 		class="overflow-hidden px-6
-	text-sm  tracking-[-0.01em] text-left"
+	text-left  text-sm tracking-[-0.01em]"
 	>
 		{#snippet child({ props, open })}
 			{#if open}
 				<div {...props} transition:slide={{ duration: 300 }}>
 					<div
 						class="
-						text para4 accordion-html pt-1 pb-[25px] text-(--accordion-item-content)
-						**:has-[li]:!list-disc **:has-[li]:list-outside **:has-[li]:pl-7  **:has-[+li]:pb-1
-						dark:text-(--accordion-item-content_dark) 
-					[&_a]:text-primary-500 [&_a]:font-semibold [&_a]:underline
-					[&_a]:underline-offset-4
-						dark:[&_a]:text-primary-100
-					[&_a]:hover:text-primary-900 [&_a]:transition-colors
-					[&_a]:duration-300
-						dark:[&_a]:hover:text-primary-300
+						text para4 accordion-html [&_a]:text-primary-500 dark:[&_a]:text-primary-100 [&_a]:hover:text-primary-900
+						dark:[&_a]:hover:text-primary-300 pt-1 pb-[25px] text-(--accordion-item-content)
+						**:has-[li]:list-outside
+					**:has-[li]:!list-disc **:has-[li]:pl-7 **:has-[+li]:pb-1
+					dark:text-(--accordion-item-content_dark)
+						[&_a]:font-semibold
+					[&_a]:underline [&_a]:underline-offset-4
+					[&_a]:transition-colors
+						[&_a]:duration-300
 						"
 					>
 						{@html content}

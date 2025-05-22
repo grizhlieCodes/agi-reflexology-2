@@ -37,7 +37,7 @@
 	const align_items = alignItemsProp ?? 'center';
 	const background_color = backgroundColorProp ?? 'default';
 	const overflow = overflowProp ?? 'visible';
-	const vertical_padding = verticalPaddingProp ?? 4;
+	const vertical_padding = verticalPaddingProp ?? 8;
 	const horizontal_padding = horizontalPaddingProp ?? 4;
 	const gap = gapProp ?? 0;
 	const customStyling = customStylingProp ?? '';

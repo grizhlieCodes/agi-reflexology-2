@@ -41,7 +41,7 @@
 	];
 </script>
 
-<Section section_id="homepage-problem" horizontal_padding={4} grid_span="fullSpan">
+<Section section_id="homepage-problem" horizontal_padding={4} vertical_padding={8} grid_span="fullSpan">
 	<Container class="gap-10 md:gap-16 lg:gap-20">
 		<div
 			class="flex w-full flex-col items-center gap-4 md:flex-row-reverse
