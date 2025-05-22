@@ -311,12 +311,90 @@
 // convert(str1) //?
 // convert(str2) //?
 
-const locations = ['bayswater'];
+// const locations = ['bayswater'];
 
-const treatments = [{ locations: ['bayswater', 'chelsea'] }];
+// const treatments = [{ locations: ['bayswater', 'chelsea'] }];
 
-const doIt = () => {
-	return locations.some((location) => treatments[0].locations.map((loc) => loc.includes(location)));
+// const doIt = () => {
+// 	return locations.some((location) => treatments[0].locations.map((loc) => loc.includes(location)));
+// };
+
+// console.log(doIt); //?
+
+const routes = [
+	{
+		route: '/',
+		sub_routes: null
+	},
+	{
+		route: '/about',
+		sub_routes: null
+	},
+	{
+		route: '/services',
+		sub_routes: ['reflexology', 'massage']
+	},
+
+	{
+		route: '/locations',
+		sub_routes: [
+			'agi-studio/burnham',
+			'reflexions/chelsea',
+			'reflexions/bayswater',
+			'home-visit/beaconsfield',
+			'home-visit/bisham',
+			'home-visit/bourne-end',
+			'home-visit/cookham',
+			'home-visit/farnham-common',
+			'home-visit/forty-green',
+			'home-visit/hedgerley',
+			'home-visit/maidenhead',
+			'home-visit/marlow',
+			'home-visit/penn',
+			'home-visit/stoke-poges',
+			'home-visit/taplow',
+			'home-visit/woodburn-green'
+		]
+	},
+	{
+		route: '/contact',
+		sub_routes: null
+	},
+	{
+		route: '/faq',
+		sub_routes: null
+	},
+	{
+		route: '/treatments',
+		sub_routes: null
+	},
+	{
+		route: '/privacy-policy',
+		sub_routes: null
+	},
+	{
+		route: '/disclaimer',
+		sub_routes: null
+	},
+	{
+		route: '/terms-and-conditions',
+		sub_routes: null
+	}
+];
+
+const createLinks = (arr) => {
+	let res = [];
+	arr.forEach((route) => {
+		res.push(route.route);
+		if (route.sub_routes && route.sub_routes.length > 0) {
+			route.sub_routes.forEach((sub_route) => {
+				console.log()
+				res.push(`${route.route}/${sub_route}`);
+			});
+		}
+	});
+
+	return res;
 };
 
-console.log(doIt); //?
+createLinks(routes); //?

@@ -8,7 +8,28 @@
 	import Head from '$lib/data/Head.svelte';
 	import ReportButton from '$lib/components/ui-interactive/ReportButton.svelte';
 
-	let pathname = $derived(page.url.pathname === '/' ? 'Home' : page.url.pathname);
+	const pathToTitle = (path: string) => {
+		if (path === '/') return 'Home';
+
+		const segmentMap: Record<string, string> = {
+			locations: 'Locations',
+			reflexions: 'Reflexions',
+			chelsea: 'Chelsea',
+			bayswater: 'Bayswater',
+			about: 'About',
+			contact: 'Contact'
+		};
+
+		return path
+			.split('/')
+			.filter(Boolean)
+			.map((segment) => segmentMap[segment] || capitalize(segment))
+			.join(' – ');
+	};
+
+	const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
+
+	let pathname = $derived(pathToTitle(page.url.pathname));
 	let { header_cta, header_logo, header_links } = $derived(headerData);
 	let { children, data } = $props();
 </script>
