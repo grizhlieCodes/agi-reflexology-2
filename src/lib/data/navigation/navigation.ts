@@ -137,7 +137,7 @@ export const footerData: FooterData = {
 		},
 		{
 			column_title: 'Privacy & Data',
-			links: [getLink('Privacy Policy', '/privacy-policy'), getLink('Disclaimer', '/disclaimer'), getLink('Terms & Conditions', '/terms-and-conditions'), getLink('Cookie Policy', '/cookie-policy')]
+			links: [getLink('Privacy Policy', '/privacy-policy'), getLink('Disclaimer', '/disclaimer'), getLink('Terms & Conditions', '/terms-and-conditions')]
 		}
 	],
 	footer_business_name: 'Agi Reflexology'

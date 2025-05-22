@@ -63,16 +63,16 @@
 		</div>
 
 		<!-- ! Navigation -->
-		<div class="flex flex-col items-center gap-3">
+		<div class="flex flex-col items-center gap-8 lg:gap-14">
 			<div class="flex flex-col items-center gap-3">
 				<LocationType></LocationType>
 
-				<div class="flex items-center gap-3">
+				<div class="flex flex-wrap items-center justify-center gap-3">
 					<Location></Location>
 					<TreatmentType />
+					<Days></Days>
 					<BodyPart />
 					<Duration />
-					<Days></Days>
 				</div>
 			</div>
 			<!--
