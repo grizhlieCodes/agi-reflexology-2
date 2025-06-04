@@ -4,6 +4,85 @@
 	import Button from '$lib/components/ui-interactive/Button.svelte';
 	import Image from '$lib/components/ui/Image.svelte';
 	import Text from '$lib/components/ui/Text.svelte';
+	const hero_image = {
+		id: 'w29mcm48q3gee6e',
+		type: 'image',
+		project: 'agi-reflexology',
+		name: 'Serene Nature Retreat',
+		slug: 'serene-nature-retreat',
+		folder: 'midjourney',
+		tags: [],
+		created: '2025-06-04 21:59:26.466Z',
+		updated: '2025-06-04 21:59:26.466Z',
+		image_name: 'Serene Nature Retreat',
+		alt_text:
+			'A serene scene depicting a woman with long, wavy blonde hair, peacefully reclining in a white chair surrounded by lush green ferns. Soft, diffused light streams in from a window, illuminating the tranquil atmosphere. The woman is dressed in a flowing white gown, her eyes closed as she enjoys a moment of relaxation amidst the vibrant greenery.',
+		variants: {
+			lg: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-nature-retreat-lg.png',
+				filesize: 862483,
+				format: 'png',
+				height: 1076,
+				name: 'lg.png',
+				width: 1920
+			},
+			md: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-nature-retreat-md.png',
+				filesize: 388231,
+				format: 'png',
+				height: 717,
+				name: 'md.png',
+				width: 1280
+			},
+			original: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-nature-retreat-original.png',
+				filesize: 2115371,
+				format: 'png',
+				height: 1632,
+				name: 'original.png',
+				width: 2912
+			},
+			sm: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-nature-retreat-sm.png',
+				filesize: 151075,
+				format: 'png',
+				height: 430,
+				name: 'sm.png',
+				width: 768
+			},
+			thumbnail: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-nature-retreat-thumbnail.webp',
+				filesize: 4600,
+				format: 'webp',
+				height: 300,
+				name: 'thumbnail.webp',
+				width: 300
+			},
+			webp: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-nature-retreat-webp.webp',
+				filesize: 388828,
+				format: 'webp',
+				height: 1632,
+				name: 'webp.webp',
+				width: 2912
+			},
+			xs: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-nature-retreat-xs.png',
+				filesize: 65610,
+				format: 'png',
+				height: 269,
+				name: 'xs.png',
+				width: 480
+			}
+		}
+	};
 </script>
 
 <Section
@@ -54,6 +133,8 @@
 				src="https://seerstudio.b-cdn.net/image-tests/grizhlie_A_bright_and_white_advert_shot_of_a_blonde_woman_layin_cfe1a24a-46aa-4151-9bb7-5aca186c77f8.webp"
 				alt="A woman reclines peacefully on a white chair amidst lush green ferns, bathed in soft, natural light streaming through a large window behind her."
 				imgClass=""
+				record={hero_image}
+				fallbackVariant="lg"
 			></Image>
 		</div>
 	</Container>
