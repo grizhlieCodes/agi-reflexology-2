@@ -17,15 +17,17 @@
 		<div class="flex flex-col gap-4 md:gap-6 lg:gap-8">
 			{#each how_it_works_section.steps as { eyebrow, title, description, image }}
 				<div
-				class="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] 
-				min-h-[26rem] gap-4 md:gap-8 lg:grid-cols-[1.2fr_1fr]"
+				class="flex flex-col md:flex-row min-h-[26rem] gap-4 md:gap-8 
+				supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 
+				supports-[display:grid]:md:grid-cols-[1.5fr_1fr] 
+				supports-[display:grid]:lg:grid-cols-[1.2fr_1fr]"
 				>
-					<div class="w-full grow aspect-square md:aspect-auto">
+					<div class="w-full grow aspect-square md:aspect-auto md:flex-[1.5] lg:flex-[1.2]">
                         <Image record={image} brightness={15}
                         imgClass="object-[0%_20%]"></Image>
                     </div>
 					<div
-						class="flex flex-col gap-2 justify-center h-full md:text-left "
+						class="flex flex-col gap-2 justify-center h-full md:text-left md:flex-1"
 					>
 						<div class="">
 							<Text style="eyebrow" type="span">{eyebrow}</Text>

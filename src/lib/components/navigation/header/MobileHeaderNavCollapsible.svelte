@@ -63,6 +63,7 @@
 						{#if link.links && link.links.length > 0}
 							{#each link.links as sublink, i}
 								<a
+								onclick={toggleMobMenu}
 								class:italic={i === 0}
 								class:bold={i === 0}
 									href={sublink.href}
