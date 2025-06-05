@@ -18,7 +18,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23278970'
 		},
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
@@ -37,7 +37,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279001'
 		},
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
@@ -56,7 +56,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279059'
 		},
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
@@ -75,7 +75,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279510'
 		},
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
@@ -94,7 +94,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279353'
 		},
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
@@ -113,7 +113,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279427'
 		},
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
@@ -132,7 +132,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279427'
 		},
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
@@ -151,7 +151,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279470'
 		},
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
@@ -170,7 +170,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279311'
 		},
 		location_type: { name: 'on_location', label: 'On Location' },
 		locations: ['burnham'],
@@ -189,7 +189,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279120'
 		},
 		location_type: { name: 'home_visit', label: 'Home Visit' },
 		locations: ['beaconsfield', 'bisham', 'bourne_end', 'cookham', 'farnham_common', 'forty_green', 'hedgerley', 'maidenhead', 'marlow', 'penn', 'stoke_poges', 'taplow', 'woodburn_green'],
@@ -208,7 +208,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279160'
 		},
 		location_type: { name: 'home_visit', label: 'Home Visit' },
 		locations: ['beaconsfield', 'bisham', 'bourne_end', 'cookham', 'farnham_common', 'forty_green', 'hedgerley', 'maidenhead', 'marlow', 'penn', 'stoke_poges', 'taplow', 'woodburn_green'],
@@ -227,7 +227,7 @@ export const price_cards: pc.PriceCard[] = [
 		button: {
 			content: 'Book Treatment',
 			icon: null,
-			href: 'https://google.com'
+			href: 'https://www.fresha.com/a/agi-reflexology-burnham-25-hall-meadow-vsdu68y7/booking?offerItems=sv:23279213'
 		},
 		location_type: { name: 'home_visit', label: 'Home Visit' },
 		locations: ['beaconsfield', 'bisham', 'bourne_end', 'cookham', 'farnham_common', 'forty_green', 'hedgerley', 'maidenhead', 'marlow', 'penn', 'stoke_poges', 'taplow', 'woodburn_green'],
