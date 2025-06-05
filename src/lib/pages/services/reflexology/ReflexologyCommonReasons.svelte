@@ -14,9 +14,93 @@
 		'Digestive discomfort or bloating',
 		'General fatigue or feeling out of sync'
 	];
+
+	const pb_img = {
+		id: '2z40boq908pxv81',
+		type: 'image',
+		project: 'agi-reflexology',
+		name: 'Serene Meditation Scene',
+		slug: 'serene-meditation-scene',
+		folder: 'midjourney',
+		tags: ['reflexology'],
+		created: '2025-06-04 21:59:46.089Z',
+		updated: '2025-06-05 09:06:17.365Z',
+		image_name: 'Serene Meditation Scene',
+		alt_text:
+			'An overhead view of a young woman lying peacefully on a white bed. She has long brown hair and is wearing a light beige shirt and light pants. Soft, colorful light trails in green, yellow, and purple swirl around her body, creating a calming atmosphere. The background is minimalistic with a light-colored floor, enhancing the serene and tranquil setting.',
+		variants: {
+			lg: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-meditation-scene-lg.png',
+				filesize: 476898,
+				format: 'png',
+				height: 1024,
+				name: 'lg.png',
+				width: 1024
+			},
+			md: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-meditation-scene-md.png',
+				filesize: 476898,
+				format: 'png',
+				height: 1024,
+				name: 'md.png',
+				width: 1024
+			},
+			original: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-meditation-scene-original.png',
+				filesize: 476898,
+				format: 'png',
+				height: 1024,
+				name: 'original.png',
+				width: 1024
+			},
+			sm: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-meditation-scene-sm.png',
+				filesize: 285100,
+				format: 'png',
+				height: 768,
+				name: 'sm.png',
+				width: 768
+			},
+			thumbnail: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-meditation-scene-thumbnail.webp',
+				filesize: 3606,
+				format: 'webp',
+				height: 300,
+				name: 'thumbnail.webp',
+				width: 300
+			},
+			webp: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-meditation-scene-webp.webp',
+				filesize: 52142,
+				format: 'webp',
+				height: 1024,
+				name: 'webp.webp',
+				width: 1024
+			},
+			xs: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/serene-meditation-scene-xs.png',
+				filesize: 122125,
+				format: 'png',
+				height: 480,
+				name: 'xs.png',
+				width: 480
+			}
+		}
+	};
 </script>
 
-<Section section_id="reflexology-common-reasons-for-trying" horizontal_padding={4} grid_span="fullSpan">
+<Section
+	section_id="reflexology-common-reasons-for-trying"
+	horizontal_padding={4}
+	grid_span="fullSpan"
+>
 	<Container class="gap-10 md:gap-16 lg:gap-20">
 		<div
 			class="flex w-full flex-col items-center gap-6 md:flex-row-reverse
@@ -24,8 +108,7 @@
 		>
 			<div class="aspect-square w-full max-w-md md:min-w-xs lg:max-w-sm">
 				<Image
-					src="https://seerstudio.b-cdn.net/image-tests/grizhlie_A_realistic_overhead_photo_of_a_relaxed_human_figure_b5d624df-7652-48a1-9c34-0d8f3c008995_1.webp"
-					alt="A woman lying on her back on a white sheet, eyes closed, wearing light-colored, comfortable clothes. A soft, glowing rainbow-like pattern surrounds her, suggesting relaxation or a meditative state. The setting conveys calm and tranquility."
+					record={pb_img}
 				></Image>
 			</div>
 			<div
@@ -34,13 +117,19 @@
 			>
 				<div>
 					<Text type="span" style="eyebrow">Common Reasons People Try Reflexology</Text>
-					<Text type="h2" style="h6" id="reflexology-common-reasons-for-trying_heading" class="max-w-xl">
+					<Text
+						type="h2"
+						style="h6"
+						id="reflexology-common-reasons-for-trying_heading"
+						class="max-w-xl"
+					>
 						Support for Stress, Hormones, Digestion, and More
 					</Text>
 				</div>
 				<Text type="p" style="paraBase">
-					People often try reflexology after dealing with tension, irregular cycles, sleep issues, or unexplained aches. Even if the symptoms are hard
-					to describe, reflexology works by calming the nervous system — which can improve how your whole body functions and feels.
+					People often try reflexology after dealing with tension, irregular cycles, sleep issues,
+					or unexplained aches. Even if the symptoms are hard to describe, reflexology works by
+					calming the nervous system — which can improve how your whole body functions and feels.
 				</Text>
 				<!-- Turn this into a list comp -->
 				<DecoratedList item_list={APPROACH_LIST} Icon={Leaf}></DecoratedList>

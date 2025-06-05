@@ -13,14 +13,88 @@
 		'Nervous system overload — feeling wired or burnt out',
 		'A need to soften, feel safe, and breathe again'
 	];
+
+	const pb_img = {
+  "id": "9el584izjui6yo0",
+  "type": "image",
+  "project": "agi-reflexology",
+  "name": "Woman in Distress",
+  "slug": "woman-in-distress",
+  "folder": "midjourney",
+  "tags": [
+    "home",
+    "massage"
+  ],
+  "created": "2025-06-04 21:59:47.839Z",
+  "updated": "2025-06-05 09:07:17.876Z",
+  "image_name": "Woman in Distress",
+  "alt_text": "A young woman with long dark hair is standing amidst lush green foliage. She appears to be in distress, with her eyes closed and hands pressed against her temples. Her expression conveys pain or discomfort. The background is softly illuminated, creating a contrast with the vibrant greenery surrounding her.",
+  "variants": {
+    "lg": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-distress-lg.png",
+      "filesize": 349217,
+      "format": "png",
+      "height": 1024,
+      "name": "lg.png",
+      "width": 1024
+    },
+    "md": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-distress-md.png",
+      "filesize": 349217,
+      "format": "png",
+      "height": 1024,
+      "name": "md.png",
+      "width": 1024
+    },
+    "original": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-distress-original.png",
+      "filesize": 383473,
+      "format": "png",
+      "height": 1024,
+      "name": "original.png",
+      "width": 1024
+    },
+    "sm": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-distress-sm.png",
+      "filesize": 206887,
+      "format": "png",
+      "height": 768,
+      "name": "sm.png",
+      "width": 768
+    },
+    "thumbnail": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-distress-thumbnail.webp",
+      "filesize": 6086,
+      "format": "webp",
+      "height": 300,
+      "name": "thumbnail.webp",
+      "width": 300
+    },
+    "webp": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-distress-webp.webp",
+      "filesize": 72228,
+      "format": "webp",
+      "height": 1024,
+      "name": "webp.webp",
+      "width": 1024
+    },
+    "xs": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-distress-xs.png",
+      "filesize": 91692,
+      "format": "png",
+      "height": 480,
+      "name": "xs.png",
+      "width": 480
+    }
+  }
+}
 </script>
 
 <Section section_id="massage-common-reasons-to-visit" grid_span="centeredSpan3" vertical_padding={9}>
 	<Container class="md:flex-row-reverse">
 		<div class="aspect-square w-full md:max-w-sm">
 			<Image
-				src="https://seerstudio.b-cdn.net/image-tests/grizhlie_httpss.mj.run00UXohO79Rk_Realistic_photo_of_a_woman__b77ff3f5-0c8c-4050-a58a-1d2c4a2c6d5d_2.webp"
-				alt="A woman stands in a green leafy environment, her eyes closed in discomfort. She holds her hands to her temples, and there is a red glow around her neck, suggesting pain or tension."
+				record={pb_img}
 			></Image>
 		</div>
 		<div

@@ -21,7 +21,7 @@
 				min-h-[26rem] gap-4 md:gap-8 lg:grid-cols-[1.2fr_1fr]"
 				>
 					<div class="w-full grow aspect-square md:aspect-auto">
-                        <Image src={image.src} alt={image.alt} brightness={15}
+                        <Image record={image} brightness={15}
                         imgClass="object-[0%_20%]"></Image>
                     </div>
 					<div

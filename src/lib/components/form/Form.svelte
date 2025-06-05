@@ -131,7 +131,7 @@ overflow-hidden rounded-2xl border lg:grid-cols-[1.25fr_1fr]"
 			class="col-start-1 row-start-1 aspect-video h-full w-full
 		lg:col-start-2 lg:row-start-1 lg:aspect-auto"
 		>
-			<Image src={image.src} alt={image.alt} containerClass="!rounded-none" brightness={15}></Image>
+			<Image record={image} containerClass="!rounded-none" brightness={15}></Image>
 		</div>
 	{/if}
 </div>

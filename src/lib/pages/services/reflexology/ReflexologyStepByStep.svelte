@@ -5,27 +5,81 @@
 	import BasicCard from '$lib/components/ui/BasicCard.svelte';
 	import Image from '$lib/components/ui/Image.svelte';
 	import Text from '$lib/components/ui/Text.svelte';
-
-	const solutionCards = [
-		{
-			content: 'Relief That Stays <br/> With You',
-			imgSrc: 'https://seerstudio.b-cdn.net/image-tests/happy-man-icon.webp',
-			imgAlt:
-				'A green, smiling 3D emoji of a person with short hair, against a transparent background.'
-		},
-		{
-			content: 'Sleep That Feels Like <br/> Actual Rest',
-			imgSrc: 'https://seerstudio.b-cdn.net/image-tests/moon-icon.webp',
-			imgAlt:
-				'A teal crescent moon accompanied by four sparkling stars on a white background, symbolising a good night\s sleep.'
-		},
-		{
-			content: 'Feeling More in Tune <br/> With Your Body',
-			imgSrc: 'https://seerstudio.b-cdn.net/image-tests/leaf-health-pulse-icon.webp',
-			imgAlt:
-				'A green leaf icon with a white heartbeat line running through the center, symbolizing a connection between nature and health.'
+	const pb_img = {
+		id: 'di04569spz5p931',
+		type: 'image',
+		project: 'agi-reflexology',
+		name: 'Relaxing at Home',
+		slug: 'relaxing-at-home',
+		folder: 'photographs',
+		tags: ['reflexology', 'location', 'burnham'],
+		created: '2025-06-04 21:36:33.162Z',
+		updated: '2025-06-05 09:16:44.239Z',
+		image_name: 'Relaxing at Home',
+		alt_text:
+			'A person resting in a reclining chair with a white blanket draped over them. They have a cold compress over their eyes and are lying in a cozy indoor setting. In the background, there are large windows with sheer curtains, allowing natural light to filter in. Outside the window, there are blooming white orchids in pots. The room is decorated with green plants, adding to the tranquil atmosphere.',
+		variants: {
+			lg: {
+				bunny_url: 'https://seerstudio.b-cdn.net/projects/agi-reflexology/relaxing-at-home-lg.jpeg',
+				filesize: 2267403,
+				format: 'jpeg',
+				height: 2559,
+				name: 'lg.jpeg',
+				width: 1920
+			},
+			md: {
+				bunny_url: 'https://seerstudio.b-cdn.net/projects/agi-reflexology/relaxing-at-home-md.jpeg',
+				filesize: 1058859,
+				format: 'jpeg',
+				height: 1706,
+				name: 'md.jpeg',
+				width: 1280
+			},
+			original: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/relaxing-at-home-original.jpeg',
+				filesize: 2674776,
+				format: 'jpeg',
+				height: 2666,
+				name: 'original.jpeg',
+				width: 2000
+			},
+			sm: {
+				bunny_url: 'https://seerstudio.b-cdn.net/projects/agi-reflexology/relaxing-at-home-sm.jpeg',
+				filesize: 413280,
+				format: 'jpeg',
+				height: 1024,
+				name: 'sm.jpeg',
+				width: 768
+			},
+			thumbnail: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/relaxing-at-home-thumbnail.webp',
+				filesize: 6134,
+				format: 'webp',
+				height: 300,
+				name: 'thumbnail.webp',
+				width: 300
+			},
+			webp: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/relaxing-at-home-webp.webp',
+				filesize: 451064,
+				format: 'webp',
+				height: 2666,
+				name: 'webp.webp',
+				width: 2000
+			},
+			xs: {
+				bunny_url: 'https://seerstudio.b-cdn.net/projects/agi-reflexology/relaxing-at-home-xs.jpeg',
+				filesize: 168695,
+				format: 'jpeg',
+				height: 640,
+				name: 'xs.jpeg',
+				width: 480
+			}
 		}
-	];
+	};
 </script>
 
 <Section
@@ -43,8 +97,7 @@
 			<div class="flex w-full flex-col items-center">
 				<div class="aspect-[2/3] w-full max-w-xs sm:min-w-[17rem] md:max-w-sm lg:min-w-sm">
 					<Image
-						src="https://seerstudio.b-cdn.net/image-tests/agas-client.webp"
-						alt="A person is reclining on a chair indoors, covered with a cream-colored knitted blanket. They have a cloth covering their eyes. There are large plants around, and a window with sheer curtains overlooks white orchids. The setting appears calm and relaxing."
+						record={pb_img}
 					></Image>
 				</div>
 			</div>

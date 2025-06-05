@@ -13,6 +13,86 @@
 		'You’re seeking natural support for your hormones, digestion, or mood',
 		'You just want space to breathe, reset, and come back to yourself'
 	];
+
+	const pb_img = {
+		id: 'vnu3t2szdl0530y',
+		type: 'image',
+		project: 'agi-reflexology',
+		name: 'Forest Path Walker',
+		slug: 'forest-path-walker',
+		folder: 'midjourney',
+		tags: ['reflexology'],
+		created: '2025-06-04 21:59:09.302Z',
+		updated: '2025-06-05 09:06:17.702Z',
+		image_name: 'Forest Path Walker',
+		alt_text:
+			'A person walking barefoot along a narrow path in a serene forest. The scene is illuminated by soft, golden light filtering through the trees, creating a tranquil atmosphere. Lush green ferns and moss line the path, while tall trees stand on either side, enhancing the feeling of being immersed in nature.',
+		variants: {
+			lg: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/forest-path-walker-lg.png',
+				filesize: 2625620,
+				format: 'png',
+				height: 1920,
+				name: 'lg.png',
+				width: 1920
+			},
+			md: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/forest-path-walker-md.png',
+				filesize: 1220494,
+				format: 'png',
+				height: 1280,
+				name: 'md.png',
+				width: 1280
+			},
+			original: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/forest-path-walker-original.png',
+				filesize: 3015391,
+				format: 'png',
+				height: 2048,
+				name: 'original.png',
+				width: 2048
+			},
+			sm: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/forest-path-walker-sm.png',
+				filesize: 466730,
+				format: 'png',
+				height: 768,
+				name: 'sm.png',
+				width: 768
+			},
+			thumbnail: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/forest-path-walker-thumbnail.webp',
+				filesize: 10850,
+				format: 'webp',
+				height: 300,
+				name: 'thumbnail.webp',
+				width: 300
+			},
+			webp: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/forest-path-walker-webp.webp',
+				filesize: 987358,
+				format: 'webp',
+				height: 2048,
+				name: 'webp.webp',
+				width: 2048
+			},
+			xs: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/forest-path-walker-xs.png',
+				filesize: 190996,
+				format: 'png',
+				height: 480,
+				name: 'xs.png',
+				width: 480
+			}
+		}
+	};
 </script>
 
 <Section
@@ -28,10 +108,7 @@
 		md:items-start lg:gap-10"
 		>
 			<div class="aspect-square w-full max-w-md md:min-w-xs lg:max-w-sm">
-				<Image
-					src="https://seerstudio.b-cdn.net/image-tests/grizhlie_A_realistic_photo_of_a_man_walking_barefoot_along_a_qu_362dcec9-3e88-447f-86a3-9c6a365f0b2c.webp"
-					alt="A man with short hair walks barefoot along a sunlit, forested path surrounded by lush ferns and tall trees. Sunlight filters through the leaves, creating a serene and peaceful atmosphere."
-				></Image>
+				<Image record={pb_img}></Image>
 			</div>
 			<div
 				class="flex flex-col items-center gap-4 text-center md:items-start
@@ -44,8 +121,9 @@
 					</Text>
 				</div>
 				<Text type="p" style="paraBase">
-					People often try reflexology after dealing with tension, irregular cycles, sleep issues, or unexplained aches. Even if the symptoms are hard
-					to describe, reflexology works by calming the nervous system — which can improve how your whole body functions and feels.
+					People often try reflexology after dealing with tension, irregular cycles, sleep issues,
+					or unexplained aches. Even if the symptoms are hard to describe, reflexology works by
+					calming the nervous system — which can improve how your whole body functions and feels.
 				</Text>
 				<!-- Turn this into a list comp -->
 				<DecoratedList item_list={APPROACH_LIST} Icon={Leaf}></DecoratedList>

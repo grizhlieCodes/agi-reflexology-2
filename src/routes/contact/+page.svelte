@@ -60,19 +60,91 @@
 			class: 'w-full grow'
 		}
 	];
+
+	const pb_img = {
+		id: 'h038h459y95tb1f',
+		type: 'image',
+		project: 'agi-reflexology',
+		name: 'Massage Therapy Room',
+		slug: 'massage-therapy-room',
+		folder: 'photographs',
+		tags: ['location', 'burnham', 'contact'],
+		created: '2025-06-04 21:36:37.112Z',
+		updated: '2025-06-05 09:26:30.166Z',
+		image_name: 'Massage Therapy Room',
+		alt_text:
+			'A serene massage therapy room featuring a massage table covered with a light-colored sheet. Two rolled towels, one gray and one beige, are neatly placed on the table. A small candle is lit on a round wooden side table, and another table holds a potted plant. The room has large windows with sheer curtains, allowing natural light to filter in, and a decorative folding screen is visible in the background.',
+		variants: {
+			lg: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/massage-therapy-room-lg.jpeg',
+				filesize: 2087092,
+				format: 'jpeg',
+				height: 2560,
+				name: 'lg.jpeg',
+				width: 1920
+			},
+			md: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/massage-therapy-room-md.jpeg',
+				filesize: 939167,
+				format: 'jpeg',
+				height: 1707,
+				name: 'md.jpeg',
+				width: 1280
+			},
+			original: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/massage-therapy-room-original.jpeg',
+				filesize: 4794469,
+				format: 'jpeg',
+				height: 4032,
+				name: 'original.jpeg',
+				width: 3024
+			},
+			sm: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/massage-therapy-room-sm.jpeg',
+				filesize: 345669,
+				format: 'jpeg',
+				height: 1024,
+				name: 'sm.jpeg',
+				width: 768
+			},
+			thumbnail: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/massage-therapy-room-thumbnail.webp',
+				filesize: 5176,
+				format: 'webp',
+				height: 300,
+				name: 'thumbnail.webp',
+				width: 300
+			},
+			webp: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/massage-therapy-room-webp.webp',
+				filesize: 654454,
+				format: 'webp',
+				height: 4032,
+				name: 'webp.webp',
+				width: 3024
+			},
+			xs: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/massage-therapy-room-xs.jpeg',
+				filesize: 141501,
+				format: 'jpeg',
+				height: 640,
+				name: 'xs.jpeg',
+				width: 480
+			}
+		}
+	};
 </script>
 
 <Section section_id="contact-form" vertical_padding={20} grid_span="centeredSpan3">
 	<Container>
-		<Form
-			method="POST"
-			dataForm={data.form}
-			inputs={formInputs}
-			image={{
-				alt: 'A tranquil massage room featuring a bed topped with neatly folded towels and massage supplies. Soft candlelight glows from two side tables, creating a calming atmosphere. A window with potted plants adds a touch of nature, while a privacy screen stands in the background.',
-				src: 'https://seerstudio.b-cdn.net/image-tests/IMG_1679.webp'
-			}}
-		></Form>
+		<Form method="POST" dataForm={data.form} inputs={formInputs} image={pb_img}></Form>
 	</Container>
 </Section>
 

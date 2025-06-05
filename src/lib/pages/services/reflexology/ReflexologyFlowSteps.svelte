@@ -4,6 +4,80 @@
 	import BasicCard from '$lib/components/ui/BasicCard.svelte';
 	import Image from '$lib/components/ui/Image.svelte';
 	import Text from '$lib/components/ui/Text.svelte';
+
+	const pb_img = {
+  "id": "i6n8zvd7q0cfzif",
+  "type": "image",
+  "project": "agi-reflexology",
+  "name": "Ethereal Human Form",
+  "slug": "ethereal-human-form",
+  "folder": "midjourney",
+  "tags": [
+    "reflexology"
+  ],
+  "created": "2025-06-04 21:59:38.228Z",
+  "updated": "2025-06-05 09:06:18.142Z",
+  "image_name": "Ethereal Human Form",
+  "alt_text": "A translucent, ethereal representation of a human figure walking forward. The figure is surrounded by vibrant, swirling colors and light, suggesting energy and life. The body appears to be made of light, with intricate patterns and glowing elements, particularly around the chest area, which radiates a bright, luminous energy. The background is softly blurred, enhancing the focus on the figure, while wisps of light extend outward, creating a sense of movement and vitality.",
+  "variants": {
+    "lg": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/ethereal-human-form-lg.png",
+      "filesize": 2209105,
+      "format": "png",
+      "height": 2688,
+      "name": "lg.png",
+      "width": 1792
+    },
+    "md": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/ethereal-human-form-md.png",
+      "filesize": 1174469,
+      "format": "png",
+      "height": 1920,
+      "name": "md.png",
+      "width": 1280
+    },
+    "original": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/ethereal-human-form-original.png",
+      "filesize": 2209105,
+      "format": "png",
+      "height": 2688,
+      "name": "original.png",
+      "width": 1792
+    },
+    "sm": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/ethereal-human-form-sm.png",
+      "filesize": 437570,
+      "format": "png",
+      "height": 1152,
+      "name": "sm.png",
+      "width": 768
+    },
+    "thumbnail": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/ethereal-human-form-thumbnail.webp",
+      "filesize": 4114,
+      "format": "webp",
+      "height": 300,
+      "name": "thumbnail.webp",
+      "width": 300
+    },
+    "webp": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/ethereal-human-form-webp.webp",
+      "filesize": 436072,
+      "format": "webp",
+      "height": 2688,
+      "name": "webp.webp",
+      "width": 1792
+    },
+    "xs": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/ethereal-human-form-xs.png",
+      "filesize": 183345,
+      "format": "png",
+      "height": 720,
+      "name": "xs.png",
+      "width": 480
+    }
+  }
+}
 </script>
 
 <Section section_id="reflexology-flow-steps" horizontal_padding={4} vertical_padding={8} grid_span="centeredSpan2">
@@ -32,8 +106,7 @@
 		>
 			<div class="aspect-[2/3] w-full max-w-sm md:aspect-[unset] md:max-w-none">
 				<Image
-					src="https://seerstudio.b-cdn.net/image-tests/grizhlie_A_realistic_digital_illustration_of_a_full_human_silho_07bd63a1-266d-48ee-90c4-184f91651dac.webp"
-					alt="An ethereal, glowing human figure stands with closed eyes against a swirling, colorful backdrop of light and energy patterns, resembling neural pathways or cosmic currents."
+					record={pb_img}
 				></Image>
 			</div>
 			<div class="flex w-full flex-col items-center gap-4">

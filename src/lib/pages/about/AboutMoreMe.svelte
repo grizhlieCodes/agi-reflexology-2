@@ -7,6 +7,80 @@
 	import Text from '$lib/components/ui/Text.svelte';
 	import Leaf from 'lucide-svelte/icons/leaf';
 
+	const pb_img = {
+  "id": "iv4mk90m6nmar2o",
+  "type": "image",
+  "project": "agi-reflexology",
+  "name": "Woman in Forest",
+  "slug": "woman-in-forest",
+  "folder": "photographs",
+  "tags": [
+    "about"
+  ],
+  "created": "2025-06-04 21:36:47.913Z",
+  "updated": "2025-06-05 09:04:48.421Z",
+  "image_name": "Woman in Forest",
+  "alt_text": "A woman with medium-length brown hair sits in a forest, looking directly at the camera. She has a thoughtful expression and is wearing a gray top with a decorative pattern. Her left arm is raised, resting on her shoulder, and is adorned with colorful tattoos, including a green bird and fern leaves. The background features tall trees and soft, dappled sunlight filtering through the foliage, creating a serene and natural atmosphere.",
+  "variants": {
+    "lg": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-forest-lg.jpeg",
+      "filesize": 2210314,
+      "format": "jpeg",
+      "height": 2560,
+      "name": "lg.jpeg",
+      "width": 1920
+    },
+    "md": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-forest-md.jpeg",
+      "filesize": 1037884,
+      "format": "jpeg",
+      "height": 1707,
+      "name": "md.jpeg",
+      "width": 1280
+    },
+    "original": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-forest-original.jpeg",
+      "filesize": 3117551,
+      "format": "jpeg",
+      "height": 3088,
+      "name": "original.jpeg",
+      "width": 2316
+    },
+    "sm": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-forest-sm.jpeg",
+      "filesize": 409741,
+      "format": "jpeg",
+      "height": 1024,
+      "name": "sm.jpeg",
+      "width": 768
+    },
+    "thumbnail": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-forest-thumbnail.webp",
+      "filesize": 6070,
+      "format": "webp",
+      "height": 300,
+      "name": "thumbnail.webp",
+      "width": 300
+    },
+    "webp": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-forest-webp.webp",
+      "filesize": 499188,
+      "format": "webp",
+      "height": 3088,
+      "name": "webp.webp",
+      "width": 2316
+    },
+    "xs": {
+      "bunny_url": "https://seerstudio.b-cdn.net/projects/agi-reflexology/woman-in-forest-xs.jpeg",
+      "filesize": 176066,
+      "format": "jpeg",
+      "height": 640,
+      "name": "xs.jpeg",
+      "width": 480
+    }
+  }
+}
+
 	const APPROACH_LIST = [
 		'Gentle, focused touch supports your body’s natural healing flow',
 		'Each session adapts to how your body and energy feel that day',
@@ -42,8 +116,7 @@
 
 			<div class="aspect-square w-full max-w-sm md:max-w-md md:min-w-xs lg:max-w-sm">
 				<Image
-					src="https://seerstudio.b-cdn.net/image-tests/IMG_2127.webp"
-					alt="A woman with shoulder-length hair and a tattoo on her right arm stands in a forest, wearing a patterned gray top. The background shows blurred trees and forest floor."
+					record={pb_img}
 				></Image>
 			</div>
 		</div>

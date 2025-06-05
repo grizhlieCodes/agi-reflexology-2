@@ -4,6 +4,86 @@
 	import Button from '$lib/components/ui-interactive/Button.svelte';
 	import Image from '$lib/components/ui/Image.svelte';
 	import Text from '$lib/components/ui/Text.svelte';
+
+	const pb_img = {
+		id: '3z84n551x003paj',
+		type: 'image',
+		project: 'agi-reflexology',
+		name: 'Spa Essentials Setup',
+		slug: 'spa-essentials-setup',
+		folder: 'midjourney',
+		tags: ['reflexology'],
+		created: '2025-06-04 21:59:16.356Z',
+		updated: '2025-06-05 09:06:16.070Z',
+		image_name: 'Spa Essentials Setup',
+		alt_text:
+			'A serene spa setup featuring neatly stacked white towels and two green towels on a light-colored table. In the foreground, there are three glass bottles filled with oils, varying in shades of green, and a white vase containing vibrant green ferns. The background shows soft, natural light filtering through sheer curtains, with greenery visible outside the window, creating a calming atmosphere.',
+		variants: {
+			lg: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/spa-essentials-setup-lg.png',
+				filesize: 1054713,
+				format: 'png',
+				height: 960,
+				name: 'lg.png',
+				width: 1920
+			},
+			md: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/spa-essentials-setup-md.png',
+				filesize: 475940,
+				format: 'png',
+				height: 640,
+				name: 'md.png',
+				width: 1280
+			},
+			original: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/spa-essentials-setup-original.png',
+				filesize: 2612186,
+				format: 'png',
+				height: 1536,
+				name: 'original.png',
+				width: 3072
+			},
+			sm: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/spa-essentials-setup-sm.png',
+				filesize: 179389,
+				format: 'png',
+				height: 384,
+				name: 'sm.png',
+				width: 768
+			},
+			thumbnail: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/spa-essentials-setup-thumbnail.webp',
+				filesize: 9540,
+				format: 'webp',
+				height: 300,
+				name: 'thumbnail.webp',
+				width: 300
+			},
+			webp: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/spa-essentials-setup-webp.webp',
+				filesize: 726642,
+				format: 'webp',
+				height: 1536,
+				name: 'webp.webp',
+				width: 3072
+			},
+			xs: {
+				bunny_url:
+					'https://seerstudio.b-cdn.net/projects/agi-reflexology/spa-essentials-setup-xs.png',
+				filesize: 77554,
+				format: 'png',
+				height: 240,
+				name: 'xs.png',
+				width: 480
+			}
+		}
+	};
 </script>
 
 <Section
@@ -27,8 +107,7 @@
 		<div class="aspect-[3/2] w-full sm:aspect-video lg:aspect-[645/299]">
 			<Image
 				brightness={15}
-				src="https://seerstudio.b-cdn.net/image-tests/grizhlie_A_serene_still-life_arrangement_on_a_soft_white_linen__1cbdbfa1-deb0-4a51-937c-eccb47fb642d.webp"
-				alt="A serene spa setting with rolled white towels, small bottles containing green liquid, and vases with ferns on a table. Soft natural light filters through a window, highlighting the greenery."
+				record={pb_img}
 			></Image>
 		</div>
 		<div>

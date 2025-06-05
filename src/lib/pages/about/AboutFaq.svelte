@@ -7,6 +7,7 @@
 	import Text from '$lib/components/ui/Text.svelte';
 
 	import { about_faqs } from '$lib/data/faqs/faqs';
+	import FaqImage from '../shared/FaqImage.svelte';
 </script>
 
 <Section section_id="about-faq" horizontal_padding={4} grid_span="fullSpan"
@@ -17,10 +18,7 @@ class="bg-primary-50 dark:bg-primary-950">
  lg:justify-items-start lg:gap-10"
 		>
 			<div class="aspect-[2/3] w-full max-w-xs lg:col-start-2 lg:row-start-1">
-				<Image
-					src="https://seerstudio.b-cdn.net/image-tests/grizhlie_question_mark_made_from_fern_plants_green_background_-_67dadcca-4b2e-4111-b90f-a21a808bd671.webp"
-					alt="A lush, green question mark made of ferns and leaves, set against a background of dense, leafy foliage."
-				></Image>
+				<FaqImage></FaqImage>
 			</div>
 			<div
 				class="flex flex-col items-center gap-4 text-center md:items-start
