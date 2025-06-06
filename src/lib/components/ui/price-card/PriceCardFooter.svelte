@@ -4,7 +4,7 @@
 	let { button } = $props();
 </script>
 
-<footer class="mt-2 w-full grow grid place-items-end">
+<footer class="mt-2 w-full grow flex items-end supports-[display:grid]:grid supports-[display:grid]:place-items-end">
 	<Button
 		type="outline"
 		size={5}

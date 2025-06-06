@@ -15,20 +15,29 @@ dark:border-neutral-800 dark:bg-black/80"
 >
 	<div
 		class="flex w-full max-w-5xl flex-col items-center justify-center
-	gap-12 xl:gap-16 px-6 sm:px-8 lg:px-12 2xl:px-0"
+	gap-12 px-6 sm:px-8 lg:px-12 xl:gap-16 2xl:px-0"
 	>
 		<!-- ! LOGO (symbol only) -->
 		<div class="[&_svg]:!size-14">
 			<Logo {...footer_logo} linkClass="flex-col"></Logo>
 		</div>
 		<!-- ! LINKS ROW -->
-		<div class="grid w-full max-w-3xl grid-cols-1 justify-items-center
-		sm:grid-cols-3 text-center sm:text-left gap-7">
+		<div
+			class="flex w-full max-w-3xl flex-col items-start gap-7
+		text-center supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:justify-items-center sm:flex-row sm:text-left
+		supports-[display:grid]:sm:grid-cols-3"
+		>
 			{#each footer_links as column}
-				<div class="flex flex-col items-center sm:items-start gap-0">
+				<div class="flex flex-col items-center gap-0 sm:items-start">
 					<Text type="span" style="h8">{column.column_title}</Text>
 					{#each column.links as column_link}
-						<Button href={column_link.href} type="plain" size={4} ariaLabel={`Navigate to the ${column_link.content} page.`} class="justify-start">
+						<Button
+							href={column_link.href}
+							type="plain"
+							size={4}
+							ariaLabel={`Navigate to the ${column_link.content} page.`}
+							class="justify-start"
+						>
 							{column_link.content}
 						</Button>
 					{/each}
@@ -39,8 +48,8 @@ dark:border-neutral-800 dark:bg-black/80"
 		<div class="flex max-w-2xl flex-col items-center gap-1 text-center">
 			<Text type="p" style="paraBase">
 				© {new Date().getFullYear()}
-				{footer_business_name} All rights reserved. Website design and content are property of {footer_business_name}. Unauthorised use or
-				reproduction is prohibited.
+				{footer_business_name} All rights reserved. Website design and content are property of {footer_business_name}.
+				Unauthorised use or reproduction is prohibited.
 			</Text>
 			<Text type="span" style="eyebrow" class="text-base text-neutral-400 dark:text-neutral-400">
 				Website design & development by <InlineLink

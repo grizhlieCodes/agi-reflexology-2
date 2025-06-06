@@ -42,13 +42,13 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 				iconOnly
 				size={3}
 				onclick={darkToggle}
-				class="min-w-[2.5rem]"
+				class="min-h-10 min-w-10 rounded-xl"
 			>
-				<div class="grid aspect-square w-full place-items-center *:col-start-1 *:row-start-1">
-					<div class="hidden dark:block">
+				<div class="relative aspect-square w-full">
+					<div class="absolute top-1/2 left-1/2 hidden -translate-1/2 dark:block">
 						<Sun class="!size-4.5"></Sun>
 					</div>
-					<div class="block dark:hidden">
+					<div class="absolute top-1/2 left-1/2 block -translate-1/2 dark:hidden">
 						<Moon class="!size-4.5"></Moon>
 					</div>
 				</div>

@@ -96,7 +96,7 @@
 		</div> -->
 
 			<!-- ! Price Cards -->
-			<div class="flex flex-wrap justify-center gap-4 md:gap-8 xl:grid xl:grid-cols-3">
+			<div class="flex flex-wrap justify-center gap-4 md:gap-8 supports-[display:grid]:xl:grid supports-[display:grid]:xl:grid-cols-3">
 				{#each t.aval_price_cards as pc (pc.id)}
 					<div
 						in:receive={{ key: pc.id }}

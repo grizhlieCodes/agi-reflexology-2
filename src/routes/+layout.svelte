@@ -38,10 +38,10 @@
 <Header cta={header_cta} logo={header_logo} links={header_links}></Header>
 
 <div
-	class="grid min-h-screen
-grid-cols-1 grid-rows-[minmax(100px,max-content)_1fr_max-content]"
+	class="flex flex-col min-h-screen
+supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:grid-rows-[minmax(100px,max-content)_1fr_max-content]"
 >
-	<div class="row-start-1 h-full w-full">
+	<div class="flex-1 h-full w-full supports-[display:grid]:row-start-1">
 		<PageTransition url={data.url}>
 			{@render children()}
 		</PageTransition>

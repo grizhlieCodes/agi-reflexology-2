@@ -64,7 +64,7 @@
 
 {#if type === 'agi_price_card'}
 	<article
-		class="relative flex w-full max-w-96 flex-col gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-6 text-left transition-colors duration-300 dark:border-neutral-700 dark:bg-neutral-800/20"
+		class="relative flex w-full max-w-92 flex-col gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-6 text-left transition-colors duration-300 dark:border-neutral-700 dark:bg-neutral-800/20"
 	>
 		{#if infoUnlocked && additional_info_badges && additional_info_badges.length > 0}
 			<PriceCardInfo badges={additional_info_badges}></PriceCardInfo>
@@ -86,7 +86,7 @@
 	</article>
 {:else}
 	<article
-		class="relative flex w-full max-w-96 flex-col gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-6 text-left transition-colors duration-300 dark:border-neutral-700 dark:bg-neutral-800/20"
+		class="relative flex w-full max-w-92 flex-col gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-6 text-left transition-colors duration-300 dark:border-neutral-700 dark:bg-neutral-800/20"
 	>
 		{#if infoUnlocked && additional_info_badges && additional_info_badges.length > 0}
 			<PriceCardInfo badges={additional_info_badges}></PriceCardInfo>

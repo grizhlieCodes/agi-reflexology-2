@@ -44,8 +44,9 @@
 						class="bg-info-200
 				text-info-700 hover:bg-info-300 data-[state=on]:bg-info-400 data-[state=on]:text-info-950 dark:bg-info-900
 				dark:hover:bg-info-800 dark:data-[state=on]:bg-info-700 dark:text-info-400 dark:data-[state=on]:text-info-50
-				dark:hover:text-info-300 grid aspect-square size-8
-				cursor-pointer place-items-center
+				dark:hover:text-info-300 flex aspect-square size-8
+				cursor-pointer items-center justify-center
+				supports-[display:grid]:grid supports-[display:grid]:place-items-center
 				rounded-sm transition-all duration-300"
 					>
 						<Info class="!size-4" />
@@ -82,8 +83,9 @@ text-neutral-500 dark:text-neutral-400"
 						class="bg-info-200
 				text-info-700 hover:bg-info-300 data-[state=on]:bg-info-400 data-[state=on]:text-info-950 dark:bg-info-900
 				dark:hover:bg-info-800 dark:data-[state=on]:bg-info-700 dark:text-info-400 dark:data-[state=on]:text-info-50
-				dark:hover:text-info-300 grid aspect-square size-8
-				cursor-pointer place-items-center
+				dark:hover:text-info-300 flex aspect-square size-8
+				cursor-pointer items-center justify-center
+				supports-[display:grid]:grid supports-[display:grid]:place-items-center
 				rounded-sm transition-all duration-300"
 					>
 						<Info class="!size-4" />

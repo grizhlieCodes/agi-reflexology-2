@@ -622,8 +622,8 @@ const records = {
 			</div>
 		</div>
 		<div
-			class="grid w-full grid-cols-1 justify-items-center gap-4
-		sm:grid-cols-2 md:grid-cols-3 md:gap-5 lg:gap-6"
+			class="flex w-full flex-wrap justify-center gap-4 md:gap-5 lg:gap-6
+		supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:justify-items-center supports-[display:grid]:sm:grid-cols-2 supports-[display:grid]:md:grid-cols-3"
 		>
 			{#each problemCards as card}
 				<BasicCard>

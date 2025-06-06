@@ -30,7 +30,7 @@
 				referrerpolicy="no-referrer-when-downgrade"
 			></iframe>
 		</div>
-		<ul class="grid w-full grid-cols-1 gap-4 *:max-w-sm md:grid-cols-2 md:gap-5">
+		<ul class="flex w-full flex-wrap justify-center gap-4 md:gap-5 *:max-w-sm supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:md:grid-cols-2">
 			<BasicCard includeMaxWidthStyling={false} type="neutral" element="li" class="items-start p-6 text-left">
 				<Text type="h3" style="paraBase" class="font-ui font-semibold">1. Book Your Session</Text>
 				<Text type="h3" style="paraBase" class="text-neutral-500">

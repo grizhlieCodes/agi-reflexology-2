@@ -52,8 +52,9 @@
 </script>
 
 <div
-	class=" bg-primary-50 dark:bg-primary-950 border-primary-200 dark:border-primary-700 grid w-full grid-cols-1
-overflow-hidden rounded-2xl border lg:grid-cols-[1.25fr_1fr]"
+	class=" bg-primary-50 dark:bg-primary-950 border-primary-200 dark:border-primary-700 flex flex-col lg:flex-row w-full
+overflow-hidden rounded-2xl border supports-[display:grid]:grid supports-[display:grid]:grid-cols-1
+supports-[display:grid]:lg:grid-cols-[1.25fr_1fr]"
 >
 	<form
 		oninput={() => {
@@ -64,7 +65,7 @@ overflow-hidden rounded-2xl border lg:grid-cols-[1.25fr_1fr]"
 		{action}
 		{method}
 		use:enhance
-		class="row-start-2 flex flex-wrap gap-x-3 gap-y-5 p-6 lg:row-start-1 lg:p-10"
+		class="order-2 lg:order-1 flex-[1.25] flex flex-wrap gap-x-3 gap-y-5 p-6 lg:p-10 supports-[display:grid]:row-start-2 supports-[display:grid]:lg:row-start-1"
 	>
 		<div class="flex w-full flex-col items-start text-left">
 			<Text type="h2" style="h6">Get In Touch</Text>
@@ -128,8 +129,9 @@ overflow-hidden rounded-2xl border lg:grid-cols-[1.25fr_1fr]"
 	</form>
 	{#if image}
 		<div
-			class="col-start-1 row-start-1 aspect-video h-full w-full
-		lg:col-start-2 lg:row-start-1 lg:aspect-auto"
+			class="order-1 lg:order-2 flex-1 aspect-video h-full w-full lg:aspect-auto
+		supports-[display:grid]:col-start-1 supports-[display:grid]:row-start-1 
+		supports-[display:grid]:lg:col-start-2 supports-[display:grid]:lg:row-start-1"
 		>
 			<Image record={image} containerClass="!rounded-none" brightness={15}></Image>
 		</div>

@@ -101,8 +101,8 @@
 			</div>
 		</div>
 		<div
-			class="flex w-full max-w-3xl flex-col items-center gap-8 md:grid
-		md:grid-cols-[5fr_4fr] md:items-stretch"
+			class="flex w-full max-w-3xl flex-col items-center gap-8 md:flex-row md:items-stretch
+		supports-[display:grid]:md:grid supports-[display:grid]:md:grid-cols-[5fr_4fr]"
 		>
 			<div class="aspect-[2/3] w-full max-w-sm md:aspect-[unset] md:max-w-none">
 				<Image

@@ -14,15 +14,16 @@
 class="bg-primary-50 dark:bg-primary-950">
 	<Container class="gap-10 md:gap-16 lg:gap-20">
 		<div
-			class=" grid w-full grid-cols-1 justify-items-center gap-4 lg:grid-cols-[2fr_1fr]
- lg:justify-items-start lg:gap-10"
+			class="flex w-full flex-col items-center gap-4 lg:flex-row lg:items-start lg:gap-10
+ supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:justify-items-center supports-[display:grid]:lg:grid-cols-[2fr_1fr]
+ supports-[display:grid]:lg:justify-items-start"
 		>
-			<div class="aspect-[2/3] w-full max-w-xs lg:col-start-2 lg:row-start-1">
+			<div class="aspect-[2/3] w-full max-w-xs order-1 lg:order-2 lg:flex-shrink-0 supports-[display:grid]:lg:col-start-2 supports-[display:grid]:lg:row-start-1">
 				<FaqImage></FaqImage>
 			</div>
 			<div
-				class="flex flex-col items-center gap-4 text-center md:items-start
-            md:gap-5 md:text-left lg:col-start-1 lg:row-start-1"
+				class="flex flex-col items-center gap-4 text-center order-2 lg:order-1 lg:flex-grow md:items-start
+            md:gap-5 md:text-left supports-[display:grid]:lg:col-start-1 supports-[display:grid]:lg:row-start-1"
 			>
 				<div>
 					<Text type="span" style="eyebrow">FAQ</Text>

@@ -175,13 +175,14 @@
 	horizontal_padding={4}
 >
 	<Container
-		class="grid min-h-screen w-full max-w-[100rem] grid-cols-1
-	grid-rows-1 p-0 *:col-start-1 *:row-start-1 md:min-h-[52rem] md:p-10
-	lg:min-h-[56rem] xl:min-h-[60rem]"
+		class="relative min-h-screen w-full max-w-[100rem] p-0 md:min-h-[52rem] md:p-10
+	lg:min-h-[56rem] xl:min-h-[60rem]
+	supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:grid-rows-1 supports-[display:grid]:*:col-start-1 supports-[display:grid]:*:row-start-1"
 	>
 		<div
-			class="z-3 flex flex-col items-center gap-4 px-6 md:gap-6 md:px-10
-		lg:gap-8 lg:px-12 2xl:px-0"
+			class="relative z-10 flex h-full w-full flex-col items-center justify-center gap-4 px-6 md:gap-6 md:px-10
+		lg:gap-8 lg:px-12 2xl:px-0
+		supports-[display:grid]:z-3"
 		>
 			<Text type="h1" style="h3" class="font-[450]">
 				Ready To Feel <br /> Supported Again?
@@ -212,8 +213,8 @@
 			</div>
 		</div>
 		<div
-			class="z-2 grid h-full w-full grid-cols-1 grid-rows-1 *:col-start-1
-		*:row-start-1"
+			class="absolute inset-0 h-full w-full
+		supports-[display:grid]:z-2 supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:grid-rows-1 supports-[display:grid]:*:col-start-1 supports-[display:grid]:*:row-start-1"
 		>
 			<Image
 				record={records.green_ferns_background}
