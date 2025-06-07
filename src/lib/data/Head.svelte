@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/state';
 
-	const pageTitle = `Agi Reflexology - Experience Deep Relief & Reconnect With Your Body`;
-	const description =
-		'I use my intuitive reflexology-massage techniques to guide your body toward a deep release and natural balance. In a healing and peaceful environment, I help you let go of tension patterns that prevent you from experiencing true bodily peace. Based in Burnham, UK.';
+	let {
+		title = 'Agi Reflexology - Experience Deep Relief & Reconnect With Your Body',
+		description = 'I use my intuitive reflexology-massage techniques to guide your body toward a deep release and natural balance. In a healing and peaceful environment, I help you let go of tension patterns that prevent you from experiencing true bodily peace. Based in Burnham, UK.'
+	} = $props();
 
 	const fullLink = $derived(`https://www.agireflexology.com${page.url.pathname}`);
 
@@ -14,7 +15,7 @@
 		},
 		{
 			property: 'og:title',
-			content: pageTitle
+			content: title
 		},
 		{
 			property: 'og:image',
@@ -38,12 +39,13 @@
 		},
 		{
 			property: 'og:site_name',
-			content: pageTitle
+			content: title
 		}
 	]);
 </script>
 
 <svelte:head>
+	<title>{title}</title>
 	<!-- ROBOTS -->
 	<meta name="googlebot" content="all" />
 	<meta name="robots" content="all" />

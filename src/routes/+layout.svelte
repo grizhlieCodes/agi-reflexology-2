@@ -7,10 +7,8 @@
 	import Footer from '$lib/components/navigation/footer/Footer.svelte';
 	import Head from '$lib/data/Head.svelte';
 	import ReportButton from '$lib/components/ui-interactive/ReportButton.svelte';
-	import { pathToTitle } from '$lib/scripts/utils';
 	import { dm } from '$lib/stores/darkmode.svelte';
 
-	let pathname = $derived(pathToTitle(page.url.pathname));
 	let mounted = $state(false);
 	let { header_cta, header_logo, header_links } = $derived(headerData);
 	let { children, data } = $props();
@@ -29,11 +27,7 @@
 	});
 </script>
 
-<Head></Head>
-
-<svelte:head>
-	<title>Agi Reflexology - {pathname}</title>
-</svelte:head>
+<Head title={data.title} description={data.description}></Head>
 
 <Header cta={header_cta} logo={header_logo} links={header_links}></Header>
 
