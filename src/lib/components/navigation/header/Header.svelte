@@ -27,7 +27,7 @@ md:mt-4 md:px-6 md:pt-5 lg:p-0"
 		<Logo {...logo} textClass="lg:text-xl"></Logo>
 
 		<!--! Mobile Navigation -->
-		<MobileHeaderNav {mobileMenuOpen} {toggleMobMenu} {links}></MobileHeaderNav>
+		<MobileHeaderNav {mobileMenuOpen} {toggleMobMenu} {links} {cta}></MobileHeaderNav>
 		<DesktopHeaderNav {links}></DesktopHeaderNav>
 
 		<div class="md:hidden">

@@ -1,29 +1,36 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { fly } from 'svelte/transition';
-	import type { NavLink } from '$lib/data/navigation/navigation';
+	import type { HeaderCTA, NavLink } from '$lib/data/navigation/navigation';
 	import Text from '$lib/components/ui/Text.svelte';
 	import CollapsibleLink from './MobileHeaderNavCollapsible.svelte';
+	import Button from '$lib/components/ui-interactive/Button.svelte';
+	import { Moon, Sun } from 'lucide-svelte';
+	import { dm } from '$lib/stores/darkmode.svelte';
 
 	let {
 		mobileMenuOpen,
 		links,
-		toggleMobMenu
+		toggleMobMenu,
+		cta
 	}: {
 		mobileMenuOpen: boolean;
 		links: NavLink[];
 		toggleMobMenu: () => void;
+		cta: HeaderCTA;
 	} = $props();
+
+	const darkToggle = () => dm.toggle();
 </script>
 
 {#if mobileMenuOpen}
 	<nav
 		transition:fly={{ y: -4, duration: 400 }}
 		class=" absolute top-[4.5625rem] left-0
-	z-30 flex h-[calc(100vh_-_4.5625rem)] w-full
-	overflow-y-auto bg-(--header-bg) md:hidden dark:bg-(--header-bg_dark)"
+	z-30 flex h-[calc(100vh_-_4.5625rem)] w-full flex-col
+	overflow-y-scroll bg-(--header-bg) md:hidden dark:bg-(--header-bg_dark)"
 	>
-		<ul
+		<div
 			class="flex h-full w-full flex-col items-center justify-start
 		pt-10"
 		>
@@ -56,7 +63,38 @@
 					</a>
 				{/if}
 			{/each}
-		</ul>
+			<div
+				class="border-primary-200 dark:border-primary-700 flex w-full items-center gap-2 border-t-1 p-4"
+			>
+				<Button
+					type="outline"
+					ariaLabel="Toggle dark mode"
+					iconOnly
+					size={3}
+					onclick={darkToggle}
+					class="h-full min-h-10 !w-16 min-w-10 rounded-xl"
+				>
+					<div class="relative aspect-square w-full">
+						<div class="absolute top-1/2 left-1/2 hidden -translate-1/2 dark:block">
+							<Sun class="!size-4.5"></Sun>
+						</div>
+						<div class="absolute top-1/2 left-1/2 block -translate-1/2 dark:hidden">
+							<Moon class="!size-4.5"></Moon>
+						</div>
+					</div>
+				</Button>
+
+				<Button
+					size={4}
+					type="primary"
+					href={cta.href}
+					ariaLabel="Explore all of the treatments I offer"
+					class="w-full"
+				>
+					{cta.content}
+				</Button>
+			</div>
+		</div>
 	</nav>
 {/if}
 

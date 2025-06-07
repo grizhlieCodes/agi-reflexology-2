@@ -3,7 +3,8 @@
 	import { Collapsible } from 'bits-ui';
 	import { slide } from 'svelte/transition';
 	import Text from '$lib/components/ui/Text.svelte';
-	let { link, toggleMobMenu }: { link: { href: string; content: string; links: any[] }; toggleMobMenu: () => void } = $props();
+	import type { NavLink } from '$lib/data/navigation/navigation';
+	let { link, toggleMobMenu }: { link: NavLink; toggleMobMenu: () => void } = $props();
 	let isOpen = $state(false);
 </script>
 
