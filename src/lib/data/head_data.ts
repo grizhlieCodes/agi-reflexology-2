@@ -31,6 +31,10 @@ export const headData: { [key: string]: { title: string; description: string } }
 		title: 'Terms and Conditions | Agi Reflexology',
 		description: 'Please read the Terms and Conditions for using the Agi Reflexology website and services. This includes policies on booking, payment, cancellations, and client responsibilities.'
 	},
+	'/disclaimer': {
+		title: 'Disclaimer | Agi Reflexology',
+		description: 'Official disclaimer for Agi Reflexology. Our services are not a substitute for medical advice. Please read for information on individual results and personal responsibility.'
+	},
 	'/locations': {
 		title: 'Treatment Locations | Agi Reflexology | Burnham, London & Home Visits',
 		description: 'Find the perfect spot for your treatment. Visit my serene studio in Burnham, find me at Reflexions in Chelsea or Bayswater (London), or book a relaxing home visit in the Buckinghamshire area.'
