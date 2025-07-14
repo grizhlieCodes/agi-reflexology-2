@@ -146,7 +146,7 @@ export const price_cards: pc.PriceCard[] = [
 		cost: 40,
 		title: 'Arms & Hands Massage',
 		duration: 30,
-		description: 'Support for calves and hamstrings using slow, soothing massage to relax deep muscular tension.',
+		description: 'Support for arms and hands using slow, soothing massage to relax nerves and muscular tension.',
 		location_name: 'Agi\s Studio: Burnham',
 		button: {
 			content: 'Book Treatment',
