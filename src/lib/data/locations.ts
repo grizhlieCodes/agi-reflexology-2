@@ -525,7 +525,7 @@ export const locations: locations.LocationsMap = {
 				image: images.massage_therapy_room,
 				badges: {
 					location: badge.getLocationBadges(['agi']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-true'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -598,7 +598,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['chelsea']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['tue'])
 				},
 				buttons: {
@@ -671,7 +671,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['bayswater']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['sat'])
 				},
 				buttons: {
@@ -744,7 +744,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'beaconsfield']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -817,7 +817,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'bisham']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -890,7 +890,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'bourne End']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -963,7 +963,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'cookham']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -1036,7 +1036,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'farnham']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -1109,7 +1109,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'forty Green']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -1182,7 +1182,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'hedgerley']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -1255,7 +1255,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'maidenhead']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -1328,7 +1328,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'marlow']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -1401,7 +1401,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'penn']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -1474,7 +1474,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'stoke poges']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -1547,7 +1547,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'taplow']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -1620,7 +1620,7 @@ export const locations: locations.LocationsMap = {
 				image: null,
 				badges: {
 					location: badge.getLocationBadges(['home_visit', 'woodburn green']),
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 				},
 				buttons: {
@@ -1681,7 +1681,7 @@ export const locationSections: locations.LocationSections = [
 		title: 'Agi\s Studio',
 		id: 'agi-studio-location',
 		badges: {
-			available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-true'),
+			available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 			available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 		},
 		description: 'The easiest and optimal way to work with me is by booking a visit to my studio in Burnham, UK. I provide Reflexology & Massage treatments in my studio. Other locations will have a reduced number of treatments I can offer.',
@@ -1695,7 +1695,7 @@ export const locationSections: locations.LocationSections = [
 		title: 'Reflexions, London',
 		id: 'reflexions-location',
 		badges: {
-			available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+			available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 			available_days: badge.getDayBadges(['tue', 'sat'])
 		},
 		description: 'I work in London on Tuesday, Friday and Saturday at the Reflexions studio. You can book an appointment with me via Fresha and ask for Aga.',
@@ -1706,7 +1706,7 @@ export const locationSections: locations.LocationSections = [
 				title: 'Reflexions, Chelsea',
 				id: 'reflexions-chelsea-location',
 				badges: {
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['tue'])
 				},
 				description: 'I work in London on Tuesday at the Reflexions, Chelsea reflexology studio. You can book an appointment with me via Fresha and ask for Aga.',
@@ -1717,7 +1717,7 @@ export const locationSections: locations.LocationSections = [
 				title: 'Reflexions, Bayswater',
 				id: 'reflexions-bayswater-location',
 				badges: {
-					available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 					available_days: badge.getDayBadges(['sat'])
 				},
 				description: 'I work in London on Saturday at the Reflexions, Bayswater reflexology studio. You can book an appointment with me via Fresha and ask for Aga.',
@@ -1731,7 +1731,7 @@ export const locationSections: locations.LocationSections = [
 		title: 'Home Visits',
 		id: 'home-visit-locations',
 		badges: {
-			available_services: badge.getServiceAvailabilityBadges('reflexology-true,massage-false'),
+			available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
 			available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
 		},
 		description: 'I offer home visits for Reflexology treatments only. You will book through Fresha and will have to select the “Home Visit” option. If it’s your first time booking with me you will be asked for some personal information like name, surname, contact details and your address.',

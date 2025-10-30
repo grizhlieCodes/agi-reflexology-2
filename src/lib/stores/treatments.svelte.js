@@ -9,8 +9,6 @@ import { price_cards } from '$lib/data/price_cards';
 // sel_week_days = [""]
 // aval_treatment_types = [""]
 // sel_treatment_types = [""]
-// aval_massage_areas = [""]
-// sel_massage_areas = [""]
 // aval_durations = [""]
 // sel_durations = [""]
 

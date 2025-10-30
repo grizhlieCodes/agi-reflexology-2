@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a SvelteKit-based website for Agi Reflexology, a reflexology and massage therapy business with multiple locations. The site uses Svelte 5, TypeScript, Tailwind CSS v4, and is configured to deploy to Netlify.
+This is a SvelteKit-based website for Agi Reflexology, a reflexology therapy business with multiple locations. The site uses Svelte 5, TypeScript, Tailwind CSS v4, and is configured to deploy to Netlify.
 
 ## Commands
 
@@ -44,7 +44,7 @@ npm run format           # Format code with Prettier
     - `form/` - Form input components (FormInput, FormTextarea, FormSelect, FormRadioGroup)
     - `navigation/` - Header, footer, and navigation components
     - `layout/` - Layout containers (Page, Container, Section)
-  - `pages/` - Page-specific components organized by route (home/, about/, services/, locations/)
+  - `pages/` - Page-specific components organized by route (home/, about/, reflexology/, locations/)
   - `data/` - Static data and content (navigation, locations, FAQs, price cards)
   - `schemas/` - TypeScript type definitions and Zod schemas
   - `stores/` - Svelte 5 runes-based stores (using `.svelte.js` files)

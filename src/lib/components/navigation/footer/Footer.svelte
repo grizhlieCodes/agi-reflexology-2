@@ -24,8 +24,8 @@ dark:border-neutral-800 dark:bg-black/80"
 		<!-- ! LINKS ROW -->
 		<div
 			class="flex w-full max-w-3xl flex-col items-start gap-7
-		text-center supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:justify-items-center sm:flex-row sm:text-left
-		supports-[display:grid]:sm:grid-cols-3"
+		text-center supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:justify-items-center sm:flex-row sm:justify-center sm:text-left
+		supports-[display:grid]:sm:grid-cols-2"
 		>
 			{#each footer_links as column}
 				<div class="flex flex-col items-center gap-0 sm:items-start">

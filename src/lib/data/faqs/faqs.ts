@@ -9,20 +9,7 @@ export const homepage_faqs: FAQ[] = [
 		value: '0',
 		title: 'What does a typical session involve?',
 		content: `
-            <p>Each session begins with a short check-in to understand how you\’re feeling that day. From there, I\’ll tailor the treatment to your needs — working gently and intentionally within the scope of the service you\’ve booked (either Reflexology or Massage).</p>
-        `
-	},
-	{
-		value: '1',
-		title: 'Do I need to choose Reflexology or Massage in advance?',
-		content: `
-            <p>Yes, you\’ll need to select your treatment type when you book. If you\'re unsure, here\’s a simple guide:</p>
-            <ul>
-                <li>Reflexology helps the body rebalance itself from within, especially when there\’s stress, pain, or hormonal shifts.</li>
-                <li>Massage works more directly with muscle tension, physical tightness, or the need for deep relaxation.</li>
-            </ul>
-            <br/>
-            <p> You can learn more about both on the <a href="/services/reflexology" aria-label="Read about how reflexology works by going to this page.">Reflexology</a> and <a href="/services/massage" aria-label="Find out how I can help you with my massage offerings.">Massage</a> pages.</p>
+            <p>Each session begins with a short check-in to understand how you\'re feeling that day. From there, I\'ll tailor the reflexology treatment to your needs — working gently and intentionally to support your body\'s natural healing.</p>
         `
 	},
 	{
@@ -52,16 +39,16 @@ export const about_faqs: FAQ[] = [
 	},
 	{
 		value: '1',
-		title: 'What makes this different from other treatments I\’ve tried?',
+		title: 'What makes this different from other treatments I\'ve tried?',
 		content: `
-            <p>This isn\’t just a massage or pressure-point routine. My work focuses on reconnecting you with how your body actually feels, beneath the noise. I work slowly, intuitively, and always adapt to what your nervous system is ready for — no pushing, no ticking boxes.</p>
+            <p>This isn\'t just a pressure-point routine. My work focuses on reconnecting you with how your body actually feels, beneath the noise. I work slowly, intuitively, and always adapt to what your nervous system is ready for — no pushing, no ticking boxes.</p>
         `
 	},
 	{
 		value: '2',
-		title: 'Is this approach evidence-based or just \‘alternative\’?',
+		title: 'Is this approach evidence-based or just \'alternative\'?',
 		content: `
-            <p>Reflexology and massage have both been used for centuries across different cultures, and today, many aspects of these practices are supported by modern research — especially around relaxation, circulation, and nervous system regulation. I don\’t make medical claims — I support your body\’s natural capacity to heal and settle. The results my clients get are the evidence I seek to create.</p>
+            <p>Reflexology has been used for centuries across different cultures, and today, many aspects of this practice are supported by modern research — especially around relaxation, circulation, and nervous system regulation. I don\'t make medical claims — I support your body\'s natural capacity to heal and settle. The results my clients get are the evidence I seek to create.</p>
         `
 	},
 	{
@@ -85,35 +72,21 @@ export const services_faqs: FAQ[] = [
 		value: '0',
 		title: 'Do I need to know exactly what treatment to book?',
 		content: `
-            <p>Yes — you\’ll need to select a specific treatment when booking (Reflexology or Massage). If you\’re unsure which one is right for you, take a look at the Reflexology and Massage pages for more detail. Each treatment is designed with a different focus and intention.</p>
+            <p>Yes — you\'ll need to select a specific reflexology treatment when booking. Each treatment is designed with a different focus and duration. If you\'re unsure, take a look at the treatments page or contact me for guidance.</p>
         `
 	},
 	{
 		value: '1',
-		title: 'Can I switch between Reflexology and Massage on the day?',
+		title: 'What if I want support with multiple issues?',
 		content: `
-            <p>No — each treatment is prepared in advance based on what you\’ve booked. Reflexology and Massage are different approaches, and the space, tools, and timing are tailored accordingly.</p>
+            <p>That\'s absolutely okay. Many clients come with overlapping concerns — tension, fatigue, hormonal imbalance, and more. Reflexology works holistically to support your whole system, not just isolated symptoms.</p>
         `
 	},
 	{
 		value: '2',
-		title: 'What if I want support with multiple issues?',
-		content: `
-            <p>That\’s absolutely okay. Many clients come with overlapping concerns — tension, fatigue, hormonal imbalance, and more. The key is to choose the treatment style that most resonates with what your body needs right now.</p>
-        `
-	},
-	{
-		value: '3',
-		title: 'How do I know if Reflexology or Massage is better for me?',
-		content: `
-            <p>Reflexology is great if you\’re looking for deep support with your body\’s internal balance — hormones, sleep, digestion, mood. Massage is more hands-on and focused on physical tension and nervous system reset. You can read more about each here and here.</p>
-        `
-	},
-	{
-		value: '4',
 		title: 'Are prices shown here the same when booking?',
 		content: `
-            <p>Yes — all prices and session durations are consistent with what you\’ll see on the booking page (Fresha). You\’ll never be surprised by hidden costs.</p>
+            <p>Yes — all prices and session durations are consistent with what you\'ll see on the booking page (Fresha). You\'ll never be surprised by hidden costs.</p>
         `
 	}
 ];
@@ -166,71 +139,6 @@ export const reflexology_faqs: FAQ[] = [
 		content: `
             <p>No. Reflexology is a supportive therapy — not a medical diagnosis or cure. It\’s best used alongside your usual care, not instead of it. If something\’s going on with your health, always check with your GP.</p>
         `
-	},
-	{
-		value: '7',
-		title: 'When should I choose a massage instead of reflexology?',
-		content: `
-            <p>If your main goal is to release deep muscular tension or physical tightness in a specific area — like your back, legs, or shoulders — massage may be the better fit. Reflexology works holistically and indirectly through pressure points; massage works directly on the tissue. If you\’re unsure, you can always read about both on the website before you book.</p>
-        `
-	}
-];
-export const massage_faqs: FAQ[] = [
-	{
-		value: '0',
-		title: 'What\’s the difference between Aithein Healing Massage and a regular massage?',
-		content: `
-            <p>Aithein Healing Massage blends deep tissue work with gentle, intuitive touch. It\’s not just about muscle relief — it\’s about calming the nervous system, releasing stored tension, and reconnecting with your body. Each session is deeply focused and fully tailored to what your body can receive that day.</p>
-        `
-	},
-	{
-		value: '1',
-		title: 'Is this a deep tissue massage?',
-		content: `
-            <p>It includes deep tissue techniques — but applied mindfully, not forcefully. The pressure adjusts to your body\’s readiness. There\’s no forcing, no “pushing through” pain. Just a safe space to release, reset, and restore at your own pace.</p>
-        `
-	},
-	{
-		value: '2',
-		title: 'What\’s the difference between massage and reflexology?',
-		content: `
-            <p>Massage works directly on the muscles to release tightness and physical stress. Reflexology works indirectly, through mapped points on the feet (or hands/face) that correspond to your internal systems. If you want direct relief for tight areas, massage may be right. If you\'re looking to support your whole system — digestion, sleep, hormones, stress — reflexology is often more helpful.</p>
-        `
-	},
-	{
-		value: '3',
-		title: 'What happens in a session?',
-		content: `
-            <p>You\’ll be gently guided to relax fully while I use slow, attentive movements to release tension across the body. Sessions are long and unhurried, especially the full-body option. You\’ll be warmly held, physically and emotionally — and encouraged to fully let go.</p>
-        `
-	},
-	{
-		value: '4',
-		title: 'Do I need to undress fully?',
-		content: `
-            <p>Only as much as you\'re comfortable with. You’ll always be covered with towels, and I’ll only uncover the areas being worked on. This is a space of complete care and consent.</p>
-        `
-	},
-	{
-		value: '5',
-		title: 'Is this suitable if I’m going through emotional stress?',
-		content: `
-            <p>Absolutely. Many people find this massage helps with both physical and emotional release. It’s common to feel lighter, more present, or even teary afterward — all part of your system letting go.</p>
-        `
-	},
-	{
-		value: '6',
-		title: 'Can this help with sleep, burnout, or anxiety?',
-		content: `
-            <p>Yes. Massage can calm the body’s stress response, slow your breathing, and guide you back into a sense of safety and rest. It doesn’t “fix” everything, but it gives your system the chance to slow down and recalibrate.</p>
-        `
-	},
-	{
-		value: '7',
-		title: 'Is there anything I need to do before or after a session?',
-		content: `
-            <p>Just arrive on time and well-hydrated. After the session, give yourself time to rest if possible — especially after longer treatments. Some people feel emotional or tired afterward; this is normal. Drink water, move gently, and let the benefits settle in.</p>
-        `
 	}
 ];
 export const locations_faqs: FAQ[] = [
@@ -268,16 +176,16 @@ Please be aware this service is only available on Mondays, Wednesdays, Thursdays
 		value: '4',
 		title: 'How do I know which location to book at?',
 		content: `
-            <p>If you require Reflexology or Massage, you can always book for my Burnham Location (could be referred as “Agi’s Studio”). If you want a reflexology treatment and live in 1 of the specified locations, please select “Home Visit” for any reflexology service. If you want to book a Reflexology treatment when I’m working at the Reflexions studio, please visit this page, select Chelsea or Bayswater and select your treatment. Then please ensure you give a ‘special instruction’ to work with Aga.</p>
+            <p>You can book reflexology at my Burnham Location (referred to as "Agi's Studio"), or select "Home Visit" if you live in one of the specified locations. If you want to book a reflexology treatment when I'm working at the Reflexions studio, please visit this page, select Chelsea or Bayswater and select your treatment. Then please ensure you give a 'special instruction' to work with Aga.</p>
         `
 	},
 	{
 		value: '5',
-		title: 'What’s the difference between Agi’s Studio, London studios, and Home Visits?',
+		title: 'What\'s the difference between Agi\'s Studio, London studios, and Home Visits?',
 		content: `
-            <p>I offer all of my services, Reflexology and Massage treatments, in my studio in Burnham. Monday, Wednesday, Thursday, Friday.</p>
-            <p>I offer only my Reflexology treatments during home visits. Monday, Wednesday, Thursday, Friday.</p>
-            <p>I Offer only my Reflexology treatments if you see me when I work at the Reflexia Studio in Chelsea or Bayswater. Thursday & Saturday.</p>
+            <p>I offer the full range of reflexology treatments in my studio in Burnham: Monday, Wednesday, Thursday, Friday.</p>
+            <p>I offer reflexology treatments during home visits: Monday, Wednesday, Thursday, Friday.</p>
+            <p>I offer reflexology treatments if you see me when I work at the Reflexions Studio in Chelsea or Bayswater: Thursday & Saturday.</p>
         `
 	},
 	{
@@ -305,7 +213,7 @@ Please be aware this service is only available on Mondays, Wednesdays, Thursdays
 		value: '9',
 		title: 'Do you (Agi) bring all equipment with you for home visits?',
 		content: `
-            <p>That’s correct, I will bring what I need for the reflexology treatment you purchased. Massage equipment would be too heavy to carry, which is why I only offer massages at my studio in Burnham.</p>
+            <p>Yes, I will bring everything I need for the reflexology treatment you purchased.</p>
         `
 	},
 	{
@@ -344,14 +252,14 @@ export const burnham_faqs: FAQ[] = [
 		value: '0',
 		title: 'What is your setup like in Burnham?',
 		content: `
-            <p>I’ve converted a room in my home into a quiet, dedicated treatment space — calm, welcoming, and fully set up for reflexology and massage. It’s not a salon or clinic, but a private studio designed to help you feel safe, comfortable, and supported.</p>
+            <p>I've converted a room in my home into a quiet, dedicated treatment space — calm, welcoming, and fully set up for reflexology. It's not a salon or clinic, but a private studio designed to help you feel safe, comfortable, and supported.</p>
         `
 	},
 	{
 		value: '1',
 		title: 'What services can I receive at your Burnham studio?',
 		content: `
-            <p>At my Burnham location, I offer the full range of my services: Reflexology (Face, Hands, Feet), as well as all massage treatments. This includes options like Extended Reflexology, intuitive massage, and targeted treatments for the back, legs, arms, and face.</p>
+            <p>At my Burnham location, I offer the full range of reflexology services: Face Reflexology, Hand Reflexology, and Foot Reflexology. This includes options like Extended Reflexology and combined treatments.</p>
         `
 	},
 	{
@@ -372,7 +280,7 @@ export const burnham_faqs: FAQ[] = [
 		value: '4',
 		title: 'Do you offer the same treatments in other locations?',
 		content: `
-            <p>I offer Reflexology in other locations, such as the Reflexions studios in Chelsea and Bayswater, or during Home Visits nearby. However, only at the Burnham studio can I offer my full massage menu and full flexibility with session lengths and formats.</p>
+            <p>I offer reflexology in other locations, such as the Reflexions studios in Chelsea and Bayswater, or during home visits nearby. The Burnham studio offers the most flexibility with session lengths and treatment options.</p>
         `
 	},
 	{
@@ -393,7 +301,7 @@ export const burnham_faqs: FAQ[] = [
 		value: '7',
 		title: 'Can you summarise your service in Burnham?',
 		content: `
-			<p>Absolutely — if you’re based in or near Burnham, you can book a full-service reflexology or massage session at my private studio. Conveniently located in Burnham, Buckinghamshire, this studio offers a calm, welcoming space to receive personalised care. Whether you\'re seeking relief from pain, stress, emotional tension, or hormonal imbalance, I offer reflexology and massage treatments that gently support your body’s natural ability to heal and reset. Book your reflexology or massage session in Burnham today to begin reconnecting with your body in a setting designed for deep rest and renewal.</p>
+			<p>Absolutely — if you're based in or near Burnham, you can book a full-service reflexology session at my private studio. Conveniently located in Burnham, Buckinghamshire, this studio offers a calm, welcoming space to receive personalised care. Whether you\'re seeking relief from pain, stress, emotional tension, or hormonal imbalance, I offer reflexology treatments that gently support your body's natural ability to heal and reset. Book your reflexology session in Burnham today to begin reconnecting with your body in a setting designed for deep rest and renewal.</p>
 		`
 	}
 ];
@@ -403,13 +311,6 @@ export const chelsea_faqs: FAQ[] = [
 		title: 'Do you work for Reflexions in Chelsea directly?',
 		content: `
 			<p>No — I work as a visiting reflexologist at the Reflexions studio in Chelsea. I am not employed by or affiliated with the business directly. My role is to offer reflexology treatments from their location as an independent practitioner. If you’d like to work with me specifically, please make sure to request me by name when booking.</p>
-		`
-	},
-	{
-		value: '1',
-		title: 'Can I book a massage with you at Reflexions Chelsea?',
-		content: `
-			<p>Reflexions Chelsea only offers reflexology sessions with me. I do not offer massage treatments at this location. If you\'re seeking massage, you can book at my Burnham studio or request a home visit if you\'re based nearby.</p>
 		`
 	},
 	{
@@ -459,13 +360,6 @@ export const bayswater_faqs: FAQ[] = [
 	},
 	{
 		value: '1',
-		title: 'Can I book a massage with you at Reflexions Bayswater?',
-		content: `
-      <p>Reflexions Bayswater only offers reflexology sessions with me. I do not offer massage treatments at this location. If you're seeking massage, you can book at my Burnham studio or request a home visit if you’re based nearby.</p>
-    `
-	},
-	{
-		value: '2',
 		title: 'How do I make sure I’m booking with you?',
 		content: `
       <p>Please book through the Reflexions system and specify that you want to see Aga. If this option isn’t immediately clear, feel free to contact me first and I’ll guide you.</p>
@@ -514,13 +408,6 @@ export const home_visit_faqs: FAQ[] = [
 		title: 'Which areas do you cover for home visits?',
 		content: `
       <p>I travel to selected nearby areas for reflexology home visits. You can find the current list of locations on my Locations Page.</p>
-    `
-	},
-	{
-		value: '2',
-		title: 'Can I book a massage as a home visit?',
-		content: `
-      <p>I only offer reflexology as a mobile treatment. Massage treatments are only available at my Burnham studio.</p>
     `
 	},
 	{

@@ -2,7 +2,7 @@ import type { RequestHandler } from './$types';
 
 const SITEMAP_BASE_URL = 'https://www.agireflexology.com';
 
-const staticPages = ['/', '/about', '/services', '/services/reflexology', '/services/massage', '/locations', '/locations/agi-studio/burnham', '/locations/reflexions/chelsea', '/locations/reflexions/bayswater', '/locations/home-visit/beaconsfield', '/locations/home-visit/bisham', '/locations/home-visit/bourne-end', '/locations/home-visit/cookham', '/locations/home-visit/farnham-common', '/locations/home-visit/forty-green', '/locations/home-visit/hedgerley', '/locations/home-visit/maidenhead', '/locations/home-visit/marlow', '/locations/home-visit/penn', '/locations/home-visit/stoke-poges', '/locations/home-visit/taplow', '/locations/home-visit/woodburn-green', '/contact', '/faq', '/treatments', '/privacy-policy', '/disclaimer', '/terms-and-conditions'];
+const staticPages = ['/', '/about', '/reflexology', '/locations', '/locations/agi-studio/burnham', '/locations/reflexions/chelsea', '/locations/reflexions/bayswater', '/locations/home-visit/beaconsfield', '/locations/home-visit/bisham', '/locations/home-visit/bourne-end', '/locations/home-visit/cookham', '/locations/home-visit/farnham-common', '/locations/home-visit/forty-green', '/locations/home-visit/hedgerley', '/locations/home-visit/maidenhead', '/locations/home-visit/marlow', '/locations/home-visit/penn', '/locations/home-visit/stoke-poges', '/locations/home-visit/taplow', '/locations/home-visit/woodburn-green', '/contact', '/faq', '/treatments', '/privacy-policy', '/disclaimer', '/terms-and-conditions'];
 
 export const GET: RequestHandler = async () => {
 	const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD

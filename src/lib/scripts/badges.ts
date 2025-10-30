@@ -66,9 +66,9 @@ export const getLocationBadges = (locationKeys: string[], type: BadgeType = 'inf
 
 export const getTimeBadge = (timeDuration: number): pc.Badge[] => [{ type: 'primary', Icon: AlarmClock, content: `${timeDuration}min` }];
 
-export const getBodyPartAreaBadges = (massageAreaNames: string[]): pc.Badge[] => {
+export const getBodyPartAreaBadges = (bodyPartNames: string[]): pc.Badge[] => {
 	let result: any[] = [];
-	massageAreaNames.forEach((word) => {
+	bodyPartNames.forEach((word) => {
 		const isSeperator = ['and', 'or'].includes(word.trim().toLowerCase());
 		if (isSeperator) {
 			result.push({

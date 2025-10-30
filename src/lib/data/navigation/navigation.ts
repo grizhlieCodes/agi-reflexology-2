@@ -67,22 +67,8 @@ export const headerData: HeaderData = {
 			href: '/about'
 		},
 		{
-			content: 'Services',
-			href: '/services',
-			links: [
-				{
-					content: 'Services',
-					href: '/services'
-				},
-				{
-					content: 'Reflexology',
-					href: '/services/reflexology'
-				},
-				{
-					content: 'Massage',
-					href: '/services/massage'
-				}
-			]
+			content: 'Reflexology',
+			href: '/reflexology'
 		},
 		{
 			content: 'Locations',
@@ -129,11 +115,7 @@ export const footerData: FooterData = {
 	footer_links: [
 		{
 			column_title: 'Main Links',
-			links: [getLink('Home', '/'), getLink('About', '/about'), getLink('Locations', '/locations'), getLink('FAQ', '/faq'), getLink('Contact', '/contact')]
-		},
-		{
-			column_title: 'Services',
-			links: [getLink('My Services', '/services'), getLink('About', '/services/reflexology'), getLink('Locations', '/services/massage'), getLink('All Treatments', '/treatments')]
+			links: [getLink('Home', '/'), getLink('About', '/about'), getLink('Reflexology', '/reflexology'), getLink('Locations', '/locations'), getLink('Treatments', '/treatments'), getLink('FAQ', '/faq'), getLink('Contact', '/contact')]
 		},
 		{
 			column_title: 'Privacy & Data',

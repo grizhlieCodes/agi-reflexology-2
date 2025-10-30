@@ -11,7 +11,7 @@ export const load: LayoutLoad = async ({ url }) => {
 		pageData?.title ?? `Agi Reflexology - ${pathToTitle(pathname)}`;
 	const description =
 		pageData?.description ??
-		'I use my intuitive reflexology-massage techniques to guide your body toward a deep release and natural balance. In a healing and peaceful environment, I help you let go of tension patterns that prevent you from experiencing true bodily peace. Based in Burnham, UK.';
+		'I use my intuitive reflexology techniques to guide your body toward a deep release and natural balance. In a healing and peaceful environment, I help you let go of tension patterns that prevent you from experiencing true bodily peace. Based in Burnham, UK.';
 
 	return {
 		url: pathname,

@@ -30,11 +30,11 @@
 			title: 'Reflexology Questions',
 			faqs: faqs.reflexology_faqs
 		},
-		{
-			id: 'massage-questions',
-			title: 'Massage Queries',
-			faqs: faqs.massage_faqs
-		},
+		// {
+		// 	id: 'massage-questions',
+		// 	title: 'Massage Queries',
+		// 	faqs: faqs.massage_faqs
+		// },
 		{
 			id: 'location-questions',
 			title: 'Location Queries',

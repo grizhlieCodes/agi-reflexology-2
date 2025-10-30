@@ -3,25 +3,17 @@ export const headData: { [key: string]: { title: string; description: string } }
 		title: 'About Agi Reflexology - My Philosophy and Healing Approach',
 		description: 'Learn about my story and my philosophy of natural, intuitive, and respectful bodywork. I offer gentle, grounded treatments to help your body feel safe, release tension, and find its own way back to balance and clarity.'
 	},
-	'/services': {
-		title: 'Reflexology & Healing Massage Services | Agi Reflexology',
-		description: "Explore the range of reflexology and massage treatments I offer. Each session is tailored to your unique needs, helping you release stress, ease pain, and reconnect with your body's natural healing abilities."
-	},
-	'/services/reflexology': {
+	'/reflexology': {
 		title: 'Reflexology in Burnham, UK | Agi Reflexology',
 		description: 'Discover how reflexology can support your body in restoring balance. My sessions can help improve sleep, energy, mood, and menstrual regularity by calming your nervous system and helping your system reset. I also offer home visits for those who are unable to travel to my studio, in the Burnham area.'
 	},
-	'/services/massage': {
-		title: 'Aithein Healing Massage in Burnham, UK | Agi Reflexology',
-		description: 'Experience Aithein Healing Massage, a blend of deep tissue work and gentle, intuitive touch designed to calm the nervous system, release stored tension, and reconnect you with your body.'
-	},
 	'/contact': {
 		title: 'Contact Agi Reflexology | Book Your Session in Burnham, UK',
-		description: 'Get in touch to book a reflexology or massage session in Burnham, UK. Contact me for any questions you may have about my treatments. I also offer home visits for those who are unable to travel to my studio, in the Burnham area.'
+		description: 'Get in touch to book a reflexology session in Burnham, UK. Contact me for any questions you may have about my treatments. I also offer home visits for those who are unable to travel to my studio, in the Burnham area.'
 	},
 	'/faq': {
 		title: 'Frequently Asked Questions | Agi Reflexology',
-		description: 'Find answers to common questions about reflexology, massage, what to expect in a session, and how my treatments can help you. Learn about my approach and what makes it different.'
+		description: 'Find answers to common questions about reflexology, what to expect in a session, and how my treatments can help you. Learn about my approach and what makes it different.'
 	},
 	'/privacy-policy': {
 		title: 'Privacy Policy | Agi Reflexology',
@@ -41,7 +33,7 @@ export const headData: { [key: string]: { title: string; description: string } }
 	},
 	'/locations/agi-studio/burnham': {
 		title: 'Agi Reflexology Studio in Burnham, UK',
-		description: 'The easiest and optimal way to work with me is by booking a visit to my studio in Burnham, UK. I provide Reflexology & Massage treatments in my studio.'
+		description: 'The easiest and optimal way to work with me is by booking a visit to my studio in Burnham, UK. I provide reflexology treatments in my studio.'
 	},
 	'/locations/reflexions/chelsea': {
 		title: 'Reflexology at Reflexions, Chelsea, London | Tuesdays with Aga',
