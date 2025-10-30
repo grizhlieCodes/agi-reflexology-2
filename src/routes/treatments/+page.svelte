@@ -39,7 +39,7 @@
 	import Days from '$lib/pages/treatments/Days.svelte';
 	import PageCta from '$lib/pages/shared/PageCta.svelte';
 
-	$inspect(t.aval_days);
+	// $inspect(t.aval_days);
 </script>
 
 <Section
@@ -70,7 +70,7 @@
 
 				<div class="flex flex-wrap items-center justify-center gap-3">
 					<Location></Location>
-					<TreatmentType />
+					<!-- <TreatmentType /> -->
 					<Days></Days>
 					<BodyPart />
 					<Duration />
