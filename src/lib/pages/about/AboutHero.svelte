@@ -117,7 +117,7 @@
 					size={3}
 					type="plain"
 					ariaLabel="Learn how reflexology works"
-					href="/services/reflexology"
+					href="/reflexology"
 					class="min-w-max"
 				>
 					Discover My Approach

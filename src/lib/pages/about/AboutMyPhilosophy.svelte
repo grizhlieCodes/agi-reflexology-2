@@ -139,7 +139,7 @@
 					<Button
 						size={4}
 						type="plain"
-						href="/services/reflexology"
+						href="/reflexology"
 						ariaLabel="Learn how reflexology works"
 					>
 						How Reflexology Works

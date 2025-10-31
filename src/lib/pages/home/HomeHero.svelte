@@ -122,7 +122,7 @@
 				size={3}
 				type="plain"
 				ariaLabel="Learn about my reflexology service and how it can help you"
-				href="/services/reflexology"
+				href="/reflexology"
 			>
 				Discover My Approach
 			</Button>

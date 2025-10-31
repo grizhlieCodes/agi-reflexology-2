@@ -536,7 +536,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -609,7 +609,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -682,7 +682,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -755,7 +755,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -828,7 +828,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -901,7 +901,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -974,7 +974,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -1047,7 +1047,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -1120,7 +1120,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -1176,7 +1176,7 @@ export const locations: locations.LocationsMap = {
 		},
 		location_page: {
 			hero_section: {
-				title: 'Hedgerley- Home Visit',
+				title: 'Hedgerley - Home Visit',
 				id: 'hedgerley-location-hero',
 				description: 'I provide home-visit reflexology treatments in Hedgerley.',
 				image: null,
@@ -1193,7 +1193,80 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
+						aria_label: 'Go to my reflexology information page to learn about how it all works.'
+					}
+				}
+			},
+			how_it_works_section: {
+				title: 'Your Reflexology Treatment, In The Comfort Of Your Home',
+				eyebrow: 'How It Works',
+				id: 'agi-how-it-works',
+				steps: [
+					{
+						eyebrow: 'STEP 1',
+						title: 'Book Your Session',
+						description: `<span>
+							Go to <a href="/treatments" aria-label="View all of the services I offer">My Treatments</a> and select the one that suits you best. You will be taken to the Fresha platform where you can purchase the session and book your slot in my calendar. <strong>Make sure to select “Home Visit” as the location.</strong> If this is your first time working with me, you will be asked to fill out a short form.
+						</span>`,
+						image: images.fresha_experience_screenshot
+					},
+					{
+						eyebrow: 'STEP 2',
+						title: 'I Arrive And Prepare A Space',
+						description: `<span>I will arrive 5-10 minutes before the start of our session. Please make sure you have a space in your living room for our treatment. If you\’re unsure of this step, please <a href="/contact" aria-label="Go to my contact page to fill out the contact form.">contact me</a> before our session.</span>`,
+						image: images.spa_setup_essentials
+					},
+					{
+						eyebrow: 'STEP 3',
+						title: 'The Treatment',
+						description: `<span>The treatment will comprise of a focused reflexology massage (or normal massage) that will work through areas of high-benefit, uniquely to you and your body.</span>`,
+						image: images.foot_massage_session
+					}
+				],
+				buttons: {
+					primary: {
+						content: 'Explore My Treatments',
+						href: '/treatments',
+						aria_label: 'View all of my services'
+					}
+				}
+			}
+		},
+		faqs: [...faqs.home_visit_faqs, faqs.specific_home_visit_faq.hedgerley]
+	},
+	henley_on_thames: {
+		location_card: {
+			title: 'Henley-on-Thames',
+			id: 'henley-on-thames',
+			description: 'Book your home-visit reflexology treatment in Henley-on-Thames.',
+			button_href: '/locations/home-visit/henley-on-thames',
+			badges: {
+				location_badge: badge.getLocationBadges(['home_visit', 'henley']),
+				day_badges: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
+			},
+			mapIframeSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10785.730888784154!2d-0.9113824468547579!3d51.535979177852575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48768542ad0cb2ab%3A0x50b007c5953c9c7d!2sHenley-on-Thames!5e0!3m2!1sen!2suk!4v1761928414569!5m2!1sen!2suk'
+		},
+		location_page: {
+			hero_section: {
+				title: 'Henley-On-Thames - Home Visit',
+				id: 'henley-location-hero',
+				description: 'I provide home-visit reflexology treatments in Henley On Thames.',
+				image: null,
+				badges: {
+					location: badge.getLocationBadges(['home_visit', 'henley']),
+					available_services: badge.getServiceAvailabilityBadges('reflexology-true'),
+					available_days: badge.getDayBadges(['mon', 'wed', 'thur', 'fri'])
+				},
+				buttons: {
+					primary: {
+						content: 'Explore My Treatments',
+						href: '/treatments',
+						aria_label: 'View all of the treatments I offer'
+					},
+					secondary: {
+						content: 'How Reflexology Works',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -1266,7 +1339,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -1339,7 +1412,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -1412,7 +1485,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -1485,7 +1558,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -1558,7 +1631,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -1631,7 +1704,7 @@ export const locations: locations.LocationsMap = {
 					},
 					secondary: {
 						content: 'How Reflexology Works',
-						href: '/services/reflexology',
+						href: '/reflexology',
 						aria_label: 'Go to my reflexology information page to learn about how it all works.'
 					}
 				}
@@ -1727,7 +1800,7 @@ export const locationSections: locations.LocationSections = [
 		}
 	},
 	{
-		locationNames: ['beaconsfield', 'bisham', 'bourne_end', 'cookham', 'farnham_common', 'forty_green', 'hedgerley', 'maidenhead', 'marlow', 'penn', 'stoke_poges', 'taplow', 'woodburn_green'],
+		locationNames: ['beaconsfield', 'bisham', 'bourne_end', 'cookham', 'farnham_common', 'forty_green', 'hedgerley', 'henley_on_thames', 'maidenhead', 'marlow', 'penn', 'stoke_poges', 'taplow', 'woodburn_green'],
 		title: 'Home Visits',
 		id: 'home-visit-locations',
 		badges: {
@@ -1736,6 +1809,6 @@ export const locationSections: locations.LocationSections = [
 		},
 		description: 'I offer home visits for Reflexology treatments only. You will book through Fresha and will have to select the “Home Visit” option. If it’s your first time booking with me you will be asked for some personal information like name, surname, contact details and your address.',
 		location_button: null,
-		locations: [locations.beaconsfield, locations.bisham, locations.bourne_end, locations.cookham, locations.farnham_common, locations.forty_green, locations.hedgerley, locations.maidenhead, locations.marlow, locations.penn, locations.stoke_poges, locations.taplow, locations.woodburn_green]
+		locations: [locations.beaconsfield, locations.bisham, locations.bourne_end, locations.cookham, locations.farnham_common, locations.forty_green, locations.hedgerley, locations.henley_on_thames, locations.maidenhead, locations.marlow, locations.penn, locations.stoke_poges, locations.taplow, locations.woodburn_green]
 	}
 ];

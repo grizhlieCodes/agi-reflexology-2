@@ -23,7 +23,7 @@
 					<Button
 						type="default_light"
 						size={4}
-						href="/services/reflexology"
+						href="/reflexology"
 						ariaLabel="Learn how my reflexology service works."
 						class="w-full rounded-md">Explore How Reflexology Works</Button
 					>

@@ -85,6 +85,7 @@ export const headerData: HeaderData = {
 				{ content: 'Farnham Common', href: '/locations/home-visit/farnham-common' },
 				{ content: 'Forty Green', href: '/locations/home-visit/forty-green' },
 				{ content: 'Hedgerley', href: '/locations/home-visit/hedgerley' },
+				{ content: 'Henley-on-Thames', href: '/locations/home-visit/henley-on-thames' },
 				{ content: 'Maidenhead', href: '/locations/home-visit/maidenhead' },
 				{ content: 'Marlow', href: '/locations/home-visit/marlow' },
 				{ content: 'Penn', href: '/locations/home-visit/penn' },

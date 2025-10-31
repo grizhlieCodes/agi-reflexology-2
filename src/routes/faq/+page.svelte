@@ -79,7 +79,7 @@
 				type="plain"
 				ariaLabel="View the locations that I
 			offer my services in"
-				href="/services/reflexology"
+				href="/reflexology"
 				class="min-w-max"
 			>
 				How Reflexology Works

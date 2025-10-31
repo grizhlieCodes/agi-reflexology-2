@@ -204,7 +204,7 @@
 				<Button
 					size={4}
 					type="plain"
-					href="/services/reflexology"
+					href="/reflexology"
 					ariaLabel="Learn how reflexology works"
 					class="w-full max-w-md sm:w-max"
 				>
